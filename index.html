@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goodman - юристы для людей</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="media/icons/icon-font/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <picture class="header__logo-container">
+          <source
+            class="header__logo-xs"
+            srcset="media/icons/logo-xs.svg"
+            media="(max-width: 1100px)"
+          />
+          <img
+            class="header__logo-xl"
+            class="header__logo"
+            src="media/icons/logo-xl.svg"
+            alt="Good Man"
+          />
+        </picture>
+        <nav>
+          <ul class="header__nav">
+            <li class="header__nav-item"><a href="#">О нас</a></li>
+            <li class="header__nav-item"><a href="#">Новости</a></li>
+            <li class="header__nav-item"><a href="#">Документы</a></li>
+            <li class="header__nav-item"><a href="#">Вопросы</a></li>
+            <li class="header__nav-item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__connection">
+          <a href="tel:+78001014273" class="header__tel">8 (800) 101-42-73</a>
+          <button class="header__button" type="button">
+            Связаться с нами &rarr;
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <img class="intro__substract" src="media/img/subtract.svg" alt="" />
+        <div class="intro__container">
+          <div class="intro__title-box">
+            <h1 class="intro__title">
+              Помогаем списывать долги. Законно и&nbsp;безопасно
+            </h1>
+            <p class="intro__descripton">
+              7 лет успешной практики, реальные кейсы, и&nbsp;поддержка
+              на&nbsp;каждом этапе. Мы&nbsp;помогаем людям вернуть контроль
+              над&nbsp;жизнью
+            </p>
+            <button class="intro__button">
+              Получить бесплатную консультацию
+            </button>
+          </div>
+          <div class="intro__slider-box">
+            <div class="feedback swiper">
+              <div class="feedback__wrapper swiper-wrapper">
+                <div class="feedback__slide swiper-slide">
+                  <div class="feedback__video-wrapper">
+                    <video
+                      class="feedback__video"
+                      muted
+                      autoplay
+                      loop
+                      playsinline
+                    >
+                      <source
+                        src="media/video/feedback/video-feedback1.webm"
+                        type="video/webm"
+                      />
+                      <source
+                        src="media/video/feedback/video-feedback1.mp4"
+                        type="video/mp4"
+                      />
+                      <img
+                        src="media/video/feedback/video-feedback1Fallback.JPG"
+                        alt="Видео недоступно в вашем браузере"
+                      />
+                    </video>
+                    <div class="feedback__overlay overlay">
+                      <div
+                        class="overlay__mute icon-mute"
+                        data-video-mute
+                      ></div>
+                      <div class="overlay__controls">
+                        <span
+                          class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"
+                        ></span>
+                        <span
+                          class="overlay__full-screen icon-full-screen"
+                          data-video-fullscreen
+                        ></span>
+                        <span
+                          class="overlay__arrow-next swiper-button-next icon-arrow-next"
+                        ></span>
+                      </div>
+                      <div class="overlay__title">
+                        Я долго не решалась на банкротство
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback__resume">
+                    <p class="feedback__title">Антонина Петровна, 38 лет</p>
+                    <p class="feedback__description">
+                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
+                      квартиру внучке. Команда Goodman обязала банк признать
+                      случай страховым и возместить 6 500 000 ₽
+                    </p>
+                  </div>
+                </div>
+                <div class="feedback__slide swiper-slide">
+                  <div class="feedback__video-wrapper">
+                    <video
+                      class="feedback__video"
+                      muted
+                      autoplay
+                      loop
+                      playsinline
+                    >
+                      <source
+                        src="media/video/feedback/video-feedback1.webm"
+                        type="video/webm"
+                      />
+                      <source
+                        src="media/video/feedback/video-feedback1.mp4"
+                        type="video/mp4"
+                      />
+                      <img
+                        src="media/video/feedback/video-feedback1Fallback.JPG"
+                        alt="Видео недоступно в вашем браузере"
+                      />
+                    </video>
+                    <div class="feedback__overlay overlay">
+                      <div
+                        class="overlay__mute icon-mute"
+                        data-video-mute
+                      ></div>
+                      <div class="overlay__controls">
+                        <span
+                          class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"
+                        ></span>
+                        <span
+                          class="overlay__full-screen icon-full-screen"
+                          data-video-fullscreen
+                        ></span>
+                        <span
+                          class="overlay__arrow-next swiper-button-next icon-arrow-next"
+                        ></span>
+                      </div>
+                      <div class="overlay__title">
+                        Я долго не решалась на банкротство
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback__resume">
+                    <p class="feedback__title">Антонина Петровна, 38 лет</p>
+                    <p class="feedback__description">
+                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
+                      квартиру внучке. Команда Goodman обязала банк признать
+                      случай страховым и возместить 6 500 000 ₽
+                    </p>
+                  </div>
+                </div>
+                <div class="feedback__slide swiper-slide">
+                  <div class="feedback__video-wrapper">
+                    <video
+                      class="feedback__video"
+                      muted
+                      autoplay
+                      loop
+                      playsinline
+                    >
+                      <source
+                        src="media/video/feedback/video-feedback1.webm"
+                        type="video/webm"
+                      />
+                      <source
+                        src="media/video/feedback/video-feedback1.mp4"
+                        type="video/mp4"
+                      />
+                      <img
+                        src="media/video/feedback/video-feedback1Fallback.JPG"
+                        alt="Видео недоступно в вашем браузере"
+                      />
+                    </video>
+                    <div class="feedback__overlay overlay">
+                      <div
+                        class="overlay__mute icon-mute"
+                        data-video-mute
+                      ></div>
+                      <div class="overlay__controls">
+                        <span
+                          class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"
+                        ></span>
+                        <span
+                          class="overlay__full-screen icon-full-screen"
+                          data-video-fullscreen
+                        ></span>
+                        <span
+                          class="overlay__arrow-next swiper-button-next icon-arrow-next"
+                        ></span>
+                      </div>
+                      <div class="overlay__title">
+                        Я долго не решалась на банкротство
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback__resume">
+                    <p class="feedback__title">Антонина Петровна, 38 лет</p>
+                    <p class="feedback__description">
+                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
+                      квартиру внучке. Команда Goodman обязала банк признать
+                      случай страховым и возместить 6 500 000 ₽
+                    </p>
+                  </div>
+                </div>
+                <div class="feedback__slide swiper-slide">
+                  <div class="feedback__video-wrapper">
+                    <video
+                      class="feedback__video"
+                      muted
+                      autoplay
+                      loop
+                      playsinline
+                    >
+                      <source
+                        src="media/video/feedback/video-feedback1.webm"
+                        type="video/webm"
+                      />
+                      <source
+                        src="media/video/feedback/video-feedback1.mp4"
+                        type="video/mp4"
+                      />
+                      <img
+                        src="media/video/feedback/video-feedback1Fallback.JPG"
+                        alt="Видео недоступно в вашем браузере"
+                      />
+                    </video>
+                    <div class="feedback__overlay overlay">
+                      <div
+                        class="overlay__mute icon-mute"
+                        data-video-mute
+                      ></div>
+                      <div class="overlay__controls">
+                        <span
+                          class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"
+                        ></span>
+                        <span
+                          class="overlay__full-screen icon-full-screen"
+                          data-video-fullscreen
+                        ></span>
+                        <span
+                          class="overlay__arrow-next swiper-button-next icon-arrow-next"
+                        ></span>
+                      </div>
+                      <div class="overlay__title">
+                        Я долго не решалась на банкротство
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback__resume">
+                    <p class="feedback__title">Антонина Петровна, 38 лет</p>
+                    <p class="feedback__description">
+                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
+                      квартиру внучке. Команда Goodman обязала банк признать
+                      случай страховым и возместить 6 500 000 ₽
+                    </p>
+                  </div>
+                </div>
+                <div class="feedback__slide swiper-slide">
+                  <div class="feedback__video-wrapper">
+                    <video
+                      class="feedback__video"
+                      muted
+                      autoplay
+                      loop
+                      playsinline
+                    >
+                      <source
+                        src="media/video/feedback/video-feedback1.webm"
+                        type="video/webm"
+                      />
+                      <source
+                        src="media/video/feedback/video-feedback1.mp4"
+                        type="video/mp4"
+                      />
+                      <img
+                        src="media/video/feedback/video-feedback1Fallback.JPG"
+                        alt="Видео недоступно в вашем браузере"
+                      />
+                    </video>
+                    <div class="feedback__overlay overlay">
+                      <div
+                        class="overlay__mute icon-mute"
+                        data-video-mute
+                      ></div>
+                      <div class="overlay__controls">
+                        <span
+                          class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"
+                        ></span>
+                        <span
+                          class="overlay__full-screen icon-full-screen"
+                          data-video-fullscreen
+                        ></span>
+                        <span
+                          class="overlay__arrow-next swiper-button-next icon-arrow-next"
+                        ></span>
+                      </div>
+                      <div class="overlay__title">
+                        Я долго не решалась на банкротство
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feedback__resume">
+                    <p class="feedback__title">Антонина Петровна, 38 лет</p>
+                    <p class="feedback__description">
+                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
+                      квартиру внучке. Команда Goodman обязала банк признать
+                      случай страховым и возместить 6 500 000 ₽
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__footer">
+              <div class="feedback__pagination swiper-pagination"></div>
+              <a href="#" class="feedback__button">Все отзывы &darr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <img
+          class="team__image"
+          src="media/img/team.png"
+          alt="Изображение недоступно в вашем браузере"
+        />
+      </section>
+      <section class="about">
+        <div class="about__container">
+          <div class="about__quastion">
+            <div class="about__message">
+              <div class="about__message--shape"></div>
+              <picture>
+                <img
+                  class="about__message--image"
+                  src="media/img/staff/staff1.jpg"
+                  alt="#"
+                />
+              </picture>
+              <div class="about__message--title">
+                Хотите закрыть долги<br />
+                и&nbsp;начать новую жизнь?
+              </div>
+              <p class="about__message--text">
+                Если вы задаётесь вопросом: «Как закрыть долги и&nbsp;начать
+                новую жизнь?», ответ прост — с правильной поддержкой этот путь
+                становится понятным и&nbsp;достижимым. В компании Goodman мы
+                верим, что каждый заслуживает свободы от долгов и возможности
+                начать всё с чистого листа. Мы не просто юридическая фирма – мы
+                ваш надёжный проводник в мир финансовой независимости
+              </p>
+            </div>
+          </div>
+          <div class="about__answer">
+            <h2 class="about__title">
+              Наша команда работает по&nbsp;всей&nbsp;России
+            </h2>
+            <p class="about__text">
+              Goodman – это не просто ответ на проблему, а возможность для
+              начала новой жизни. Мы помогаем вам разобраться в тонкостях
+              законодательства, разобраться с накопившимися обязательствами и,
+              главное, вернуть себе спокойствие и уверенность в завтрашнем дне.
+              С&nbsp;нами вы научитесь смотреть в&nbsp;будущее с оптимизмом,
+              ведь закрыть долги – это первый шаг к новой главе вашей жизни.
+              <br /><br />Мы внимательно анализируем вашу ситуацию, подбираем
+              индивидуальную стратегию и шаг за шагом воплощаем план по закрытию
+              долгов. Наш опыт, проверенный за 7 лет успешной практики, и
+              реальные истории наших клиентов говорят сами за&nbsp;себя.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="values">
+        <div class="values__wrapper">
+          <div class="values__item">
+            <i class="values__item--icon icon-message"></i>
+            <div class="values__item--index">
+              <span class="values__item--index-number">7</span>лет
+            </div>
+            <div class="values__item--text">Экспертизы и судебной практики</div>
+            <picture>
+              <img
+                class="values__item--image"
+                src="media/img/staff/staff2.jpg"
+                alt="#"
+              />
+            </picture>
+          </div>
+          <div class="values__item">
+            <div class="values__dark-wrapper">
+              <div class="values__item--text">Нам можно доверять!</div>
+              <picture>
+                <img
+                  class="values__item--image"
+                  src="media/img/staff/staff3.jpg"
+                  alt="#"
+                />
+              </picture>
+            </div>
+            <div class="values__item--slogan">
+              Банкротство без&nbsp;стресса — мы всегда рядом
+            </div>
+          </div>
+          <div class="values__item">
+            <i class="values__item--icon icon-message"></i>
+            <div class="values__item--index">
+              <span class="values__item--index-number">2</span>млрд&#8381;
+            </div>
+            <div class="values__item--text">
+              Размер списанного долга у всех наших клиентов
+            </div>
+            <picture>
+              <img
+                class="values__item--image"
+                src="media/img/staff/staff4.jpg"
+                alt="#"
+              />
+            </picture>
+          </div>
+          <div class="values__item">
+            <div class="values__item--slogan">
+              Начните жизнь с&nbsp;чистого листа!
+            </div>
+            <div class="values__dark-wrapper">
+              <i class="values__item--icon icon-message"></i>
+              <div class="values__item--index">
+                ><span class="values__item--index-number">1</span>тыс.
+              </div>
+              <div class="values__item--text">Завершенных клиентов</div>
+            </div>
+          </div>
+          <div class="values__item">
+            <picture>
+              <img
+                class="values__item--image"
+                src="media/img/staff/staff5.jpg"
+                alt="#"
+              />
+            </picture>
+            <i class="values__item--icon icon-message"></i>
+            <div class="values__item--index">
+              <span class="values__item--index-number">100</span>%
+            </div>
+            <div class="values__item--text">
+              Процент успешных судебных дел за&nbsp;2020-2024 гг
+            </div>
+          </div>
+        </div>
+      </section>
+      <article class="opinion">
+        <div class="opinion__container">
+          <p class="opinion__text">Как показала практика, секрет отсутствия долгов&nbsp;— это&nbsp;не&nbsp;тратить больше, чем способен заработать. <span class="opinion__text--accent">Это позволяет с&nbsp;легкостью масштабировать любой бизнес</span></p>
+          <div class="opinion__author">
+            <img class="opinion__author--image" src="media/img/staff/staff1.jpg" alt="#">
+            <div class="opinion__author--infobox">
+              <div class="opinion__author--post">Арбитражный&nbsp;управляющий</div>
+              <div class="opinion__author--name">Павел&nbsp;Прасолов</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <section class="cases">
+        <div class="cases__container">
+          <h2 class="cases__title">Как мы решаем проблемы наших клиентов</h2>
+          <div class="cases__controls">
+            <div class="cases__tags" id="cases-tags"></div>
+            <div class="cases__slider-navigation">
+              <div class="cases__counter">
+                <span class="cases__counter--current"></span>
+                <span class="cases__counter--separator">/</span>
+                <span class="cases__counter--total"></span>
+              </div>
+              <div class="cases__slider-button cases__slider-button--prev icon-arrow-prev swiper-button-prev"></div>
+              <div class="cases__slider-button cases__slider-button--next icon-arrow-next swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="cases__sliders" id="cases-sliders"></div>
+        </div>
+      </section>
+    </main>
+    <svg width="0" height="0">
+          <clipPath id="message" clipPathUnits="objectBoundingBox">
+            <path d="M0.214 0 C0.107 0 0.02 0.087 0.02 0.195 V0.427 C0.02 0.571 0.107 0.658 0.214 0.658 H0.757 L1 0.905 L1 0.195 C1 0.087 0.915 0 0.808 0 H0.214 Z">
+          </clipPath>
+    </svg>
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="clip-lb">
+              <path d="M323 161.5C323 250.694 250.694 323 161.5 323C127.858 323 96.6183 312.713 70.755 295.114L27.8866 295.114L27.8867 252.246C10.2868 226.382 -8.52995e-06 195.143 -7.05939e-06 161.5C-3.1606e-06 72.306 72.306 3.1606e-06 161.5 7.05939e-06C250.694 1.09582e-05 323 72.306 323 161.5Z">
+            </clipPath>
+          </defs>
+    </svg>
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="clip-lt">
+              <path d="M323 161.5C323 250.694 250.694 323 161.5 323C127.858 323 96.6183 312.713 70.755 295.114L27.8866 295.114L27.8867 252.246C10.2868 226.382 -8.52995e-06 195.143 -7.05939e-06 161.5C-3.1606e-06 72.306 72.306 3.1606e-06 161.5 7.05939e-06C250.694 1.09582e-05 323 72.306 323 161.5Z" transform="rotate(90 161.5 161.5)">
+            </clipPath>
+          </defs>
+    </svg>
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="clip-rt">
+              <path 
+                d="M275 137.5C275 213.4 213.4 275 137.5 275C108.9 275 82.3 266.3 60.3 251.3L23.75 251.3L23.75 214.8C8.76 192.8 0 166.2 0 137.5C0 61.6 61.6 0 137.5 0C213.4 0 275 61.6 275 137.5Z"
+                transform="rotate(180 137.5 137.5)"
+              >
+            </clipPath>
+          </defs>
+    </svg>
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="clip-rb">
+              <path 
+                d="M275 137.5C275 213.4 213.4 275 137.5 275C108.9 275 82.3 266.3 60.3 251.3L23.75 251.3L23.75 214.8C8.76 192.8 0 166.2 0 137.5C0 61.6 61.6 0 137.5 0C213.4 0 275 61.6 275 137.5Z"
+                transform="rotate(270 137.5 137.5)"
+              >
+            </clipPath>
+          </defs>
+    </svg>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/feedbackSlider.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/casesSlider.js"></script>
+  </body>
+</html>

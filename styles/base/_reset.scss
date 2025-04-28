@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: default;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:active {
+  outline: none;
+}
+
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+  background: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  width: fit-content;
+  height: fit-content;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}

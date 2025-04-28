@@ -1,0 +1,67 @@
+.values {
+    background-color: $secondary-color;
+    padding: 7rem 0;
+    &__wrapper {
+        max-width: 100%;
+        @include content-width();
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0 0.5rem;
+    }
+    &__dark-wrapper {
+        background-color: $primary-color;
+        border-radius: 10rem;
+        height: 60rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+    }
+    &__item {
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1.5rem;
+        &--icon {
+            font-size: 2rem;
+            text-align: left;
+            padding: 2rem;
+        }
+        &--text {
+            font-weight: 550;
+        }
+        &--index {
+            font-size: 2.5rem;
+            font-weight: 550;
+            &-number {
+                font-size: 6rem;
+            }
+        }
+        &--image {
+            width: $shape-size;
+            height: $shape-size;
+            border-radius: 50%;
+            @supports (clip-path: path('M0 0')) {
+                clip-path: url(#clip-rt);
+                border-radius: 0;
+            }
+        }
+        &--slogan {
+            width: $shape-size;
+            height: $shape-size;
+            background-color: $add-color;
+            color: $secondary-color;
+            font-size: 1.5rem;
+            font-weight: 550;
+            text-align: center;
+            @include flex-center();
+            border-radius: 50%;
+            @supports (clip-path: path('M0 0')) {
+                clip-path: url(#clip-rb);
+                border-radius: 0;
+            }
+        }
+    }
+}

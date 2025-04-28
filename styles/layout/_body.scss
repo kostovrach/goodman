@@ -1,0 +1,12 @@
+html,
+body {
+    font-family: 'Golos', sans-serif;
+    font-size: $fs;
+    line-height: 150%;
+    letter-spacing: 0.1rem;
+    text-wrap: balance;
+    color: $text-color;
+    background-color: $primary-color;
+    width: 100%;
+    overflow-x: hidden;
+}

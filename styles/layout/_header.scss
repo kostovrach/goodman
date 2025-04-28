@@ -1,0 +1,40 @@
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 1.5rem 0;
+  transition-duration: $duration;
+  &__container {
+    @include content-width();
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav {
+      display: flex;
+      gap: 1rem;
+      &-item {
+        @include nav-item-hover();
+      }
+  }
+  &__tel {
+    @include nav-item-hover();
+  }
+  &__connection {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      height: fit-content;
+  }
+  &__button {
+    @include button($text-color, none, none, none, $text-color, #000, $text-color);
+  }
+}
+
+.header.sticky {
+  position: fixed;
+  background-color: $accent-color;
+  & > .header__container {
+    align-items: center;
+  }
+}

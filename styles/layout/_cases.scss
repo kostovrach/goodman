@@ -1,0 +1,214 @@
+.cases {
+  padding: 8rem 0;
+  &__container {
+    @include content-width();
+  }
+  &__title {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+  }
+  &__controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  &__tag {
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 550;
+    letter-spacing: 0.0625rem;
+    color: $secondary-color;
+    height: fit-content;
+    padding: 0.25rem 1rem;
+    outline: 0.0625rem solid $secondary-color;
+    border-radius: 2rem;
+    transition-duration: $duration;
+    &:hover:not(.cases__tag--active) {
+      color: $add-color;
+      outline-color: $add-color;
+    }
+    &:focus:not(.cases__tag--active) {
+      background-color: $add-color;
+      color: $secondary-color;
+    }
+    &--active {
+      cursor: default;
+      background-color: $secondary-color;
+      color: #fff;
+    }
+  }
+  &__sliders {
+    margin-top: 4rem;
+  }
+  &__slide-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  &__slide {
+    &-left,
+    &-right {
+      padding: 2rem;
+      max-width: 40rem;
+      height: 40rem;
+      border-radius: $border-radius;
+    }
+  }
+  &__slide-left {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background: url("../media/img/hypnotic.svg");
+      background-size: cover;
+      animation: hypnotic 2500ms linear infinite;
+      width: 150%;
+      height: 150%;
+    }
+  }
+  &__slide-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $add-color;
+    color: $secondary-color;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    font-weight: 550;
+  }
+  &__slide-image {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  &__slide-title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 550;
+  }
+  &__slide-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  &__slide-stat {
+    &-percent,
+    &-rate,
+    &-dur {
+      &--number {
+        font-size: 2.5rem;
+        font-weight: 800;
+      }
+      &--description {
+        padding-top: 1rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        text-wrap: wrap;
+      }
+    }
+  }
+  &__slide-description {
+    display: grid;
+    gap: 1rem;
+  }
+  &__slide-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--number {
+      opacity: 0.5;
+    }
+    &--accent {
+      font-size: 1.25rem;
+      font-weight: 800;
+    }
+  }
+  &__slide-links {
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    opacity: 0.8;
+    & a {
+      position: relative;
+      transition-duration: $duration;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 0.6rem;
+        height: 0.6rem;
+        background-color: $accent-color;
+        border-radius: 50%;
+        scale: 0;
+        transition-duration: $duration;
+      }
+      &:hover {
+        color: black;
+        opacity: 1;
+        translate: 1rem 0;
+        &::before {
+          scale: 1;
+          translate: -1rem 0;
+        }
+      }
+    }
+  }
+  &__slider-navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__counter {
+    font-size: 0.75rem;
+    color: $secondary-color;
+    opacity: 0.9;
+  }
+  &__slider-button {
+    cursor: pointer;
+    @include flex-center();
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    outline: 0.125rem solid $secondary-color;
+    transition: scale $duration;
+    &:hover:not(.disable) {
+      outline-color: $accent-color;
+      background-color: $accent-color;
+      scale: 1.1;
+    }
+    &.disable {
+      cursor: default;
+      background-color: $secondary-color;
+      opacity: 0.5;
+    }
+  }
+}
+
+@keyframes hypnotic {
+  0% {
+    translate: 0 0;
+  }
+  100% {
+    translate: -14.45% -14.45%;
+  }
+}
