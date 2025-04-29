@@ -1,0 +1,123 @@
+.steps {
+  &__container {
+    @include content-width();
+  }
+  &__title {
+    font-size: $title-fs;
+    line-height: $title-fs;
+    text-align: center;
+  }
+  &__subtitle {
+    color: $add-color;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  &__spoiler {
+    width: 100%;
+    margin-top: 4rem;
+    overflow: hidden;
+    border-radius: $border-radius;
+    display: flex;
+    &-item {
+      display: flex;
+      background-color: $secondary-color;
+      height: 80vh;
+      &-content {
+        &.active {
+          max-width: 100%;
+          opacity: 1;
+          padding: 2rem;
+          translate: 0 0;
+          transition: translate $duration;
+        }
+        translate: 20rem 0;
+        max-width: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+      }
+      &-preview {
+        & * {
+          cursor: pointer;
+        }
+        &.active {
+          opacity: 0;
+          scale: 0.99;
+          width: 0;
+          padding: 0;
+          overflow: hidden;
+        }
+        cursor: pointer;
+        font-weight: 550;
+        padding: 1.5rem 0.65rem;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 1;
+        scale: 1;
+        transition: all $duration;
+        &--first {
+          background-color: $add-color--dark;
+        }
+        &--second {
+          background-color: $accent-color--powdery;
+        }
+        &--third {
+          background-color: $accent-color--dirty;
+        }
+        &--fourth {
+          background-color: $accent-color--dark;
+        }
+        &-number {
+          font-size: 6rem;
+          line-height: 6rem;
+          width: fit-content;
+        }
+        &-titlebox {
+          width: fit-content;
+          font-size: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1.5rem;
+        }
+        &-title {
+          writing-mode: sideways-lr;
+        }
+        &-icon {
+          rotate: 45deg;
+          transition-duration: $duration;
+          &:hover {
+            rotate: 135deg;
+          }
+        }
+      }
+      &-title {
+        font-size: 1.5rem;
+      }
+      &-text-wrapper {
+        display: grid;
+        gap: 1.5rem;
+      }
+      &-text {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+      }
+      &-button {
+        @include button(
+          $add-color,
+          $accent-color,
+          none,
+          none,
+          $text-color,
+          $text-color,
+          $accent-color
+        );
+      }
+    }
+  }
+}

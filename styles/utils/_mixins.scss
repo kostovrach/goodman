@@ -11,6 +11,7 @@
 }
 
 @mixin button ($outline-color, $outline-color-hover, $bg-color, $bg-color-hover, $t-color, $t-color-hover, $before-bg) {
+    display: block;
     position: relative;
     overflow: hidden;
     z-index: 0;
@@ -42,6 +43,7 @@
     &:hover {
         color: $t-color-hover;
         background: $bg-color-hover;
+        outline-color: $outline-color-hover;
     }
 }
 

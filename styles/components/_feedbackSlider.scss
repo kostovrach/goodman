@@ -5,7 +5,7 @@
         @include flex-center();
         position: relative;
         width: 100%;
-        aspect-ratio: 5/4;         //aspect-ratio: 5/4;
+        aspect-ratio: 5/4;
         //object-fit: cover;
         border-radius: 2rem;
         overflow: hidden;
@@ -17,16 +17,6 @@
     }
     &__video {
         height: 100%;
-        //width: 100%;
-        //aspect-ratio: 5/4;
-        //object-fit: cover;
-        //border-radius: 2rem;
-        //overflow: hidden;
-        //@supports (clip-path: path('M0 0')) {
-        //    clip-path: url(#message);
-        //    border-radius: 0;
-        //    overflow: visible;
-        //}
     }
     &__resume {
         translate: 0 -7vw;
