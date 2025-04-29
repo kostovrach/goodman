@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Goodman - юристы для людей</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="media/icons/icon-font/style.css" />
+    <link rel="stylesheet" href="media/icons/icon-font/style.css">
+    <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
     <header class="header">
@@ -41,7 +41,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="intro">
+      <section id="intro" class="intro">
         <img class="intro__substract" src="media/img/subtract.svg" alt="" />
         <div class="intro__container">
           <div class="intro__title-box">
@@ -330,14 +330,14 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <section id="team" class="team">
         <img
           class="team__image"
           src="media/img/team.png"
           alt="Изображение недоступно в вашем браузере"
         />
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <div class="about__container">
           <div class="about__quastion">
             <div class="about__message">
@@ -382,7 +382,7 @@
           </div>
         </div>
       </section>
-      <section class="values">
+      <section id="values" class="values">
         <div class="values__wrapper">
           <div class="values__item">
             <i class="values__item--icon icon-message"></i>
@@ -471,7 +471,7 @@
           </div>
         </div>
       </article>
-      <section class="cases">
+      <section id="cases" class="cases">
         <div class="cases__container">
           <h2 class="cases__title">Как мы решаем проблемы наших клиентов</h2>
           <div class="cases__controls">
@@ -489,7 +489,7 @@
           <div class="cases__sliders" id="cases-sliders"></div>
         </div>
       </section>
-      <section class="steps">
+      <section id="steps" class="steps">
         <div class="steps__container">
           <h2 class="steps__title">4 шага к банкротству</h2>
           <p class="steps__subtitle">Правильная подготовка и поддержка на каждом этапе обеспечивают защиту интересов клиента и&nbsp;способствуют восстановлению финансовой стабильности</p>
@@ -561,7 +561,7 @@
           </div>
         </div>
       </section>
-      <section class="clients">
+      <section id="clients" class="clients">
         <div class="clients__container">
           <div class="clients__titlebox">
             <h2 class="clients__title"><span class="clients__title--accent">>1000</span> отзывов от клиентов</h2>
@@ -725,7 +725,62 @@
           </div>
         </div>
       </section>
+      <section id="request" class="request">
+        <div class="request__container">
+          <div class="request__titlebox">
+            <h2 class="request__title">Готовы закрыть долги и&nbsp;начать новую жизнь?</h2>
+            <div class="request__linksbox">
+              <div class="request__email">Свяжитесь с нами: <a class="request__email-link" href="mailto:hello@goodman.bz" target="_blank">hello@goodman.bz</a></div>
+              <div class="request__socials">
+                <a class="request__link request__link--telegram icon-telegram" href="" target="_blank"></a>
+                <a class="request__link request__link--vk icon-vk" href="" target="_blank"></a>
+                <a class="request__link request__link--instagram icon-instagram" href="" target="_blank"></a>
+              </div>
+            </div>
+            <p class="request__questionnairye">Или заполните <a class="request__questionnairye-link" href="">небольшую анкету</a>, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым решением</p>
+          </div>
+          <form id="request-form" class="request__form form" action="" method="">
+            <h3 class="form__title">Отправьте заявку для&nbsp;получения <span class="form__title-accent">бесплатной</span>&nbsp;консультации</h3>
+            <div class="form__input-wrapper">
+              <div class="form__inputbox">
+                <label class="form__label input__label--name" for="input-name">Как вас зовут?</label>
+                <input id="input-name" class="form__input form__input--name" type="text" name="name" placeholder="Иван Иванов">
+              </div>
+              <div class="form__inputbox">
+                <label class="form__label input__label--tel" for="input-tel">Ваш номер телефона</label>
+                <input id="input-tel" class="form__input form__input--tel" type="tel" name="tel" required data-masked>
+              </div>
+            </div>
+            <div>
+              <p class="form__privacy-policy">Отправляя заявку, вы соглашаетесь с <a href="" class="form__privacy-policy-link">политикой конфиденциальности</a></p>
+              <button id="request-submit" class="form__button" type="submit">Начать работать с нами &rarr;</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__socials"></div>
+          <nav>
+            <ul class="footer__nav">
+              <li class="ffoter__nav-item"></li>
+              <li class="ffoter__nav-item"></li>
+              <li class="ffoter__nav-item"></li>
+              <li class="ffoter__nav-item"></li>
+              <li class="ffoter__nav-item"></li>
+              <li class="ffoter__nav-item"></li>
+              <li class="ffoter__nav-item"></li>
+            </ul>
+          </nav>
+          <div class="footer__location"></div>
+          <div class="footer__worktime"></div>
+          <a class="footer__button-up" href="#intro"></a>
+        </div>
+        
+      </div>
+    </footer>
     <svg width="0" height="0">
           <clipPath id="message" clipPathUnits="objectBoundingBox">
             <path d="M0.214 0 C0.107 0 0.02 0.087 0.02 0.195 V0.427 C0.02 0.571 0.107 0.658 0.214 0.658 H0.757 L1 0.905 L1 0.195 C1 0.087 0.915 0 0.808 0 H0.214 Z">
@@ -771,5 +826,6 @@
     <script src="js/casesSlider.js"></script>
     <script src="js/steps.js"></script>
     <script src="js/clientsSlider.js"></script>
+    <script src="js/numberMask.js"></script>
   </body>
 </html>

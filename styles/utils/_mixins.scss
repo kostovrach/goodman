@@ -36,7 +36,7 @@
         animation-timing-function: ease-out;
     }
     &:hover::before {
-        scale: 50;
+        scale: 55;
         background-color: $before-bg;
     }
 
@@ -70,5 +70,36 @@
     }
     &:hover {
         translate: 0 -0.3rem;
+    }
+}
+
+
+// Socials hover
+@mixin tg-hover {
+    transition: scale $duration;
+    will-change: scale;
+    border-radius: 50%;
+    &:hover {
+        background-color: #229ED9;
+        scale: 1.1;
+    }
+}
+@mixin vk-hover {
+    font-size: 0.75rem;
+    transition: scale $duration;
+    will-change: scale;
+    border-radius: 50%;
+    &:hover {
+        background-color: #0E7CFF;
+        scale: 1.1;
+    }
+}
+@mixin insta-hover {
+    transition: scale $duration;
+    will-change: scale;
+    border-radius: 50%;
+    &:hover {
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        scale: 1.1;
     }
 }
