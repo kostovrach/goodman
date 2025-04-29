@@ -46,6 +46,7 @@
           opacity: 0;
           scale: 0.99;
           width: 0;
+          translate: 15rem 0;
           padding: 0;
           overflow: hidden;
         }
@@ -59,7 +60,7 @@
         justify-content: space-between;
         opacity: 1;
         scale: 1;
-        transition: all $duration;
+        transition: translate $duration;
         &--first {
           background-color: $add-color--dark;
         }
