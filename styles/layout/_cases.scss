@@ -148,29 +148,7 @@
     margin-top: 1rem;
     opacity: 0.8;
     & a {
-      position: relative;
-      transition-duration: $duration;
-      &::before {
-        content: '';
-        position: absolute;
-        top: 30%;
-        left: 0;
-        width: 0.6rem;
-        height: 0.6rem;
-        background-color: $accent-color;
-        border-radius: 50%;
-        scale: 0;
-        transition-duration: $duration;
-      }
-      &:hover {
-        color: black;
-        opacity: 1;
-        translate: 1rem 0;
-        &::before {
-          scale: 1;
-          translate: -1rem 0;
-        }
-      }
+      @include nav-item-horizontal-hover(black);
     }
   }
   &__slider-navigation {

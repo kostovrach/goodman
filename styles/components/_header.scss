@@ -14,11 +14,11 @@
       display: flex;
       gap: 1rem;
       &-item {
-        @include nav-item-hover();
+        @include nav-item-vertical-hover();
       }
   }
   &__tel {
-    @include nav-item-hover();
+    @include nav-item-vertical-hover();
   }
   &__connection {
       display: flex;

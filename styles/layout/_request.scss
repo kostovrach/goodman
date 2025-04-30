@@ -2,6 +2,7 @@
   background-color: $accent-color;
   border-radius: 6vw;
   padding: 4rem;
+  margin-bottom: 4rem;
   &__container {
     @include content-width();
     display: grid;

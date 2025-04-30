@@ -6,8 +6,10 @@
 @import "utils/swiper.scss";
 @import "utils/service";
 
+@import "components/header.scss";
+@import "components/footer.scss";
+
 @import "layout/body.scss";
-@import "layout/header.scss";
 @import "layout/intro.scss";
 @import "layout/team.scss";
 @import "layout/about.scss";
@@ -17,5 +19,3 @@
 @import "layout/steps.scss";
 @import "layout/clients.scss";
 @import "layout/request.scss";
-
-@import "components/feedbackSlider";
