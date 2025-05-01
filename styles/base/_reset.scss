@@ -70,3 +70,18 @@ ul li {
 img {
   vertical-align: top;
 }
+
+body {
+    font-family: 'Golos', sans-serif;
+    font-size: $fs;
+    line-height: 150%;
+    text-wrap: balance;
+    color: $text-color;
+    background-color: $primary-color;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

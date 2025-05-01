@@ -1,0 +1,46 @@
+.evolution {
+    padding: 8rem 0;
+    &__container {
+        @include content-width();
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        flex: 20%;
+        gap: 2rem;
+        &-year {
+            font-size: 1.5rem;
+            font-weight: $font-weight;
+            color: $accent-color--dirty;
+        }
+        &-text {
+            font-size: 0.9375rem;
+        }
+        &-divider {
+            position: relative;
+            background-color: $accent-color--dirty;
+            width: 80%;
+            height: 0.25rem;
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                right: -0.4rem;
+                background-color: $accent-color--dirty;
+                width: 1rem;
+                height: 0.25rem;
+            }
+            &::before {
+                top: -0.25rem;
+                rotate: 45deg;
+            }
+            &::after {
+                top: 0.25rem;
+                rotate: -45deg;
+            }
+        }
+    }
+}

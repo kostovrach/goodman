@@ -1,0 +1,117 @@
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+
+@import "base/reset.scss";
+@import "base/typography.scss";
+
+@import "components/header.scss";
+@import "components/footer.scss";
+
+@import "layout/about-page/intro.scss";
+@import "layout/about-page/team.scss";
+@import "layout/about-page/evolution.scss";
+@import "layout/about-page/staff.scss";
+@import "layout/about-page/about.scss";
+
+@media (max-width: 900px) {
+    .intro {
+        &__title {
+            font-size: 6rem;
+        }
+    }
+    .team {
+        &__quote {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+    .evolution {
+        &__container {
+            flex-direction: column;
+        }
+    }
+    .staff {
+        &__container {
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+    }
+    .about {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+        &__image-container {
+            display: none;
+        }
+    }
+}
+@media (max-width: 660px) {
+    .team {
+        &__img-container {
+            aspect-ratio: 1/1;
+        }
+    }
+    .staff {
+        &__item a {
+            font-size: 0.75rem;
+        }
+        &__name {
+            font-size: 1rem;
+        }
+    }
+}
+@media (max-width: 580px) {
+    .main h2 {
+        font-size: 3rem;
+    }
+    .intro {
+        &__titlebox {
+            min-width: 100%;
+        }
+        &__title {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .team {
+        &__text-container {
+            padding: 2rem 0;
+        }
+        &__quote {
+            font-size: 1.25rem;
+        }
+    }
+    .staff {
+        &__subtitle {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 390px) {
+    .intro {
+        &__title {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+        &__subtitle {
+            font-size: 0.825rem;
+        }
+        &__text {
+            font-size: 0.75rem;
+            width: 100%;
+        }
+    }
+    .team {
+        &__text-container {
+            padding: 2rem 0;
+        }
+        &__quote {
+            font-size: 1.25rem;
+        }
+    }
+    .about {
+        &__button span {
+            display: none;
+        }
+    }
+}

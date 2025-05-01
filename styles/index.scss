@@ -1,26 +1,24 @@
-@import "base/reset.scss";
-@import "base/typography.scss";
-
 @import "utils/variables.scss";
 @import "utils/mixins.scss";
 @import "utils/swiper.scss";
-@import "utils/service";
+
+@import "base/reset.scss";
+@import "base/typography.scss";
 
 @import "components/header.scss";
-@import "components/burger.scss";
-
-@import "layout/body.scss";
-@import "layout/intro.scss";
-@import "layout/team.scss";
-@import "layout/about.scss";
-@import "layout/values.scss";
-@import "layout/opinion.scss";
-@import "layout/cases.scss";
-@import "layout/steps.scss";
-@import "layout/clients.scss";
-@import "layout/request.scss";
-
 @import "components/footer.scss";
+
+@import "layout/index/body.scss";
+@import "layout/index/intro.scss";
+@import "layout/index/team.scss";
+@import "layout/index/about.scss";
+@import "layout/index/values.scss";
+@import "layout/index/opinion.scss";
+@import "layout/index/cases.scss";
+@import "layout/index/steps.scss";
+@import "layout/index/clients.scss";
+@import "layout/index/request.scss";
+
 
 
 @media (max-width: 1250px) {
@@ -66,27 +64,9 @@
             justify-content: center;
         }
     }
-    .footer {
-        &__socials-wrapper {
-            flex-wrap: wrap;
-        }
-    }
 }
 @media (max-width: 960px) {
-    .burger {
-        display: block;
-    }
-    .header {
-        &__container {
-            align-items: center;
-        }
-        &__nav {
-            display: none;
-        }
-        &__connection {
-            display: none;
-        }
-    }
+    
     .about {
         &__container {
             grid-template-columns: 1fr;
@@ -125,7 +105,6 @@
         }
     }
 }
-
 @media (max-width: 860px) {
     .team {
         aspect-ratio: 3/2;
@@ -136,11 +115,6 @@
         }
         &__text {
             text-align: left;
-        }
-    }
-    .footer {
-        &__nav {
-            display: none;
         }
     }
 }
@@ -180,17 +154,6 @@
             }
         }
     }
-    .footer {
-        &__docs {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1rem;
-            height: fit-content;
-        }
-        &__logo {
-            display: none;
-        }
-    }
 }
 @media (max-width: 620px) {
     .values {
@@ -201,15 +164,6 @@
             &-stats {
                 grid-template-columns: auto;
             }
-        }
-    }
-    .footer {
-        &__links {
-            flex-direction: column-reverse;
-            //align-items: center;
-        }
-        &__button {
-            align-self: flex-end;
         }
     }
 }

@@ -1,0 +1,36 @@
+.team {
+    border-radius: 6vw;
+    overflow: hidden;
+    &__img-container {
+        width: 100%;
+        aspect-ratio: 2/1;
+        background-image: url('../media/img/team2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-attachment: fixed;
+    }
+    &__text-container {
+        @include flex-center();
+        flex-direction: column;
+        padding: 8rem 0;
+        background-color: $accent-color;
+        box-shadow: 0 0 4rem 5rem $accent-color;
+    }
+    &__author {
+        font-size: 1.125rem;
+        font-weight: $font-weight;
+        text-align: center;
+    }
+    &__quote {
+        width: 70%;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-weight: $font-weight;
+        text-align: center;
+        margin-top: 1rem;
+        &--accent {
+            color: $accent-color--light;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.about {
+    padding: 8rem 0;
+    &__container {
+        @include content-width();
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 6rem;
+    }
+    &__image-container {
+        @include flex-center();
+        overflow: hidden;
+        border-radius: 0 4rem 4rem 0;
+    }
+    &__image {
+        width: 130%;
+    }
+    &__title {
+        font-size: $title-fs;
+        line-height: $title-fs;
+    }
+    &__text {
+        margin-top: 4rem;
+    }
+    &__button {
+        @include button(none, none, $secondary-color, $secondary-color, $text-color, $text-color, $accent-color);
+        margin-top: 2rem;
+    }
+}

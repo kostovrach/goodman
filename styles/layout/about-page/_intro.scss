@@ -1,0 +1,63 @@
+.intro {
+    &__container {
+        @include content-width();
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__titlebox {
+        max-width: min-content;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-size: 8rem;
+        line-height: 8rem;
+        font-weight: $font-weight;
+        margin-bottom: 4rem;
+    }
+    &__subtitle {
+        font-weight: $font-weight;
+    }
+    &__text {
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        text-wrap: wrap;
+        opacity: 0.5;
+    }
+    &__buttonsbox {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    &__button {
+        opacity: 0.5;
+        &--text {
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 0.825rem;
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                height: 0.125rem;
+                width: 0.5rem;
+                background-color: $text-color;
+            }
+            &::before {
+                rotate: 45deg;
+                left: 0;
+            }
+            &::after {
+                rotate: -45deg;
+                left: 0.3rem;
+            }
+        }
+        &--icon {
+            rotate: -90deg;
+        }
+    }
+}
