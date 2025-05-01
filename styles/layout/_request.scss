@@ -1,7 +1,7 @@
 .request {
   background-color: $accent-color;
   border-radius: 6vw;
-  padding: 4rem;
+  padding: 4rem 0;
   margin-bottom: 4rem;
   &__container {
     @include content-width();
@@ -133,6 +133,7 @@
   }
   &__privacy-policy {
     font-size: 0.75rem;
+    line-height: 1rem;
     text-align: center;
     letter-spacing: 0;
     color: $text-color-dark;

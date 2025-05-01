@@ -20,7 +20,7 @@ const cases = [
   },
   {
     category: "Жертвы мошенников",
-    image: "https://via.placeholder.com/400x300?text=Фото+2",
+    image: "",
     title: "Оптимизация налогообложения",
     stats: {
       percentIncrease: "200%",
@@ -33,7 +33,7 @@ const cases = [
   },
   {
     category: "Жертвы мошенников",
-    image: "https://via.placeholder.com/400x300?text=Фото+2",
+    image: "",
     title: "Оптимизация налогообложения",
     stats: {
       percentIncrease: "200%",
@@ -46,7 +46,7 @@ const cases = [
   },
   {
     category: "Успешные кейсы",
-    image: "https://via.placeholder.com/400x300?text=Фото+3",
+    image: "",
     title: "Пенсионер спас дом от ареста",
     stats: {
       percentIncrease: "250%",
@@ -196,6 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const swiper = new Swiper(`#${uniqueId}`, {
         slidesPerView: 1,
         speed: 800,
+        spaceBetween: 30,
         //  effect: 'creative',
         //  creativeEffect: {
         //    prev: {

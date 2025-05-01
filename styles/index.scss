@@ -7,7 +7,7 @@
 @import "utils/service";
 
 @import "components/header.scss";
-@import "components/footer.scss";
+@import "components/burger.scss";
 
 @import "layout/body.scss";
 @import "layout/intro.scss";
@@ -19,3 +19,272 @@
 @import "layout/steps.scss";
 @import "layout/clients.scss";
 @import "layout/request.scss";
+
+@import "components/footer.scss";
+
+
+@media (max-width: 1250px) {
+    .request {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media (max-width: 1100px) {
+    .intro {
+        &__slider-box {
+            display: none;
+        }
+    }
+    .values {
+        &__item {
+            &--slogan {
+                & span {
+                    display: none;
+                }
+            }
+            &--index {
+                &-number {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+    .clients {
+        min-height: fit-content;
+        &__container {
+            flex-direction: column;
+            gap: 5rem;
+        }
+        &__slider-container {
+            min-height: 0;
+            max-height: 40rem;
+            margin: 0;
+        }
+        &__sliderbox {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .footer {
+        &__socials-wrapper {
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 960px) {
+    .burger {
+        display: block;
+    }
+    .header {
+        &__container {
+            align-items: center;
+        }
+        &__nav {
+            display: none;
+        }
+        &__connection {
+            display: none;
+        }
+    }
+    .about {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+        &__answer {
+            display: none;
+        }
+        &__message--text {
+            width: 80%;
+            padding-right: 2rem;
+        }
+    }
+    .opinion {
+        &__text {
+            font-size: 2rem;
+        }
+    }
+    .cases {
+        &__slide {
+            &-content {
+                grid-template-columns: 1fr;
+            }
+            &-left {
+                display: none;
+            }
+            &-right {
+                max-width: 100%;
+            }
+        }
+    }
+    .steps {
+        &__spoiler-item {
+            &-text {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .team {
+        aspect-ratio: 3/2;
+    }
+    .opinion {
+        &__container {
+            flex-direction: column-reverse;
+        }
+        &__text {
+            text-align: left;
+        }
+    }
+    .footer {
+        &__nav {
+            display: none;
+        }
+    }
+}
+@media (max-width: 790px) {
+    .intro {
+        &__slider-box {
+            display: none;
+        }
+    }
+    .values {
+        &__item {
+            &--slogan {
+                font-size: 0;
+            }
+            &--index {
+                font-size: 1.5rem;
+                &-number {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+    .steps {
+        display: none;
+    }
+    .form {
+        &__input-wrapper {
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 730px) {
+    .clients {
+        &__slider-container {
+            &--1 {
+                display: none;
+            }
+        }
+    }
+    .footer {
+        &__docs {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            height: fit-content;
+        }
+        &__logo {
+            display: none;
+        }
+    }
+}
+@media (max-width: 620px) {
+    .values {
+        display: none;
+    }
+    .cases {
+        &__slide {
+            &-stats {
+                grid-template-columns: auto;
+            }
+        }
+    }
+    .footer {
+        &__links {
+            flex-direction: column-reverse;
+            //align-items: center;
+        }
+        &__button {
+            align-self: flex-end;
+        }
+    }
+}
+@media (max-width: 560px) {
+    .intro {
+        &__title {
+            font-size: $title-fs-m;
+            line-height: $title-fs-m;
+        }
+    }
+    .main h2 {
+        font-size: $title-fs-xs;
+        line-height: $title-fs-xs;
+    }
+    .cases {
+        &__controls {
+            flex-direction: column;
+        }
+        &__sliders {
+            margin-top: 1rem;
+        }
+        &__slide {
+            &-summary {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }
+    }
+}
+@media (max-width: 490px) {
+    .intro {
+        &__button {
+            & span {
+                display: none;
+            }
+            
+        }
+    }
+    .opinion {
+        &__text {
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+        }
+    }
+    .cases {
+        &__slide {
+            &-text {
+                font-size: 0.75rem;
+                line-height: 1.25rem;
+            }
+        }
+    }
+    .clients {
+        &__controls {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    }
+    .request {
+        &__container {
+            gap: 2rem;
+        }
+        &__questionnairye {
+            display: none;
+        }
+    }
+    .form {
+        &__input {
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
+        &__title {
+            font-size: 1.25rem;
+            line-height: 1.25rem;
+        }
+    }
+}

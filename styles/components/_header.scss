@@ -10,6 +10,9 @@
     display: flex;
     justify-content: space-between;
   }
+  &__logo {
+    cursor: pointer;
+  }
   &__nav {
       display: flex;
       gap: 1rem;

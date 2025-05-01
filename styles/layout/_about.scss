@@ -4,6 +4,7 @@
         @include content-width();
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        overflow: hidden;
     }
     &__message {
         display: flex;
@@ -48,5 +49,6 @@
         width: 80%;
         margin-top: 4rem;
         translate: 8.5rem 0;
+        padding-right: 1rem;
     }
 }

@@ -10,10 +10,12 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <picture class="header__logo-container">
-          <source class="header__logo-xs" srcset="media/icons/logo-xs.svg" media="(max-width: 1100px)"/>
-          <img class="header__logo-xl" class="header__logo" src="media/icons/logo-xl.svg" alt="Good Man"/>
-        </picture>
+        <a href="">
+          <picture class="header__logo-container">
+            <source class="header__logo header__logo--xs" srcset="media/icons/logo-xs.svg" media="(max-width: 1100px)"/>
+            <img class="header__logo header__logo--xl" class="header__logo" src="media/icons/logo-xl.svg" alt="Good Man"/>
+          </picture>
+        </a>
         <nav>
           <ul class="header__nav">
             <li class="header__nav-item"><a href="#">О нас</a></li>
@@ -25,10 +27,27 @@
         </nav>
         <div class="header__connection">
           <a href="tel:+78001014273" class="header__tel">8 (800) 101-42-73</a>
-          <button class="header__button" type="button">
-            Связаться с нами &rarr;
-          </button>
+          <button class="header__button" type="button">Связаться с нами &rarr;</button>
         </div>
+
+          <div class="header__burger burger">
+            <div class="burger__icon">
+              <span></span>
+            </div>
+            <div class="burger__wrapper">
+              <nav>
+                <ul class="burger__nav">
+                  <li class="burger__nav-item"><a href="#">О нас</a></li>
+                  <li class="burger__nav-item"><a href="#">Новости</a></li>
+                  <li class="burger__nav-item"><a href="#">Документы</a></li>
+                  <li class="burger__nav-item"><a href="#">Вопросы</a></li>
+                  <li class="burger__nav-item"><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+              <button class="burger__button" type="button">Связаться с нами &rarr;</button>
+            </div>
+          </div>
+
       </div>
     </header>
     <main class="main">
@@ -36,13 +55,9 @@
         <img class="intro__substract" src="media/img/subtract.svg" alt="" />
         <div class="intro__container">
           <div class="intro__title-box">
-            <h1 class="intro__title">
-              Помогаем списывать долги. Законно и&nbsp;безопасно
-            </h1>
+            <h1 class="intro__title">Помогаем списывать долги. Законно и безопасно</h1>
             <p class="intro__descripton">7 лет успешной практики, реальные кейсы, и&nbsp;поддержка на&nbsp;каждом этапе. Мы&nbsp;помогаем людям вернуть контроль над&nbsp;жизнью</p>
-            <button class="intro__button">
-              Получить бесплатную консультацию
-            </button>
+            <button class="intro__button">Получить <span>бесплатную</span> консультацию</button>
           </div>
           <div class="intro__slider-box">
             <div class="feedback swiper">
@@ -322,11 +337,6 @@
         </div>
       </section>
       <section id="team" class="team">
-        <img
-          class="team__image"
-          src="media/img/team.png"
-          alt="Изображение недоступно в вашем браузере"
-        />
       </section>
       <section id="about" class="about">
         <div class="about__container">
@@ -400,14 +410,12 @@
                 />
               </picture>
             </div>
-            <div class="values__item--slogan">
-              Банкротство без&nbsp;стресса — мы всегда рядом
-            </div>
+            <div class="values__item--slogan">Банкротство без&nbsp;стресса<span> — мы&nbsp;всегда рядом</span></div>
           </div>
           <div class="values__item">
             <i class="values__item--icon icon-message"></i>
             <div class="values__item--index">
-              <span class="values__item--index-number">2</span>млрд&#8381;
+              <span class="values__item--index-number">2</span> млрд&#8381;
             </div>
             <div class="values__item--text">
               Размер списанного долга у всех наших клиентов
@@ -421,13 +429,11 @@
             </picture>
           </div>
           <div class="values__item">
-            <div class="values__item--slogan">
-              Начните жизнь с&nbsp;чистого листа!
-            </div>
+            <div class="values__item--slogan">Начните жизнь с&nbsp;чистого листа!</div>
             <div class="values__dark-wrapper">
               <i class="values__item--icon icon-message"></i>
               <div class="values__item--index">
-                ><span class="values__item--index-number">1</span>тыс.
+                ><span class="values__item--index-number">1</span> тыс.
               </div>
               <div class="values__item--text">Завершенных клиентов</div>
             </div>
@@ -452,7 +458,7 @@
       </section>
       <article class="opinion">
         <div class="opinion__container">
-          <p class="opinion__text">Как показала практика, секрет отсутствия долгов&nbsp;— это&nbsp;не&nbsp;тратить больше, чем способен заработать. <span class="opinion__text--accent">Это позволяет с&nbsp;легкостью масштабировать любой бизнес</span></p>
+          <p class="opinion__text">Как показала практика, секрет отсутствия долгов&nbsp;— это&nbsp;не&nbsp;тратить больше, чем способен заработать. <span class="opinion__text--accent">Это&nbsp;позволяет с легкостью масштабировать любой бизнес</span></p>
           <div class="opinion__author">
             <img class="opinion__author--image" src="media/img/staff/staff1.jpg" alt="#">
             <div class="opinion__author--infobox">
@@ -731,7 +737,7 @@
             <p class="request__questionnairye">Или заполните <a class="request__questionnairye-link" href="">небольшую анкету</a>, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым решением</p>
           </div>
           <form id="request-form" class="request__form form" action="" method="">
-            <h3 class="form__title">Отправьте заявку для&nbsp;получения <span class="form__title-accent">бесплатной</span>&nbsp;консультации</h3>
+            <h3 class="form__title">Отправьте заявку для&nbsp;получения <span class="form__title-accent">бесплатной</span> консультации</h3>
             <div class="form__input-wrapper">
               <div class="form__inputbox">
                 <label class="form__label input__label--name" for="input-name">Как вас зовут?</label>
@@ -750,96 +756,100 @@
         </div>
       </section>
     </main>
-    <svg width="0" height="0">
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
       <clipPath id="message" clipPathUnits="objectBoundingBox">
         <path d="M0.214 0 C0.107 0 0.02 0.087 0.02 0.195 V0.427 C0.02 0.571 0.107 0.658 0.214 0.658 H0.757 L1 0.905 L1 0.195 C1 0.087 0.915 0 0.808 0 H0.214 Z" />
       </clipPath>
     </svg>
+
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <clipPath id="clip-lb">
-              <path d="M323 161.5C323 250.694 250.694 323 161.5 323C127.858 323 96.6183 312.713 70.755 295.114L27.8866 295.114L27.8867 252.246C10.2868 226.382 -8.52995e-06 195.143 -7.05939e-06 161.5C-3.1606e-06 72.306 72.306 3.1606e-06 161.5 7.05939e-06C250.694 1.09582e-05 323 72.306 323 161.5Z">
-            </clipPath>
-          </defs>
+      <defs>
+        <clipPath id="arrow" clipPathUnits="objectBoundingBox">
+          <path d="M 0,0 L 1,0 L 1,0.523 C 1,0.75 1,0.8 0.8,0.8 L 0.6,0.8 L 0.5,1 L 0.4,0.8 L 0.2,0.8 C 0,0.8 0,0.75 0,0.523 L 0,0 Z"/>
+        </clipPath>
+      </defs>
+    </svg>
+       
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <clipPath id="clip-lb" clipPathUnits="objectBoundingBox">
+          <path 
+            d="M1 0.5C1 0.776 0.776 1 0.5 1C0.396 1 0.299 0.968 0.219 0.914L0.086 0.914L0.086 0.781C0.032 0.701 0 0.604 0 0.5C0 0.224 0.224 0 0.5 0C0.776 0 1 0.224 1 0.5Z"
+          />
+        </clipPath>
+      </defs>
     </svg>
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <clipPath id="clip-lt">
-              <path d="M323 161.5C323 250.694 250.694 323 161.5 323C127.858 323 96.6183 312.713 70.755 295.114L27.8866 295.114L27.8867 252.246C10.2868 226.382 -8.52995e-06 195.143 -7.05939e-06 161.5C-3.1606e-06 72.306 72.306 3.1606e-06 161.5 7.05939e-06C250.694 1.09582e-05 323 72.306 323 161.5Z" transform="rotate(90 161.5 161.5)">
-            </clipPath>
-          </defs>
+      <defs>
+        <clipPath id="clip-rt" clipPathUnits="objectBoundingBox">
+          <path 
+            d="M1 0.5C1 0.776 0.776 1 0.5 1C0.396 1 0.299 0.968 0.219 0.914L0.086 0.914L0.086 0.781C0.032 0.701 0 0.604 0 0.5C0 0.224 0.224 0 0.5 0C0.776 0 1 0.224 1 0.5Z"
+            transform="rotate(180 0.5 0.5)"
+          />
+        </clipPath>
+      </defs>
     </svg>
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <clipPath id="clip-rt">
-              <path 
-                d="M275 137.5C275 213.4 213.4 275 137.5 275C108.9 275 82.3 266.3 60.3 251.3L23.75 251.3L23.75 214.8C8.76 192.8 0 166.2 0 137.5C0 61.6 61.6 0 137.5 0C213.4 0 275 61.6 275 137.5Z"
-                transform="rotate(180 137.5 137.5)"
-              >
-            </clipPath>
-          </defs>
-    </svg>
-    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <clipPath id="clip-rb">
-              <path 
-                d="M275 137.5C275 213.4 213.4 275 137.5 275C108.9 275 82.3 266.3 60.3 251.3L23.75 251.3L23.75 214.8C8.76 192.8 0 166.2 0 137.5C0 61.6 61.6 0 137.5 0C213.4 0 275 61.6 275 137.5Z"
-                transform="rotate(270 137.5 137.5)"
-              >
-            </clipPath>
-          </defs>
+      <defs>
+        <clipPath id="clip-rb" clipPathUnits="objectBoundingBox">
+          <path 
+            d="M1 0.5C1 0.776 0.776 1 0.5 1C0.396 1 0.299 0.968 0.219 0.914L0.086 0.914L0.086 0.781C0.032 0.701 0 0.604 0 0.5C0 0.224 0.224 0 0.5 0C0.776 0 1 0.224 1 0.5Z"
+            transform="rotate(270 0.5 0.5)"
+          />
+        </clipPath>
+      </defs>
     </svg>
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__links">
-          <div class="footer__socials">
-            <p class="footer__socials-title">Следите за нами в&nbsp;соцсетях:</p>
-            <div class="footer__socials-wrapper">
-              <a class="footer__socials-icon footer__socials-icon--zen icon-zen" href=""></a>
-              <a class="footer__socials-icon footer__socials-icon--telegram icon-telegram" href=""></a>
-              <a class="footer__socials-icon footer__socials-icon--youtube icon-youtube" href=""></a>
-              <a class="footer__socials-icon footer__socials-icon--vk icon-vk" href=""></a>
-              <a class="footer__socials-icon footer__socials-icon--instagram icon-instagram" href=""></a>
+            <div class="footer__socials">
+              <p class="footer__socials-title">Следите за нами в&nbsp;соцсетях:</p>
+              <div class="footer__socials-wrapper">
+                <a class="footer__socials-icon footer__socials-icon--zen icon-zen" href=""></a>
+                <a class="footer__socials-icon footer__socials-icon--telegram icon-telegram" href=""></a>
+                <a class="footer__socials-icon footer__socials-icon--youtube icon-youtube" href=""></a>
+                <a class="footer__socials-icon footer__socials-icon--vk icon-vk" href=""></a>
+                <a class="footer__socials-icon footer__socials-icon--instagram icon-instagram" href=""></a>
+              </div>
             </div>
-          </div>
-          <nav>
-            <ul class="footer__nav">
-              <li class="footer__nav-item"><a href="#">О нас</a></li>
-              <li class="footer__nav-item"><a href="#">Новости</a></li>
-              <li class="footer__nav-item"><a href="#">Вопросы и ответы</a></li>
-              <li class="footer__nav-item"><a href="#">Полезное</a></li>
-              <li class="footer__nav-item"><a href="#">Партнёрам</a></li>
-              <li class="footer__nav-item"><a href="#">Оплата</a></li>
-              <li class="footer__nav-item"><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="footer__location">
-            <div class="footer__location-linksbox">
-              <a class="footer__location-item footer__location-item--tel" href="tel:+79998461709"><i class="icon-tel"></i>+7 (999) 846-17-09</a>
-              <a class="footer__location-item footer__location-item--mail" href="mailto:hello@goodman.bz"><i class="icon-mail"></i>hello@goodman.bz</a>
+            <nav>
+              <ul class="footer__nav">
+                <li class="footer__nav-item"><a href="#">О нас</a></li>
+                <li class="footer__nav-item"><a href="#">Новости</a></li>
+                <li class="footer__nav-item"><a href="#">Вопросы и ответы</a></li>
+                <li class="footer__nav-item"><a href="#">Полезное</a></li>
+                <li class="footer__nav-item"><a href="#">Партнёрам</a></li>
+                <li class="footer__nav-item"><a href="#">Оплата</a></li>
+                <li class="footer__nav-item"><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="footer__location">
+              <div class="footer__location-linksbox">
+                <a class="footer__location-item footer__location-item--tel" href="tel:+79998461709"><i class="icon-tel"></i>+7 (999) 846-17-09</a>
+                <a class="footer__location-item footer__location-item--mail" href="mailto:hello@goodman.bz"><i class="icon-mail"></i>hello@goodman.bz</a>
+              </div>
+              <div class="footer__location-adress footer__location-adress--general">
+                <p class="footer__location-title">Головной офис:</p>
+                <div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Самара, ул. Пушкина, д. 15а, офис 22</div>
+              </div>
+              <div class="footer__location-adress footer__location-adress--add">
+                <p class="footer__location-title">Филиалы:</p>
+                <div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Краснодар, Красная ул., 118, этаж 8</div>
+                <div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Тольятти, ул. 70 лет Октября, 3</div>
+              </div>
             </div>
-            <div class="footer__location-adress footer__location-adress--general">
-              <p class="footer__location-title">Головной офис:</p>
-              <div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Самара, ул. Пушкина, д. 15а, офис 22</div>
+            <div class="footer__worktime-wrapper">
+              <p class="footer__worktime">Часы работы:<br><br>Понедельник – четверг: 10:00 – 19:00<br>Пятница: 10:00 – 16:00</p>
             </div>
-            <div class="footer__location-adress footer__location-adress--add">
-              <p class="footer__location-title">Филиалы:</p>
-              <div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Краснодар, Красная ул., 118, этаж 8</div>
-              <div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Тольятти, ул. 70 лет Октября, 3</div>
-            </div>
-          </div>
-          <div class="footer__worktime-wrapper">
-            <p class="footer__worktime">Часы работы:<br><br>Понедельник – четверг: 10:00 – 19:00<br>Пятница: 10:00 – 16:00</p>
-          </div>
-          <a class="footer__button icon-arrow-prev" href="#intro"></a>
+            <a class="footer__button icon-arrow-prev" href="#intro"></a>
         </div>
         <div class="footer__docs">
           <p class="footer__copyright">Goodman &copy; 2025. Все права защищены</p>
           <a class="footer__docs-link" href="">Правовая информация</a>
           <a class="footer__docs-link" href="">Политика конфиденциальности</a>
             <picture class="footer__logo-container">
-              <source class="footer__logo-xs" srcset="media/icons/logo-xs.svg" media="(max-width: 1100px)"/>
-              <img class="footer__logo-xl" src="media/icons/logo-xl.svg" alt="Good Man"/>
+              <source class="footer__logo footer__logo--xs" srcset="media/icons/logo-xs.svg" media="(max-width: 1100px)"/>
+              <img class="footer__logo footer__logo--xl" src="media/icons/logo-xl.svg" alt="Good Man"/>
             </picture>
         </div>
         
@@ -847,14 +857,15 @@
       <div class="footer__badge">
         <div class="footer__badge-container">
           <small class="footer__badge-title">Разработка и поддержка сайта:</small>
-          <img class="footer__badge-logo" src="media/icons/studio-logo.svg" alt="#">
+          <a href="https://intheplace.ru"><img class="footer__badge-logo" src="media/icons/studio-logo.svg" alt="#"></a>
         </div>
       </div>
     </footer>
     <script src="js/swiper.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/burger.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/feedbackSlider.js"></script>
-    <script src="js/header.js"></script>
     <script src="js/casesSlider.js"></script>
     <script src="js/steps.js"></script>
     <script src="js/clientsSlider.js"></script>

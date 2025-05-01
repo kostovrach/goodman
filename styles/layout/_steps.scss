@@ -10,6 +10,8 @@
   &__subtitle {
     color: $add-color;
     text-align: center;
+    margin: 0 auto;
+    width: 70%;
     margin-top: 2rem;
   }
   &__spoiler {
@@ -21,7 +23,7 @@
     &-item {
       display: flex;
       background-color: $secondary-color;
-      height: 80vh;
+      max-height: 40rem;
       &-content {
         &.active {
           max-width: 100%;

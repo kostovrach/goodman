@@ -1,7 +1,7 @@
 .opinion {
     background-color: $secondary-color;
     border-radius: $block-border-radius;
-    padding-bottom: 8rem;
+    padding: 8rem 0;
     &__container {
         @include content-width();
         display: flex;
@@ -13,7 +13,6 @@
         line-height: 2.5rem;
         font-weight: 550;
         text-align: right;
-        text-wrap: wrap;
         &--accent {
             color: $add-color;
         }
