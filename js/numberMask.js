@@ -1,6 +1,6 @@
 (function () {
   const input = document.getElementById("input-tel");
-  const label = input.closest('.form__inputbox').querySelector('.form__label');
+  const label = input.closest('.form__inputbox')?.querySelector('.form__label');
   const mask = "+7 (___) ___-__-__";
   const def = mask.replace(/\D/g, "");
   const pattern = mask.replace(/[_\d]/g, "_");
@@ -12,10 +12,10 @@
     
     if (isFilled) {
       input.classList.add('filled');
-      label.classList.add('filled');
+      if (label) label.classList.add('filled');
     } else {
       input.classList.remove('filled');
-      label.classList.remove('filled');
+      if (label) label.classList.remove('filled');
     }
   }
 

@@ -1,0 +1,10 @@
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+
+@import "base/reset.scss";
+@import "base/typography.scss";
+
+@import "components/header.scss";
+@import "components/footer.scss";
+
+@import "layout/news/main.scss";

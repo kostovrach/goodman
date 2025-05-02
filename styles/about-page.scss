@@ -7,11 +7,11 @@
 @import "components/header.scss";
 @import "components/footer.scss";
 
-@import "layout/about-page/intro.scss";
-@import "layout/about-page/team.scss";
-@import "layout/about-page/evolution.scss";
-@import "layout/about-page/staff.scss";
-@import "layout/about-page/about.scss";
+@import "layout/about/intro.scss";
+@import "layout/about/team.scss";
+@import "layout/about/evolution.scss";
+@import "layout/about/staff.scss";
+@import "layout/about/about.scss";
 
 @media (max-width: 900px) {
     .intro {

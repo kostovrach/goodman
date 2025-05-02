@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goodman - юристы для людей</title>
+    <title>Goodman - История</title>
     <link rel="stylesheet" href="../media/icons/icon-font/style.css">
     <link rel="stylesheet" href="../styles/about-page.css">
 </head>
-    <body>
+    <body id="start">
         <header class="header">
             <div class="header__container">
               <a href="../index.html">
                 <picture class="header__logo-container">
                   <source class="header__logo header__logo--xs" srcset="../media/icons/logo-xs.svg" media="(max-width: 1100px)"/>
-                  <img class="header__logo header__logo--xl" class="header__logo" src="../media/icons/logo-xl.svg" alt="Good Man"/>
+                  <img class="header__logo header__logo--xl" src="../media/icons/logo-xl.svg" alt="Good Man"/>
                 </picture>
               </a>
               <nav>
                 <ul class="header__nav">
-                  <li class="header__nav-item"><a href="#">О нас</a></li>
-                  <li class="header__nav-item"><a href="#">Новости</a></li>
-                  <li class="header__nav-item"><a href="#">Документы</a></li>
-                  <li class="header__nav-item"><a href="#">Вопросы</a></li>
-                  <li class="header__nav-item"><a href="#">Контакты</a></li>
+                  <li class="header__nav-item" data-force-hover><a href="#">О нас</a></li>
+                  <li class="header__nav-item"><a href="../pages/news.html">Новости</a></li>
+                  <li class="header__nav-item"><a href="../pages/docs.html">Документы</a></li>
+                  <li class="header__nav-item"><a href="../pages/faq.html">Вопросы</a></li>
+                  <li class="header__nav-item"><a href="../pages/contact.html">Контакты</a></li>
                 </ul>
               </nav>
               <div class="header__connection">
@@ -38,10 +38,10 @@
                     <nav>
                       <ul class="burger__nav">
                         <li class="burger__nav-item"><a href="#">О нас</a></li>
-                        <li class="burger__nav-item"><a href="#">Новости</a></li>
-                        <li class="burger__nav-item"><a href="#">Документы</a></li>
-                        <li class="burger__nav-item"><a href="#">Вопросы</a></li>
-                        <li class="burger__nav-item"><a href="#">Контакты</a></li>
+                        <li class="header__nav-item"><a href="../pages/news.html">Новости</a></li>
+                        <li class="header__nav-item"><a href="../pages/docs.html">Документы</a></li>
+                        <li class="header__nav-item"><a href="../pages/faq.html">Вопросы</a></li>
+                        <li class="header__nav-item"><a href="../pages/contact.html">Контакты</a></li>
                       </ul>
                     </nav>
                     <button class="burger__button" type="button">Связаться с нами &rarr;</button>
@@ -222,13 +222,13 @@
                   </div>
                   <nav>
                     <ul class="footer__nav">
-                      <li class="footer__nav-item"><a href="#">О нас</a></li>
-                      <li class="footer__nav-item"><a href="#">Новости</a></li>
-                      <li class="footer__nav-item"><a href="#">Вопросы и ответы</a></li>
-                      <li class="footer__nav-item"><a href="#">Полезное</a></li>
-                      <li class="footer__nav-item"><a href="#">Партнёрам</a></li>
-                      <li class="footer__nav-item"><a href="#">Оплата</a></li>
-                      <li class="footer__nav-item"><a href="#">Контакты</a></li>
+                        <li class="footer__nav-item"><a href="../pages/about.html">О нас</a></li>
+                        <li class="footer__nav-item"><a href="../pages/news.html">Новости</a></li>
+                        <li class="footer__nav-item"><a href="../pages/faq.html">Вопросы и ответы</a></li>
+                        <li class="footer__nav-item"><a href="../pages/docs.html">Полезное</a></li>
+                        <li class="footer__nav-item"><a href="#">Партнёрам</a></li>
+                        <li class="footer__nav-item"><a href="#">Оплата</a></li>
+                        <li class="footer__nav-item"><a href="../pages/contact.html">Контакты</a></li>
                     </ul>
                   </nav>
                   <div class="footer__location">
@@ -249,7 +249,7 @@
                   <div class="footer__worktime-wrapper">
                     <p class="footer__worktime">Часы работы:<br><br>Понедельник – четверг: 10:00 – 19:00<br>Пятница: 10:00 – 16:00</p>
                   </div>
-                  <a class="footer__button icon-arrow-prev" href="#intro"></a>
+                  <a class="footer__button icon-arrow-prev" href="#start"></a>
               </div>
               <div class="footer__docs">
                 <p class="footer__copyright">Goodman &copy; 2025. Все права защищены</p>

@@ -36,7 +36,7 @@
         animation-timing-function: ease-out;
     }
     &:hover::before {
-        scale: 55;
+        scale: 56;
         background-color: $before-bg;
     }
 
@@ -70,6 +70,15 @@
     }
     &:hover {
         translate: 0 -0.3rem;
+    }
+}
+
+@mixin nav-item-vertical-force-hover {
+    translate: 0 -0.3rem;
+    &::before {
+        translate: 0 0.5rem;
+        visibility: visible;
+        transition-duration: 0.2s;
     }
 }
 

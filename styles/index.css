@@ -838,6 +838,16 @@ body {
 .header__nav-item:hover {
   translate: 0 -0.3rem;
 }
+.header__nav-item[data-force-hover] {
+  translate: 0 -0.3rem;
+  font-weight: 550;
+  pointer-events: none;
+}
+.header__nav-item[data-force-hover]::before {
+  translate: 0 0.5rem;
+  visibility: visible;
+  transition-duration: 0.2s;
+}
 .header__tel {
   position: relative;
   transition-duration: 0.5s;
@@ -896,7 +906,7 @@ body {
   animation-timing-function: ease-out;
 }
 .header__button:hover::before {
-  scale: 55;
+  scale: 56;
   background-color: #FFFFFF;
 }
 .header__button:hover {
@@ -911,10 +921,6 @@ body {
 }
 .header.sticky > .header__container {
   align-items: center;
-}
-
-.header__logo--hidden {
-  display: none !important;
 }
 
 .burger {
@@ -1035,7 +1041,7 @@ body {
   animation-timing-function: ease-out;
 }
 .burger__button:hover::before {
-  scale: 55;
+  scale: 56;
   background-color: #FFFFFF;
 }
 .burger__button:hover {
@@ -1364,7 +1370,7 @@ body::after {
   animation-timing-function: ease-out;
 }
 .intro__button:hover::before {
-  scale: 55;
+  scale: 56;
   background-color: #F7624C;
 }
 .intro__button:hover {
@@ -2039,7 +2045,7 @@ body::after {
   animation-timing-function: ease-out;
 }
 .steps__spoiler-item-button:hover::before {
-  scale: 55;
+  scale: 56;
   background-color: #F7624C;
 }
 .steps__spoiler-item-button:hover {
@@ -2441,7 +2447,7 @@ body::after {
   animation-timing-function: ease-out;
 }
 .form__button:hover::before {
-  scale: 55;
+  scale: 56;
   background-color: #F7624C;
 }
 .form__button:hover {

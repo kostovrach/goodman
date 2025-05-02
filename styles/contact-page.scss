@@ -1,0 +1,52 @@
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+
+@import "base/reset.scss";
+@import "base/typography.scss";
+
+@import "components/header.scss";
+@import "components/footer.scss";
+
+@import "layout/contact/contact.scss";
+@import "layout/contact/map.scss";
+
+
+
+@media (max-width: 1300px) {
+    .contact {
+        &__item-link--tel {
+            font-size: 3rem;
+        }
+    }
+}
+@media (max-width: 1100px) {
+    .contact {
+        margin-top: 2rem;
+        &__container {
+            grid-template-columns: 1fr;
+        }
+        &__info-wrapper {
+            grid-row-start: 1;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .contact {
+        &__item-link--tel {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+    }
+    .form {
+        &__input,
+        &__textarea {
+            font-size: 0.825rem;
+        }
+        &__button {
+            font-size: 1rem;
+        }
+    }
+    .main h2 {
+        font-size: 1.5rem;
+    }
+}

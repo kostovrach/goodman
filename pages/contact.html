@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodman - Контакты</title>
+    <link rel="stylesheet" href="../media/icons/icon-font/style.css">
+    <link rel="stylesheet" href="../styles/contact-page.css">
+</head>
+    <body id="start">
+        <header class="header">
+            <div class="header__container">
+              <a href="../index.html">
+                <picture class="header__logo-container">
+                  <source class="header__logo header__logo--xs" srcset="../media/icons/logo-xs.svg" media="(max-width: 1100px)"/>
+                  <img class="header__logo header__logo--xl" src="../media/icons/logo-xl.svg" alt="Good Man"/>
+                </picture>
+              </a>
+              <nav>
+                <ul class="header__nav">
+                  <li class="header__nav-item"><a href="../pages/about.html">О нас</a></li>
+                  <li class="header__nav-item"><a href="../pages/news.html">Новости</a></li>
+                  <li class="header__nav-item"><a href="../pages/docs.html">Документы</a></li>
+                  <li class="header__nav-item"><a href="../pages/faq.html">Вопросы</a></li>
+                  <li class="header__nav-item" data-force-hover><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="header__connection">
+                <a href="tel:+78001014273" class="header__tel">8 (800) 101-42-73</a>
+                <button class="header__button" type="button">Связаться с нами &rarr;</button>
+              </div>
+      
+                <div class="header__burger burger">
+                  <div class="burger__icon">
+                    <span></span>
+                  </div>
+                  <div class="burger__wrapper">
+                    <nav>
+                      <ul class="burger__nav">
+                        <li class="header__nav-item"><a href="../pages/about.html">О нас</a></li>
+                        <li class="header__nav-item"><a href="../pages/news.html">Новости</a></li>
+                        <li class="header__nav-item"><a href="../pages/docs.html">Документы</a></li>
+                        <li class="header__nav-item"><a href="../pages/faq.html">Вопросы</a></li>
+                        <li class="burger__nav-item"><a href="#">Контакты</a></li>
+                      </ul>
+                    </nav>
+                    <button class="burger__button" type="button">Связаться с нами &rarr;</button>
+                  </div>
+                </div>
+      
+            </div>
+        </header>
+        <main class="main">
+            <section id="contact" class="contact">
+                <div class="contact__container">
+                    <div class="contact__form-wrapper">
+                        <form class="contact__form form" action="#">
+                            <h2 class="form__title">Закройте долги и начните новую жизнь!</h2>
+                            <p class="form__subtitle">Отправьте заявку для получения&nbsp;<span class="form__subtitle-accent">бесплатной консультации</span></p>
+                            <div class="form__body">
+                                <input class="form__input" name="name" type="text" placeholder="Имя">
+                                <input id="input-tel" class="form__input" name="tel" type="tel" placeholder="Телефон" required>
+                                <textarea class="form__textarea" name="desc" placeholder="Опишите вашу проблему"></textarea>
+                                <button class="form__button" type="submit">Заказать консультацию &rarr;</button>
+                            </div>
+                            <div class="form__footnote">Отправляя заявку, вы соглашаетесь с <a href="" class="form__footnote-link">политикой конфиденциальности</a></div>
+                        </form>
+                    </div>
+                    <div class="contact__info-wrapper">
+                        <h2 class="contact__title">Мы оказываем консультационные услуги как очно в&nbsp;офисе, так&nbsp;и&nbsp;удаленно. <span class="contact__title-accent">Работаем по всей России&nbsp;и&nbsp;СНГ</span></h2>
+                        <div class="contact__item">
+                            <p class="contact__item-title">Мы в соцсетях</p>
+                            <a class="contact__item-link" href="">vk</a>
+                            <a class="contact__item-link" href="">telegram</a>
+                            <a class="contact__item-link" href="">instagram</a>
+                        </div>
+                        <div class="contact__item">
+                            <p class="contact__item-title">Головной офис</p>
+                            <p class="contact__item-text contact__item-text--location"><i class="icon-mark"></i>Самара, ул. Пресненская набережная, 12, башня «Федерация.&nbsp;Восток», 30&nbsp;этаж</p>
+                        </div>
+                        <div class="contact__item">
+                            <p class="contact__item-title">Филиалы</p>
+                            <p class="contact__item-text contact__item-text--location"><i class="icon-mark"></i>Краснодар, Красная ул., 118, этаж 8</p>
+                            <p class="contact__item-text contact__item-text--location"><i class="icon-mark"></i>Тольятти, ул. 70 лет Октября, 3</p>
+                        </div>
+                        <div class="contact__item">
+                            <p class="contact__item-title">Рабочие часы</p>
+                            <p class="contact__item-text">ПН – ПТ: 09:00 / 16:00</p>
+                            <p class="contact__item-text">СБ – ВС: 10:00 / 12:00</p>
+                        </div>
+                        <div class="contact__item">
+                            <p class="contact__item-title">E-mail</p>
+                            <a class="contact__item-link" href="mailto:hello@goodman.bz" target="_blank">hello@goodman.bz</a>
+                        </div>
+                        <div class="contact__item">
+                            <p class="contact__item-title">А ещё нам можно позвонить:</p>
+                            <a class="contact__item-link contact__item-link--tel" href="tel:+79279781546" target="_blank">+7 (927) 978-15-46</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="map">
+                <div class="map__container" id="map"></div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+              <div class="footer__links">
+                  <div class="footer__socials">
+                    <p class="footer__socials-title">Следите за нами в&nbsp;соцсетях:</p>
+                    <div class="footer__socials-wrapper">
+                      <a class="footer__socials-icon footer__socials-icon--zen icon-zen" href=""></a>
+                      <a class="footer__socials-icon footer__socials-icon--telegram icon-telegram" href=""></a>
+                      <a class="footer__socials-icon footer__socials-icon--youtube icon-youtube" href=""></a>
+                      <a class="footer__socials-icon footer__socials-icon--vk icon-vk" href=""></a>
+                      <a class="footer__socials-icon footer__socials-icon--instagram icon-instagram" href=""></a>
+                    </div>
+                  </div>
+                  <nav>
+                    <ul class="footer__nav">
+                      <li class="footer__nav-item"><a href="../pages/about.html">О нас</a></li>
+                      <li class="footer__nav-item"><a href="../pages/news.html">Новости</a></li>
+                      <li class="footer__nav-item"><a href="../pages/faq.html">Вопросы и ответы</a></li>
+                      <li class="footer__nav-item"><a href="../pages/docs.html">Полезное</a></li>
+                      <li class="footer__nav-item"><a href="#">Партнёрам</a></li>
+                      <li class="footer__nav-item"><a href="#">Оплата</a></li>
+                      <li class="footer__nav-item"><a href="../pages/contact.html">Контакты</a></li>
+                    </ul>
+                  </nav>
+                  <div class="footer__location">
+                    <div class="footer__location-linksbox">
+                      <a class="footer__location-item footer__location-item--tel" href="tel:+79998461709"><i class="icon-tel"></i>+7 (999) 846-17-09</a>
+                      <a class="footer__location-item footer__location-item--mail" href="mailto:hello@goodman.bz"><i class="icon-mail"></i>hello@goodman.bz</a>
+                    </div>
+                    <div class="footer__location-adress footer__location-adress--general">
+                      <p class="footer__location-title">Головной офис:</p>
+                      <div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Самара, ул. Пушкина, д. 15а, офис 22</div>
+                    </div>
+                    <div class="footer__location-adress footer__location-adress--add">
+                      <p class="footer__location-title">Филиалы:</p>
+                      <div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Краснодар, Красная ул., 118, этаж 8</div>
+                      <div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Тольятти, ул. 70 лет Октября, 3</div>
+                    </div>
+                  </div>
+                  <div class="footer__worktime-wrapper">
+                    <p class="footer__worktime">Часы работы:<br><br>Понедельник – четверг: 10:00 – 19:00<br>Пятница: 10:00 – 16:00</p>
+                  </div>
+                  <a class="footer__button icon-arrow-prev" href="#start"></a>
+              </div>
+              <div class="footer__docs">
+                <p class="footer__copyright">Goodman &copy; 2025. Все права защищены</p>
+                <a class="footer__docs-link" href="">Правовая информация</a>
+                <a class="footer__docs-link" href="">Политика конфиденциальности</a>
+                  <picture class="footer__logo-container">
+                    <source class="footer__logo footer__logo--xs" srcset="../media/icons/logo-xs.svg" media="(max-width: 1100px)"/>
+                    <img class="footer__logo footer__logo--xl" src="../media/icons/logo-xl.svg" alt="Good Man"/>
+                  </picture>
+              </div>
+              
+            </div>
+            <div class="footer__badge">
+              <div class="footer__badge-container">
+                <small class="footer__badge-title">Разработка и поддержка сайта:</small>
+                <a href="https://intheplace.ru"><img class="footer__badge-logo" src="../media/icons/studio-logo.svg" alt="#"></a>
+              </div>
+            </div>
+        </footer>
+        <script src="../js/header.js"></script>
+        <script src="../js/burger.js"></script>
+        <script src="../js/navigation.js"></script>
+        <script src="../js/numberMask.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=0e461b3f-8a75-4fed-abe0-5ade52c59052&lang=ru_RU"></script>
+        <script>
+            ymaps.ready(init);
+    
+            function init() {
+                const map = new ymaps.Map("map", {
+                    center: [53.204209, 50.148325],
+                    zoom: 13,
+                });
+                const placemark = new ymaps.Placemark(
+                    [53.204209, 50.148325]
+                );
+                map.geoObjects.add(placemark);
+                map.behaviors.disable('scrollZoom');
+            }
+        </script>
+    </body>
+</html>

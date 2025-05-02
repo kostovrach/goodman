@@ -1,0 +1,116 @@
+.main {
+    background-color: $secondary-color;
+    padding-top: 10rem;
+    border-radius: $block-border-radius;
+    &__container {
+        @include content-width();
+    }
+    &__titlebox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    &__title {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    &__tagsbox {
+        display: flex;
+        color: $add-color;
+        font-size: 0.875rem;
+        border: 0.0625rem solid $add-color;
+        border-radius: $border-radius;
+        overflow: hidden;
+    }
+    &__tag {
+        cursor: pointer;
+        padding: 0.25rem 1.5rem;
+        transition-duration: $duration;
+        &:hover {
+            background-color: $add-color;
+            color: $primary-color;
+        }
+        &.active {
+            background-color: $text-color;
+            color: $primary-color;
+            pointer-events: none;
+        }
+    }
+    &__content {
+        padding: 6rem 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
+
+.card {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    height: 20.125rem;
+    color: $add-color;
+    outline: 0.0625rem solid $add-color;
+    border-radius: $border-radius;
+    background-color: $secondary-color;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:hover {
+        color: $text-color;
+        outline-width: 0;
+        & .card__image {
+            opacity: 0.7;
+        }
+    }
+    & h2 {
+        font-size: 1.125rem;
+        font-weight: $font-weight;
+    }
+    &[data-topical] {
+        & h2 {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+    }
+    &__image {
+        @include flex-center();
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        height: 100%;
+        opacity: 0;
+        transition-duration: $duration;
+        & img {
+            width: 100%;
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-transform: uppercase;
+        transition-duration: $duration;
+        will-change: scale;
+        &:hover {
+            scale: 1.1;
+            & i {
+                rotate: 0deg;
+                translate: 0.5rem 0;
+            }
+        }
+        & i {
+            rotate: -45deg;
+            transition-duration: $duration;
+        }
+    }
+}

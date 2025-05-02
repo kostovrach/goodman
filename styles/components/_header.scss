@@ -18,6 +18,11 @@
       gap: 1rem;
       &-item {
         @include nav-item-vertical-hover();
+        &[data-force-hover] {
+          @include nav-item-vertical-force-hover();
+          font-weight: $font-weight;
+          pointer-events: none
+        }
       }
   }
   &__tel {
@@ -40,9 +45,6 @@
   & > .header__container {
     align-items: center;
   }
-}
-.header__logo--hidden {
-  display: none !important;
 }
 
 .burger {
