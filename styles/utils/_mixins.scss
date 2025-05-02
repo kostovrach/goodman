@@ -31,13 +31,13 @@
         height: 1rem;
         scale: 0;
         border-radius: 50%;
-        background-color: $before-bg;
+        background: $before-bg;
         transition-duration: 0.6s;
         animation-timing-function: ease-out;
     }
     &:hover::before {
         scale: 56;
-        background-color: $before-bg;
+        background: $before-bg;
     }
 
     &:hover {

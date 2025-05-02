@@ -8,3 +8,67 @@
 @import "components/footer.scss";
 
 @import "layout/news/main.scss";
+
+@media (max-width: 1024px) {
+    .main {
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__card {
+            flex: 1 1 calc(50% - 0.5rem);
+        }
+        &__card[data-topical] {
+            flex-basis: 100%;
+        }
+    }
+}
+@media (max-width: 720px) {
+    .main {
+        &__tagsbox {
+            border: none;
+            border-radius: 0;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+        &__tag {
+            border-radius: $border-radius;
+            border: 0.0625rem solid $text-color;
+        }
+    }
+  }
+@media (max-width: 600px) {
+    .main {
+        &__card {
+            flex: 1 1 100%;
+        }
+    }
+    .card {
+        height: 12rem;
+        & h2 {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            line-clamp: 3;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-height: 60%;
+            max-width: 90%;
+        }
+        &[data-topical] {
+            h2 {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+        
+}
+@media (max-width: 480px) {
+    .main {
+        &__title {
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+    }
+}

@@ -28,7 +28,7 @@
         padding: 0.25rem 1.5rem;
         transition-duration: $duration;
         &:hover {
-            background-color: $add-color;
+            background-color: $text-color;
             color: $primary-color;
         }
         &.active {
@@ -41,7 +41,7 @@
         padding: 6rem 0;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
+        gap: 0.5rem;
     }
 }
 
@@ -82,10 +82,13 @@
         top: 0;
         left: 0;
         height: 100%;
+        width: 100%;
         opacity: 0;
         transition-duration: $duration;
         & img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
     &__footer {

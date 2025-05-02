@@ -203,13 +203,13 @@ body {
   height: 1rem;
   scale: 0;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background: #FFFFFF;
   transition-duration: 0.6s;
   animation-timing-function: ease-out;
 }
 .header__button:hover::before {
   scale: 56;
-  background-color: #FFFFFF;
+  background: #FFFFFF;
 }
 .header__button:hover {
   color: #000;
@@ -338,13 +338,13 @@ body {
   height: 1rem;
   scale: 0;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background: #FFFFFF;
   transition-duration: 0.6s;
   animation-timing-function: ease-out;
 }
 .burger__button:hover::before {
   scale: 56;
-  background-color: #FFFFFF;
+  background: #FFFFFF;
 }
 .burger__button:hover {
   color: #000000;

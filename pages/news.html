@@ -37,11 +37,11 @@
                   <div class="burger__wrapper">
                     <nav>
                       <ul class="burger__nav">
-                        <li class="header__nav-item"><a href="../pages/about.html">О нас</a></li>
-                        <li class="header__nav-item"><a href="#">Новости</a></li>
-                        <li class="header__nav-item"><a href="../pages/docs.html">Документы</a></li>
-                        <li class="header__nav-item"><a href="../pages/faq.html">Вопросы</a></li>
-                        <li class="header__nav-item"><a href="../pages/contact.html">Контакты</a></li>
+                        <li class="burger__nav-item"><a href="../pages/about.html">О нас</a></li>
+                        <li class="burger__nav-item"><a href="#">Новости</a></li>
+                        <li class="burger__nav-item"><a href="../pages/docs.html">Документы</a></li>
+                        <li class="burger__nav-item"><a href="../pages/faq.html">Вопросы</a></li>
+                        <li class="burger__nav-item"><a href="../pages/contact.html">Контакты</a></li>
                       </ul>
                     </nav>
                     <button class="burger__button" type="button">Связаться с нами &rarr;</button>
@@ -55,18 +55,18 @@
                 <div class="main__titlebox">
                     <h1 class="main__title">Новости</h1>
                     <div class="main__tagsbox">
-                        <div class="main__tag active" data-tag-all>Все</div>
-                        <div class="main__tag" data-tag-laws>Законы</div>
-                        <div class="main__tag" data-tag-media>Упоминания в СМИ</div>
-                        <div class="main__tag" data-tag-events>Мероприятия</div>
-                        <div class="main__tag" data-tag-advices>Полезные советы</div>
+                        <div class="main__tag active" data-type="all">Все</div>
+                        <div class="main__tag" data-type="laws">Законы</div>
+                        <div class="main__tag" data-type="media">Упоминания в СМИ</div>
+                        <div class="main__tag" data-type="events">Мероприятия</div>
+                        <div class="main__tag" data-type="advices">Полезные советы</div>
                     </div>
                 </div>
                 <div class="main__content">
 
-                        <div class="main__card card" data-topical data-laws >
+                        <div class="main__card card" data-topical data-type="laws" >
                             <picture class="card__image">
-                                <img src="../media/img/news/cover.jpg" alt="#">
+                                <img src="../media/img/news/cover1.jpg" alt="#">
                             </picture>
                             <h2 class="card__title">Новые поправки к закону о&nbsp;банкротстве</h2>
                             <div class="card__footer">
@@ -75,9 +75,20 @@
                             </div>
                         </div>
                         
-                        <div class="main__card card" data-common data-laws >
+                        <div class="main__card card" data-common data-type="laws" >
                             <picture class="card__image">
-                                <img src="../media/img/news/cover.jpg" alt="#">
+                                <img src="../media/img/news/cover2.jpg" alt="#">
+                            </picture>
+                            <h2 class="card__title">Юридическая компания "Goodman" возглавила прецедентное дело</h2>
+                            <div class="card__footer">
+                                <a class="card__link" href="#">Читать <i class="icon-arrow-next"></i></a>
+                                <p class="card__date">21 июня</p>
+                            </div>
+                        </div>
+
+                        <div class="main__card card" data-common data-type="laws" >
+                            <picture class="card__image">
+                                <img src="../media/img/news/cover1.jpg" alt="#">
                             </picture>
                             <h2 class="card__title">Новые поправки к закону о&nbsp;банкротстве</h2>
                             <div class="card__footer">
@@ -86,9 +97,20 @@
                             </div>
                         </div>
 
-                        <div class="main__card card" data-common data-laws >
+                        <div class="main__card card" data-common data-type="events" >
                             <picture class="card__image">
-                                <img src="../media/img/news/cover.jpg" alt="#">
+                                <img src="../media/img/news/cover3.jpg" alt="#">
+                            </picture>
+                            <h2 class="card__title">Эксперты обсуждают влияние изменений в законе о банкротстве</h2>
+                            <div class="card__footer">
+                                <a class="card__link" href="#">Читать <i class="icon-arrow-next"></i></a>
+                                <p class="card__date">25 января</p>
+                            </div>
+                        </div>
+
+                        <div class="main__card card" data-common data-type="laws" >
+                            <picture class="card__image">
+                                <img src="../media/img/news/cover3.jpg" alt="#">
                             </picture>
                             <h2 class="card__title">Новые поправки к закону о&nbsp;банкротстве</h2>
                             <div class="card__footer">
@@ -97,9 +119,31 @@
                             </div>
                         </div>
 
-                        <div class="main__card card" data-common data-laws >
+                        <div class="main__card card" data-topical data-type="events" >
                             <picture class="card__image">
-                                <img src="../media/img/news/cover.jpg" alt="#">
+                                <img src="../media/img/news/cover2.jpg" alt="#">
+                            </picture>
+                            <h2 class="card__title">Громкий кейс: банкротство известного бизнесмена</h2>
+                            <div class="card__footer">
+                                <a class="card__link" href="#">Читать <i class="icon-arrow-next"></i></a>
+                                <p class="card__date">25 января</p>
+                            </div>
+                        </div>
+                        
+                        <div class="main__card card" data-common data-type="events" >
+                            <picture class="card__image">
+                                <img src="../media/img/news/cover2.jpg" alt="#">
+                            </picture>
+                            <h2 class="card__title">Суд принял решение: новые гарантии для должников</h2>
+                            <div class="card__footer">
+                                <a class="card__link" href="#">Читать <i class="icon-arrow-next"></i></a>
+                                <p class="card__date">25 января</p>
+                            </div>
+                        </div>
+
+                        <div class="main__card card" data-common data-type="media" >
+                            <picture class="card__image">
+                                <img src="../media/img/news/cover1.jpg" alt="#">
                             </picture>
                             <h2 class="card__title">Новые поправки к закону о&nbsp;банкротстве</h2>
                             <div class="card__footer">
@@ -108,20 +152,9 @@
                             </div>
                         </div>
 
-                        <div class="main__card card" data-common data-laws >
+                        <div class="main__card card" data-common data-type="media" >
                             <picture class="card__image">
-                                <img src="../media/img/news/cover.jpg" alt="#">
-                            </picture>
-                            <h2 class="card__title">Новые поправки к закону о&nbsp;банкротстве</h2>
-                            <div class="card__footer">
-                                <a class="card__link" href="#">Читать <i class="icon-arrow-next"></i></a>
-                                <p class="card__date">25 января</p>
-                            </div>
-                        </div>
-
-                        <div class="main__card card" data-topical data-laws >
-                            <picture class="card__image">
-                                <img src="../media/img/news/cover.jpg" alt="#">
+                                <img src="../media/img/news/cover1.jpg" alt="#">
                             </picture>
                             <h2 class="card__title">Новые поправки к закону о&nbsp;банкротстве</h2>
                             <div class="card__footer">
@@ -130,9 +163,31 @@
                             </div>
                         </div>
                         
-                        <div class="main__card card" data-common data-laws >
+                        <div class="main__card card" data-topical data-type="advices" >
                             <picture class="card__image">
-                                <img src="../media/img/news/cover.jpg" alt="#">
+                                <img src="../media/img/news/cover3.jpg" alt="#">
+                            </picture>
+                            <h2 class="card__title">Эксперты обсуждают влияние изменений в законе о банкротстве</h2>
+                            <div class="card__footer">
+                                <a class="card__link" href="#">Читать <i class="icon-arrow-next"></i></a>
+                                <p class="card__date">25 января</p>
+                            </div>
+                        </div>
+
+                        <div class="main__card card" data-common data-type="advices" >
+                            <picture class="card__image">
+                                <img src="../media/img/news/cover2.jpg" alt="#">
+                            </picture>
+                            <h2 class="card__title">Громкий кейс: банкротство известного бизнесмена</h2>
+                            <div class="card__footer">
+                                <a class="card__link" href="#">Читать <i class="icon-arrow-next"></i></a>
+                                <p class="card__date">25 января</p>
+                            </div>
+                        </div>
+
+                        <div class="main__card card" data-topical data-type="media" >
+                            <picture class="card__image">
+                                <img src="../media/img/news/cover3.jpg" alt="#">
                             </picture>
                             <h2 class="card__title">Новые поправки к закону о&nbsp;банкротстве</h2>
                             <div class="card__footer">
@@ -141,49 +196,7 @@
                             </div>
                         </div>
 
-                        <div class="main__card card" data-common data-laws >
-                            <picture class="card__image">
-                                <img src="../media/img/news/cover.jpg" alt="#">
-                            </picture>
-                            <h2 class="card__title">Новые поправки к закону о&nbsp;банкротстве</h2>
-                            <div class="card__footer">
-                                <a class="card__link" href="#">Читать <i class="icon-arrow-next"></i></a>
-                                <p class="card__date">25 января</p>
-                            </div>
-                        </div>
-
-                        <div class="main__card card" data-common data-laws >
-                            <picture class="card__image">
-                                <img src="../media/img/news/cover.jpg" alt="#">
-                            </picture>
-                            <h2 class="card__title">Новые поправки к закону о&nbsp;банкротстве</h2>
-                            <div class="card__footer">
-                                <a class="card__link" href="#">Читать <i class="icon-arrow-next"></i></a>
-                                <p class="card__date">25 января</p>
-                            </div>
-                        </div>
                         
-                        <div class="main__card card" data-topical data-laws >
-                            <picture class="card__image">
-                                <img src="../media/img/news/cover.jpg" alt="#">
-                            </picture>
-                            <h2 class="card__title">Новые поправки к закону о&nbsp;банкротстве</h2>
-                            <div class="card__footer">
-                                <a class="card__link" href="#">Читать <i class="icon-arrow-next"></i></a>
-                                <p class="card__date">25 января</p>
-                            </div>
-                        </div>
-
-                        <div class="main__card card" data-common data-laws >
-                            <picture class="card__image">
-                                <img src="../media/img/news/cover.jpg" alt="#">
-                            </picture>
-                            <h2 class="card__title">Новые поправки к закону о&nbsp;банкротстве</h2>
-                            <div class="card__footer">
-                                <a class="card__link" href="#">Читать <i class="icon-arrow-next"></i></a>
-                                <p class="card__date">25 января</p>
-                            </div>
-                        </div>
 
                 </div>
             </div>

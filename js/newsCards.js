@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const cards = Array.from(document.querySelectorAll(".main__card"));
+  const container = document.querySelector(".main__content");
+  const tags = document.querySelectorAll(".main__tag");
+
+  const allCards = Array.from(document.querySelectorAll(".main__card"));
+  const topicalQueue = allCards.filter((card) =>
+    card.hasAttribute("data-topical")
+  );
+  const commonQueue = allCards.filter((card) =>
+    card.hasAttribute("data-common")
+  );
 
   const pattern = [
     { type: "topical", column: "1 / span 2" },
@@ -15,35 +24,41 @@ document.addEventListener("DOMContentLoaded", () => {
     { type: "common", column: "4" },
   ];
 
-  let topicalQueue = cards.filter((card) => card.hasAttribute("data-topical"));
-  let commonQueue = cards.filter((card) => card.hasAttribute("data-common"));
-
-  const totalGroups = Math.floor(cards.length / 6);
-
-  let groupIndex = 0;
   let allPlaced = [];
+  let topicalQ = [...topicalQueue];
+  let commonQ = [...commonQueue];
 
-  while (topicalQueue.length + commonQueue.length > 0) {
-    for (let i = 0; i < 6; i++) {
-      const patternItem = pattern[i];
-      let targetCard;
-
-      if (patternItem.type === "topical") {
-        targetCard = topicalQueue.shift();
-      } else {
-        targetCard = commonQueue.shift();
-      }
-
-      if (targetCard) {
-        targetCard.style.gridColumn = patternItem.column;
-        allPlaced.push(targetCard);
+  while (topicalQ.length + commonQ.length > 0) {
+    for (let i = 0; i < pattern.length; i++) {
+      const p = pattern[i];
+      let card = p.type === "topical" ? topicalQ.shift() : commonQ.shift();
+      if (card) {
+        card.style.gridColumn = p.column;
+        allPlaced.push(card);
       }
     }
-
-    groupIndex++;
   }
 
-  const container = document.querySelector(".main__content");
   container.innerHTML = "";
   allPlaced.forEach((card) => container.appendChild(card));
+
+  function filterCards(type) {
+    allPlaced.forEach((card) => {
+      const cardType = card.dataset.type;
+      if (type === "all" || cardType === type) {
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+
+  tags.forEach((tag) => {
+    tag.addEventListener("click", () => {
+      tags.forEach((t) => t.classList.remove("active"));
+      tag.classList.add("active");
+      const type = tag.dataset.type;
+      filterCards(type);
+    });
+  });
 });
