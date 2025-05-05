@@ -1,0 +1,43 @@
+.metrics {
+    padding: 6rem 0;
+    background-color: $accent-color;
+    position: relative;
+    &::before,
+    &::after {
+        content: '';
+        background-color: $accent-color;
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+    }
+    &::before {
+        top: -50%
+    }
+    &::after {
+        bottom: -50%;
+    }
+    &__container {
+        @include content-width();
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__item {
+        @include flex-center();
+        flex-direction: column;
+        justify-content: start;
+    }
+    &__number {
+        font-size: 6rem;
+        line-height: 6rem;
+        font-weight: $font-weight;
+    }
+    &__description {
+        font-size: 1.125rem;
+        font-weight: $font-weight;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}

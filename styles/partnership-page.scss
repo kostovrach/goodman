@@ -1,0 +1,12 @@
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+
+@import "base/reset.scss";
+@import "base/typography.scss";
+
+@import "components/header.scss";
+@import "components/footer.scss";
+
+@import "layout/partnership/intro.scss";
+@import "layout/partnership/metrics.scss";
+@import "layout/partnership/useful.scss";

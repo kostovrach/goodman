@@ -1,0 +1,128 @@
+.useful {
+    background-color: $secondary-color;
+    border-radius: 6vw 6vw 0 0;
+    padding: 8rem 0;
+    &__container {
+        @include content-width();
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
+    }
+    &__sider {
+        height: 100%;
+        &-wrapper {
+            position: sticky;
+            top: 8rem;
+        }
+    }
+    &__title {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: $font-weight;
+    }
+    &__video-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: $border-radius;
+        margin-top: 4rem;
+    }
+    &-video {
+        width: 120%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+        counter-reset: item-counter;
+    }
+    &__item {
+        position: relative;
+        padding-left: 4rem;
+        text-wrap: wrap;
+        &::before {
+            counter-increment: item-counter;
+            content: counter(item-counter) '';
+            position: absolute;
+            top: -3rem;
+            left: -0.5rem;
+            font-size: 10rem;
+            line-height: 10rem;
+            font-weight: $font-weight;
+            color: $add-color;
+            opacity: 0.1;
+        }
+        &-title {
+            font-size: 1.5rem;
+            font-weight: $font-weight;
+        }
+        &-text {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.video-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.control-btn {
+    cursor: pointer;
+    pointer-events: auto;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-color;
+}
+
+.mute-btn {
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+.play-pause-btn {
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.5rem;
+}
+
+.progress-container {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.225rem;
+    pointer-events: auto;
+}
+
+.progress-bar {
+    cursor: pointer;
+    height: 100%;
+    width: 0%;
+    background-color: $accent-color;
+    transition-duration: $duration;
+}
+
+.useful__video-wrapper:hover .control-btn {
+    opacity: 1;
+}
+
+.control-btn {
+    opacity: 0;
+    transition-duration: $duration;
+}
