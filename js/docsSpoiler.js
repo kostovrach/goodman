@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const list = spoilerItem.querySelector('.docs__spoiler-list');
             
             // Закрытие спойлеров
-            
+            // 
             // const currentSection = spoilerItem.closest('.docs__section');
             // if (currentSection) {
             //     currentSection.querySelectorAll('.docs__spoiler-item.active').forEach(activeItem => {
             //         if (activeItem !== spoilerItem) {
-                        // activeItem.classList.remove('active');
+            //             activeItem.classList.remove('active');
             //             const activeIcon = activeItem.querySelector('.docs__spoiler-item-icon');
             //             const activeList = activeItem.querySelector('.docs__spoiler-list');
             //             if (activeIcon) activeIcon.classList.remove('active');

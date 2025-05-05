@@ -1,0 +1,35 @@
+.banner {
+    padding: 4rem 0;
+    background-color: $accent-color;
+    border-radius: 6vw;
+    &__container {
+        @include content-width();
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-size: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        text-wrap: wrap;
+    }
+    &__subtitle {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-top: 1rem
+    }
+    &__button {
+        @include button($text-color, $text-color, $text-color, $text-color, $accent-color, $text-color, $accent-color);
+        font-size: 1.25rem;
+        margin-top: 4rem;
+        text-align: center;
+        width: 100%;
+        &::before {
+            left: 50%;
+        }
+        &:hover::before {
+            scale: 100;
+        }
+    }
+}

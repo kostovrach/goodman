@@ -684,14 +684,15 @@ body {
 }
 .docs__spoiler {
   margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .docs__spoiler-item {
   opacity: 0.7;
   transition-duration: 0.5s;
-  margin: 1rem 0;
 }
 .docs__spoiler-item.active {
-  margin: 2rem 0;
   color: #FFFFFF;
   opacity: 1;
 }
@@ -709,6 +710,9 @@ body {
   rotate: 45deg;
   transition-duration: 0.5s;
 }
+.docs__spoiler-item-icon::before {
+  color: #ADE5E4;
+}
 .docs__spoiler-item-icon.active {
   rotate: 180deg;
 }
@@ -723,6 +727,7 @@ body {
   transition-duration: 0.5s;
 }
 .docs__spoiler-list.active {
+  margin: 2rem 0;
   max-height: 20rem;
   translate: 0 0;
   transition-duration: 0.5s;
@@ -930,9 +935,6 @@ body {
   }
   .docs__section-description {
     display: none;
-  }
-  .docs__spoiler-item {
-    margin: 0 0;
   }
   .docs__spoiler-item-title {
     font-size: 1rem;

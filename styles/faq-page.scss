@@ -6,3 +6,58 @@
 
 @import "components/header.scss";
 @import "components/footer.scss";
+
+@import "layout/faq/faq.scss";
+@import "layout/faq/banner.scss";
+
+@media (max-width: 960px) {
+    .faq {
+        &__container {
+            grid-template-columns: auto;
+        }
+    }
+}
+@media (max-width: 720px) {
+    .banner {
+        &__container {
+            align-items: start;
+        }
+        &__title {
+            font-size: 2rem;
+            line-height: 2rem;
+            text-align: left;
+        }
+        &__subtitle {
+            font-size: 1rem;
+        }
+        &__button {
+            font-size: 1.125rem;
+        }
+    }
+}
+@media (max-width: 440px) {
+    .faq {
+        &__sider {
+            &-title {
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+            }
+            &-subtitle {
+                margin-top: 2rem;
+                text-wrap: wrap;
+            }
+        }
+        &__section {
+            &-title {
+                font-size: 2rem;
+            }
+        }
+        &__quastion {
+            font-size: 1rem;
+            margin: 0;
+        }
+        &__answer {
+            font-size: 0.875rem;
+        }
+    }
+}

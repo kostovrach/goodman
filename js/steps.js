@@ -9,12 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (preview.classList.contains("active")) return;
 
       spoilerItems.forEach((el) => {
-        el.querySelector(".steps__spoiler-item-preview").classList.remove(
-          "active"
-        );
-        el.querySelector(".steps__spoiler-item-content").classList.remove(
-          "active"
-        );
+        el.querySelector(".steps__spoiler-item-preview").classList.remove("active");
+        el.querySelector(".steps__spoiler-item-content").classList.remove("active");
       });
 
       preview.classList.add("active");
