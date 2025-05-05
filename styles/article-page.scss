@@ -8,3 +8,64 @@
 @import "components/footer.scss";
 
 @import "layout/article/article";
+
+@media (max-width: 780px) {
+    .article {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+        &__body {
+            grid-row: 1;
+        }
+        &__title {
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+        &__subtitle {
+            display: none;
+        }
+        &__description {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        &__reading-time {
+            text-align: left;
+        }
+        &__chapter {
+            &-title {
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+            &-text {
+                font-size: 1rem;
+                line-height: 1.75rem;
+            }
+            &-cite {
+                font-size: 1rem;
+                text-align: left;
+            }
+        }
+    }
+}
+@media (max-width: 590px) {
+    .article {
+        &__title {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+        &__banner {
+            padding: 2rem 3rem;
+            &-image-wrapper {
+                left: -3.25rem;
+            }
+            &-text {
+                font-size: 1.25rem;
+            }
+            &-button {
+                padding: $button-padding;
+            }
+        }
+    }
+}
