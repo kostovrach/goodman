@@ -1,7 +1,5 @@
-.benefits {
-    background-color: $secondary-color;
+.ideas {
     padding: 8rem 0;
-    border-radius: $block-border-radius;
     &__container {
         @include content-width();
         display: grid;
@@ -38,31 +36,23 @@
             left: 0;
             height: 100%;
             width: 6rem;
-            background: linear-gradient(to right, $secondary-color, rgba(0, 0, 0, 0));
+            background: linear-gradient(to right, $primary-color, rgba(0, 0, 0, 0));
         }
     }
     &__slide {
-        background-color: $accent-color;
-        padding: 3rem;
-        max-width: 26.25rem;
-        aspect-ratio: 1/0.75;
-        border-radius: calc($border-radius * 2);
+        color: $add-color;
+        padding: 2rem;
+        max-width: 20rem;
+        border: 0.09375rem solid $add-color;
+        aspect-ratio: 1/1;
+        border-radius: $border-radius;
         border-bottom-right-radius: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        &-icon {
-            color: $accent-color--dirty;
-            font-size: 4rem;
-        }
+        gap: 1rem;
         &-text {
-            text-align: center;
-            font-size: 1.5rem;
-            line-height: 2rem;
-            &-accent {
-                font-weight: $font-weight;
-            }
+            text-wrap: wrap;
+            font-size: 1.125rem;
         }
     }
 }

@@ -1,0 +1,47 @@
+.about {
+    padding: 4rem 0;
+    &__container {
+        @include content-width();
+    }
+    &__title {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+    }
+    &__itembox {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 4rem;
+    }
+    &__item {
+        padding: 2rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        color: $add-color;
+        font-weight: $font-weight;
+        border-radius: $border-radius;
+        outline: 0.0625rem solid $add-color;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &:nth-child(2) {
+            grid-column: span 2;
+        }
+        &:nth-child(1),
+        &:nth-child(5) {
+            outline: none;
+            padding: 0;
+        }
+        &-image-wrapper {
+            width: 100%;
+        }
+        &-image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+    }
+}
