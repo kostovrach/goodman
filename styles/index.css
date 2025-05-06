@@ -793,7 +793,7 @@ body {
 .header {
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   padding: 1.5rem 0;
   transition-duration: 0.5s;

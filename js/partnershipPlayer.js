@@ -5,9 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const progressBar = document.querySelector('.progress-bar');
     const progressContainer = document.querySelector('.progress-container');
 
-    // Инициализация состояний при загрузке
     function initControls() {
-        // Mute/Unmute
         if (video.muted) {
             muteBtn.classList.add('icon-mute');
             muteBtn.classList.remove('icon-unmute');
@@ -16,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
             muteBtn.classList.remove('icon-mute');
         }
         
-        // Play/Pause
         if (video.paused) {
             playPauseBtn.classList.add('icon-play');
             playPauseBtn.classList.remove('icon-pause');
@@ -26,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Play/Pause
     function togglePlayPause() {
         if (video.paused) {
             video.play();
@@ -37,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Mute/Unmute
     function toggleMute() {
         video.muted = !video.muted;
         if (video.muted) {
@@ -47,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Обработчики событий
     playPauseBtn.addEventListener('click', function(e) {
         e.stopPropagation();
         togglePlayPause();
@@ -59,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleMute();
     });
 
-    // Прогрессбар
     video.addEventListener('timeupdate', function() {
         const percent = (video.currentTime / video.duration) * 100;
         progressBar.style.width = `${percent}%`;
@@ -70,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
         video.currentTime = (e.offsetX / width) * video.duration;
     });
 
-    // Синхронизация при изменении состояния видео
     video.addEventListener('play', function() {
         playPauseBtn.classList.replace('icon-play', 'icon-pause');
     });
@@ -87,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Инициализация при загрузке
     video.addEventListener('loadedmetadata', initControls);
-    initControls(); // На случай, если метаданные уже загружены
+    initControls();
 });
