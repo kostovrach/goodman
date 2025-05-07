@@ -1,0 +1,117 @@
+.quastion {
+    position: relative;
+    z-index: 0;
+    &__substract {
+        font-family: monospace;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: -15%;
+        text-transform: uppercase;
+        font-size: 60rem;
+        font-weight: $font-weight;
+        opacity: 0.03;
+        rotate: -17deg
+    }
+    &__container {
+        @include content-width();
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4rem;
+    }
+    &__titlebox {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__title {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: $font-weight;
+        &-accent {
+            color: $add-color;
+        }
+    }
+    &__button-prev {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: $add-color;
+        font-size: 1.5rem;
+        &:hover {
+            color: $text-color;
+        }
+    }
+    &__form {
+        &-titlebox {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-counter {
+            color: $add-color;
+        }
+        &-body {
+            margin-top: 2rem;
+        }
+        &-inputbox {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        &-input {
+            position: relative;
+            z-index: 0;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding: 1rem 2rem;
+            width: 100%;
+            height: 4rem;
+            outline: 0.09375rem solid $add-color;
+            border-radius: $border-radius;
+            font-size: 1.5rem;
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                top: 50%;
+                left: 50%;
+                width: 1rem;
+                height: 1rem;
+                scale: 0;
+                border-radius: 50%;
+                background-color: $accent-color;
+                transition-duration: $duration;
+                animation-timing-function: ease-out;
+            }
+            &:hover::before,
+            &:focus::before {
+                scale: 56;
+                background: $accent-color;
+            }
+            & input:checked {
+                background-color: $accent-color;
+            }
+            &:hover,
+            &:focus {
+                outline-color: $accent-color;
+            }
+            &-text {
+                pointer-events: none;
+                position: absolute;
+            }
+            & input {
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+            }
+        }
+    }
+}

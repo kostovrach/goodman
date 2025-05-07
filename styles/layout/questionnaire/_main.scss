@@ -1,0 +1,7 @@
+.main {
+    min-height: 100vh;
+    padding: 10rem 0 4rem 0;
+    background-color: $secondary-color;
+    overflow: hidden;
+    border-radius: 0 0 calc($border-radius * 2) calc($border-radius * 2);
+}

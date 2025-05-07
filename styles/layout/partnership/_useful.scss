@@ -56,7 +56,9 @@
         }
         &-title {
             font-size: 1.5rem;
+            line-height: 1.75rem;
             font-weight: $font-weight;
+            text-wrap: wrap;
         }
         &-text {
             margin-top: 1rem;

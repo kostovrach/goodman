@@ -21,3 +21,242 @@
 @import "layout/partnership/advantages.scss";
 @import "layout/partnership/feedback.scss";
 @import "layout/partnership/connection.scss";
+
+@media (max-width: 1240px) {
+    .metrics {
+        &__number {
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+        &__description {
+            font-size: 1rem;
+        }
+    }
+    .process {
+        &__item {
+            &-title {
+                font-size: 2.5rem;
+            }
+            &-text {
+                font-size: 1.125rem;
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .invite {
+        &__container {
+            grid-template-columns: 1fr;
+            min-height: fit-content;
+        }
+        &__banner {
+            display: none;
+        }
+        &__form-button::before {
+            left: 50%;
+        }
+    }
+    .about {
+        &__item {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+    .advantages {
+        &__item {
+            justify-items: center;
+            &-title {
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+            }
+            &-text {
+                font-size: 1.125rem;
+                line-height: 1.5rem;
+                text-align: center;
+            }
+        }
+    }
+}
+@media (max-width: 960px) {
+    .intro {
+        &__title {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+    }
+    .useful {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+    }
+    .benefits {
+        &__container {
+            grid-template-columns: 100%;
+            gap: 4rem;
+        }
+    }
+    .process {
+        &__title {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+        &__item {
+            grid-template-columns: 1fr;
+            &-image-wrapper {
+                display: none;
+            }
+        }
+    }
+    .ideas {
+        &__container {
+            grid-template-columns: 100%;
+            gap: 4rem;
+        }
+    }
+    .team {
+        &__title {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+    }
+    .feedback {
+        &__title {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+        &__titlebox {
+            grid-template-columns: 1fr;
+        }
+        &__rating {
+            justify-content: start;
+        }
+    }
+    .connection {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+        &__linksbox {
+            grid-row: 1;
+        }
+    }
+}
+@media (max-width: 860px) {
+    .metrics {
+        &__container {
+            grid-template-columns: 1fr;
+            gap: 4rem;
+        }
+    }
+}
+@media (max-width: 780px) {
+    .about {
+        &__itembox {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__item {
+            &:nth-child(1),
+            &:nth-child(5) {
+                display: none;
+            }
+        }
+    }
+    .footnote {
+        &__image {
+            max-width: 4rem;
+        }
+        &__text-item {
+            font-size: 1.125rem;
+            &--title {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+    .team {
+        display: none;
+    }
+    .advantages {
+        &__itembox {
+            grid-template-columns: 1fr;
+        }
+    }
+    .feedback {
+        &__body {
+            grid-template-columns: 100%;
+            gap: 2rem;
+        }
+    }
+}
+@media (max-width: 580px) {
+    .intro {
+        &__container {
+            align-items: flex-start;
+        }
+        &__title {
+            text-align: left;
+        }
+        &__subtitle {
+            text-align: left;
+        }
+    }
+    .process {
+        &__title {
+            text-align: left;
+        }
+        &__item {
+            &-number {
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+            &-title {
+                font-size: 1.5rem;
+                line-height: 1.75rem;
+                font-weight: $font-weight;
+            }
+            &-text {
+                font-size: 1.125rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+    .about {
+        &__itembox {
+            grid-template-columns: 1fr;
+        }
+        &__item:nth-child(2) {
+            grid-column: span 1;
+        }
+    }
+    .invite {
+        padding: 2.5rem 0;
+        background-color: $secondary-color;
+        border-radius: calc($border-radius * 2);
+        &__container {
+            padding: 0 2rem;
+            background: none;
+        }
+        &__form {
+            padding: 0;
+            &-title {
+                font-size: 1.125rem;
+                line-height: 1.5rem;
+            }
+            &-input {
+                font-size: 1.125rem;
+            }
+        }
+    }
+    .footnote {
+        padding: 4rem 0;
+        background-color: $add-color;
+        border-radius: calc($border-radius * 2);
+        margin-bottom: 4rem;
+        &__container {
+            padding: 0 2rem;
+            background: none;
+        }
+        &__image-wrapper {
+            display: none;
+        }
+    }
+}
