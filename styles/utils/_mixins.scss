@@ -110,6 +110,7 @@
 
 // Socials hover
 @mixin tg-hover {
+    @include flex-center();
     transition: scale $duration;
     will-change: scale;
     border-radius: 50%;
@@ -119,6 +120,7 @@
     }
 }
 @mixin vk-hover {
+    @include flex-center();
     font-size: 0.75rem;
     transition: scale $duration;
     will-change: scale;
@@ -129,6 +131,7 @@
     }
 }
 @mixin insta-hover {
+    @include flex-center();
     transition: scale $duration;
     will-change: scale;
     border-radius: 50%;
@@ -138,6 +141,7 @@
     }
 }
 @mixin zen-hover {
+    @include flex-center();
     transition: scale $duration;
     will-change: scale;
     border-radius: 50%;
@@ -149,6 +153,7 @@
     }
 }
 @mixin youtube-hover {
+    @include flex-center();
     transition: scale $duration;
     will-change: scale;
     border-radius: 50%;

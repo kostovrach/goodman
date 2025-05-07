@@ -1,0 +1,155 @@
+.feedback {
+    padding: 8rem 0;
+    background-color: $secondary-color;
+    border-radius: 0 0 calc($border-radius * 2) calc($border-radius * 2);
+    &__container {
+        @include content-width();
+    }
+    &__titlebox {
+        display: grid;
+        grid-template-columns: 60% auto;
+        gap: 2rem;
+        text-wrap: wrap;
+    }
+    &__title {
+        font-size: $title-fs;
+        line-height: calc($title-fs * 1.125);
+        font-weight: $font-weight;
+        &-accent {
+            color: $add-color;
+        }
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__subtitle {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        font-weight: $font-weight;
+    }
+    &__rating {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2.5rem;
+        &-users {
+            display: flex;
+            &-avatar-wrapper {
+                width: 2.75rem;
+                aspect-ratio: 1/1;
+                overflow: hidden;
+                border-radius: 50%;
+                outline: 0.125rem solid $text-color;
+                margin-right: -1.5rem;
+            }
+            &-avatar {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-description {
+            font-size: 0.875rem;
+            color: $add-color;
+        }
+    }
+    &__body {
+        padding: 6rem 0;
+        display: grid;
+        grid-template-columns: auto 80%;
+    }
+    &__tag {
+      width: fit-content;
+      font-size: 0.875rem;
+      color: $add-color;
+      padding: 0.225rem 1rem;
+      outline: 0.0625rem solid $add-color;
+      border-radius: $border-radius;
+      opacity: 0.7;
+    }
+    &__sliderbox {
+    }
+    &__slider {
+        margin-top: 2rem;
+        &-controls {
+            display: flex;
+            gap: 2rem;
+        }
+        &-counter {
+        }
+        &-buttonsbox {
+            display: flex;
+            gap: 1rem;
+        }
+        &-button {
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition-duration: $duration;
+            will-change: scale;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                height: 0.0625rem;
+                background-color: $text-color;
+                border-radius: $border-radius;
+                transition-duration: $duration;
+            }
+            &:hover::before {
+                width: 100%;
+            }
+            &--prev::before {
+                right: 0;
+            }
+            &--next::before {
+                left: 0;
+            }
+            &.swiper-button-disabled {
+                pointer-events: none;
+                opacity: 0.4;
+                scale: 0.9;
+            }
+        }
+    }
+    &__slide {
+        &-text {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            &:not(:first-child) {
+                margin-top: 1rem;
+            }
+        }
+        &-author {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            &-name {
+                font-size: 1.5rem;
+                font-weight: $font-weight;
+            }
+            &-from {
+                color: $add-color;
+            }
+            &-image-wrapper {
+                max-width: 6rem;
+                aspect-ratio: 1/1;
+                overflow: hidden;
+                border-radius: 50%;
+                border: 0.25rem solid $accent-color--dirty;
+            }
+            &-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -1090,14 +1090,14 @@ body {
 .footer__socials-icon {
   cursor: pointer;
   font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 2rem;
   height: 2rem;
   overflow: hidden;
 }
 .footer__socials-icon--zen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: scale 0.5s;
   will-change: scale;
   border-radius: 50%;
@@ -1109,6 +1109,9 @@ body {
   scale: 1.1;
 }
 .footer__socials-icon--telegram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: scale 0.5s;
   will-change: scale;
   border-radius: 50%;
@@ -1118,6 +1121,9 @@ body {
   scale: 1.1;
 }
 .footer__socials-icon--youtube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: scale 0.5s;
   will-change: scale;
   border-radius: 50%;
@@ -1128,6 +1134,9 @@ body {
   scale: 1.1;
 }
 .footer__socials-icon--vk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 0.75rem;
   transition: scale 0.5s;
   will-change: scale;
@@ -1138,6 +1147,9 @@ body {
   scale: 1.1;
 }
 .footer__socials-icon--instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: scale 0.5s;
   will-change: scale;
   border-radius: 50%;
@@ -2295,6 +2307,9 @@ body::after {
   color: #FFFFFF;
 }
 .request__link--telegram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: scale 0.5s;
   will-change: scale;
   border-radius: 50%;
@@ -2304,6 +2319,9 @@ body::after {
   scale: 1.1;
 }
 .request__link--vk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 0.75rem;
   transition: scale 0.5s;
   will-change: scale;
@@ -2314,6 +2332,9 @@ body::after {
   scale: 1.1;
 }
 .request__link--instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: scale 0.5s;
   will-change: scale;
   border-radius: 50%;

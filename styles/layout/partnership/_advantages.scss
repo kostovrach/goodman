@@ -1,0 +1,59 @@
+.advantages {
+  padding: 6rem 0;
+  background-color: $secondary-color;
+  border-radius: calc($border-radius * 2) calc($border-radius * 2) 0 0;
+  &__container {
+    @include content-width();
+  }
+  &__titlebox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__tag {
+    width: fit-content;
+    font-size: 0.875rem;
+    color: $add-color;
+    padding: 0.225rem 1rem;
+    outline: 0.0625rem solid $add-color;
+    border-radius: $border-radius;
+    opacity: 0.7;
+  }
+  &__title {
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  &__itembox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 4rem;
+  }
+  &__item {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    gap: 2rem;
+    &-icon-wrapper {
+      max-width: 6rem;
+      max-height: 6rem;
+      background-color: $text-color;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+    &-icon {
+      width: 100%;
+      aspect-ratio: 1/1;
+    }
+    &-title {
+        font-size: $title-fs;
+        line-height: $title-fs;
+        font-weight: $font-weight;
+    }
+    &-text {
+        color: $add-color;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+  }
+}

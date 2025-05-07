@@ -1,0 +1,30 @@
+.team {
+    padding: 8rem 0;
+    &__container {
+        @include content-width();
+    }
+    &__title {
+        font-size: $title-fs;
+        line-height: $title-fs;
+    }
+    &__sliderbox {
+        margin-top: 4rem;
+    }
+    &__slide {
+        width: auto;
+        max-height: 36.375rem;
+        aspect-ratio: 1.5/1;
+        overflow: hidden;
+        border-radius: $border-radius;
+        &-image-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        &-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

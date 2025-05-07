@@ -1,0 +1,30 @@
+.footnote {
+    padding: 4rem 0;
+    &__container {
+        @include content-width();
+        padding: 4rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: $add-color;
+        border-radius: calc($border-radius * 2);
+    }
+    &__text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &-item {
+            &--title {
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+                font-weight: $font-weight;
+                margin-bottom: 2rem;
+            }
+            &--accent {
+                font-weight: $font-weight;
+            }
+        }
+    }
+}
