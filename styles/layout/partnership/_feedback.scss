@@ -70,15 +70,11 @@
       border-radius: $border-radius;
       opacity: 0.7;
     }
-    &__sliderbox {
-    }
     &__slider {
         margin-top: 2rem;
         &-controls {
             display: flex;
             gap: 2rem;
-        }
-        &-counter {
         }
         &-buttonsbox {
             display: flex;
