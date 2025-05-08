@@ -35,12 +35,14 @@
         transition-duration: 0.6s;
         animation-timing-function: ease-out;
     }
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
         scale: 56;
         background: $before-bg;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $t-color-hover;
         background: $bg-color-hover;
         outline-color: $outline-color-hover;

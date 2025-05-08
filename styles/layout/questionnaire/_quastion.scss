@@ -7,6 +7,7 @@
         z-index: -1;
         top: 50%;
         left: -15%;
+        pointer-events: none;
         text-transform: uppercase;
         font-size: 60rem;
         font-weight: $font-weight;
@@ -17,6 +18,7 @@
         @include content-width();
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
         margin-top: 4rem;
     }
     &__titlebox {
@@ -53,6 +55,8 @@
         }
         &-body {
             margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
         }
         &-inputbox {
             display: flex;
@@ -85,17 +89,24 @@
                 transition-duration: $duration;
                 animation-timing-function: ease-out;
             }
-            &:hover::before,
-            &:focus::before {
+            &:hover::before {
                 scale: 56;
                 background: $accent-color;
             }
             & input:checked {
                 background-color: $accent-color;
             }
-            &:hover,
-            &:focus {
+            &:hover {
                 outline-color: $accent-color;
+            }
+            &:has(input:focus),
+            &:has(input:checked) {
+                background-color: $accent-color--dirty;
+                color: $accent-color;
+                outline: none;
+                &::before {
+                    display: none;
+                }
             }
             &-text {
                 pointer-events: none;
@@ -111,6 +122,101 @@
                 height: 100%;
                 width: 100%;
                 opacity: 0;
+            }
+            &--custom-answer {
+                cursor: text;
+                resize: none;
+                width: 100%;
+                height: 8rem;
+                padding: 1rem 2rem;
+                font-size: 1.5rem;
+                border-radius: $border-radius;
+                color: inherit;
+                background-color: rgba($text-color, 0.1);
+                &::placeholder {
+                    color: rgba($text-color, 0.5);
+                }
+                &:hover,
+                &:focus {
+                    background-color: $secondary-color;
+                    outline: 0.09375rem solid $add-color;
+                }
+            }
+            &--info {
+                cursor: text;
+                padding: 1rem 2rem;
+                width: 100%;
+                height: 4rem;
+                color: inherit;
+                border-radius: $border-radius;
+                font-size: 1.5rem;
+                background-color: rgba($text-color, 0.1);
+                &::placeholder {
+                    color: rgba($text-color, 0.5);
+                }
+                &:hover,
+                &:focus {
+                    background-color: $secondary-color;
+                    outline: 0.09375rem solid $add-color;
+                }
+                &-checkbox {
+                    position: relative;
+                    text-wrap: wrap;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    margin-top: 1.5rem;
+                    & input {
+                        cursor: pointer;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        opacity: 0;
+                    }
+                    &::before {
+                        content: '';
+                        pointer-events: none;
+                        position: absolute;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        border: 0.125rem solid $add-color;
+                        border-radius: 50%;
+                    }
+                    &:has(input:focus)::before,
+                    &:has(input:hover)::before {
+                        background-color: $add-color;
+                    }
+                    &:has(input:checked)::before {
+                        background-color: $accent-color;
+                    }
+                }
+            }
+        }
+        &-button-next {
+            @include button($text-color, $accent-color, none, none, $text-color, $text-color, $accent-color);
+            @include flex-center();
+            width: fit-content;
+            gap: 0.25rem;
+            margin-top: 2rem;
+            align-self: flex-end;
+        }
+        &-button-submit {
+            @include button($add-color, $accent-color, $add-color, $add-color, $secondary-color, $text-color, $accent-color);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            &::before {
+                left: 50%;
+            }
+        }
+        &-privacy-policy {
+            font-size: 0.75rem;
+            color: $add-color;
+            text-align: center;
+            margin-top: 0.5rem;
+            &-link {
+                color: $text-color;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

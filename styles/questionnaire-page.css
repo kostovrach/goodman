@@ -206,11 +206,11 @@ body {
   transition-duration: 0.6s;
   animation-timing-function: ease-out;
 }
-.header__button:hover::before {
+.header__button:hover::before, .header__button:focus::before {
   scale: 56;
   background: #FFFFFF;
 }
-.header__button:hover {
+.header__button:hover, .header__button:focus {
   color: #000;
   background: none;
   outline-color: none;
@@ -284,7 +284,7 @@ body {
   background-color: #F7624C;
   transition-duration: 0.5s;
   width: max-content;
-  border-radius: 1rem;
+  border-radius: 0 0 2rem 2rem;
   padding: 2rem;
   padding-top: 6rem;
   translate: 0 -25rem;
@@ -341,11 +341,11 @@ body {
   transition-duration: 0.6s;
   animation-timing-function: ease-out;
 }
-.burger__button:hover::before {
+.burger__button:hover::before, .burger__button:focus::before {
   scale: 56;
   background: #FFFFFF;
 }
-.burger__button:hover {
+.burger__button:hover, .burger__button:focus {
   color: #000000;
   background: none;
   outline-color: #FFFFFF;
@@ -614,6 +614,10 @@ body {
   border-radius: 0 0 4rem 4rem;
 }
 
+.progress {
+  position: relative;
+  z-index: 1;
+}
 .progress__container {
   max-width: 1440px;
   margin: 0 auto;
@@ -659,6 +663,7 @@ body {
   z-index: -1;
   top: 50%;
   left: -15%;
+  pointer-events: none;
   text-transform: uppercase;
   font-size: 60rem;
   font-weight: 550;
@@ -671,6 +676,7 @@ body {
   padding: 0 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   margin-top: 4rem;
 }
 .quastion__titlebox {
@@ -706,6 +712,8 @@ body {
 }
 .quastion__form-body {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 .quastion__form-inputbox {
   display: flex;
@@ -739,15 +747,23 @@ body {
   transition-duration: 0.5s;
   animation-timing-function: ease-out;
 }
-.quastion__form-input:hover::before, .quastion__form-input:focus::before {
+.quastion__form-input:hover::before {
   scale: 56;
   background: #F7624C;
 }
 .quastion__form-input input:checked {
   background-color: #F7624C;
 }
-.quastion__form-input:hover, .quastion__form-input:focus {
+.quastion__form-input:hover {
   outline-color: #F7624C;
+}
+.quastion__form-input:has(input:focus), .quastion__form-input:has(input:checked) {
+  background-color: #F0AC87;
+  color: #F7624C;
+  outline: none;
+}
+.quastion__form-input:has(input:focus)::before, .quastion__form-input:has(input:checked)::before {
+  display: none;
 }
 .quastion__form-input-text {
   pointer-events: none;
@@ -763,4 +779,189 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
+}
+.quastion__form-input--custom-answer {
+  cursor: text;
+  resize: none;
+  width: 100%;
+  height: 8rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.quastion__form-input--custom-answer::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.quastion__form-input--custom-answer:hover, .quastion__form-input--custom-answer:focus {
+  background-color: #1C5564;
+  outline: 0.09375rem solid #ADE5E4;
+}
+.quastion__form-input--info {
+  cursor: text;
+  padding: 1rem 2rem;
+  width: 100%;
+  height: 4rem;
+  color: inherit;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.quastion__form-input--info::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.quastion__form-input--info:hover, .quastion__form-input--info:focus {
+  background-color: #1C5564;
+  outline: 0.09375rem solid #ADE5E4;
+}
+.quastion__form-input--info-checkbox {
+  position: relative;
+  text-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.quastion__form-input--info-checkbox input {
+  cursor: pointer;
+  width: 1.25rem;
+  height: 1.25rem;
+  opacity: 0;
+}
+.quastion__form-input--info-checkbox::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 0.125rem solid #ADE5E4;
+  border-radius: 50%;
+}
+.quastion__form-input--info-checkbox:has(input:focus)::before, .quastion__form-input--info-checkbox:has(input:hover)::before {
+  background-color: #ADE5E4;
+}
+.quastion__form-input--info-checkbox:has(input:checked)::before {
+  background-color: #F7624C;
+}
+.quastion__form-button-next {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+  outline: 0.0625rem solid #FFFFFF;
+  background: none;
+  color: #FFFFFF;
+  transition-duration: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  gap: 0.25rem;
+  margin-top: 2rem;
+  align-self: flex-end;
+}
+.quastion__form-button-next::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 70%;
+  width: 1rem;
+  height: 1rem;
+  scale: 0;
+  border-radius: 50%;
+  background: #F7624C;
+  transition-duration: 0.6s;
+  animation-timing-function: ease-out;
+}
+.quastion__form-button-next:hover::before, .quastion__form-button-next:focus::before {
+  scale: 56;
+  background: #F7624C;
+}
+.quastion__form-button-next:hover, .quastion__form-button-next:focus {
+  color: #FFFFFF;
+  background: none;
+  outline-color: #F7624C;
+}
+.quastion__form-button-submit {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 2rem;
+  padding: 0.75rem 2rem;
+  outline: 0.0625rem solid #ADE5E4;
+  background: #ADE5E4;
+  color: #1C5564;
+  transition-duration: 0.5s;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.quastion__form-button-submit::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 70%;
+  width: 1rem;
+  height: 1rem;
+  scale: 0;
+  border-radius: 50%;
+  background: #F7624C;
+  transition-duration: 0.6s;
+  animation-timing-function: ease-out;
+}
+.quastion__form-button-submit:hover::before, .quastion__form-button-submit:focus::before {
+  scale: 56;
+  background: #F7624C;
+}
+.quastion__form-button-submit:hover, .quastion__form-button-submit:focus {
+  color: #FFFFFF;
+  background: #ADE5E4;
+  outline-color: #F7624C;
+}
+.quastion__form-button-submit::before {
+  left: 50%;
+}
+.quastion__form-privacy-policy {
+  font-size: 0.75rem;
+  color: #ADE5E4;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.quastion__form-privacy-policy-link {
+  color: #FFFFFF;
+}
+.quastion__form-privacy-policy-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 960px) {
+  .quastion__container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 540px) {
+  .quastion__title {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+  .quastion__form-input {
+    font-size: 1.125rem;
+  }
+  .quastion__form-input--custom-answer {
+    font-size: 1.125rem;
+  }
+  .quastion__form-input--info {
+    font-size: 1.125rem;
+  }
+  .quastion__button-prev {
+    font-size: 1rem;
+  }
+  .quastion__form-button-submit {
+    font-size: 1.25rem;
+  }
 }

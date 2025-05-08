@@ -1,4 +1,6 @@
 .progress {
+    position: relative;
+    z-index: 1;
     &__container {
         @include content-width();
         display: flex;
@@ -18,7 +20,7 @@
         height: 1rem;
         border-radius: $border-radius;
         overflow: hidden;
-        background-color: rgba(0, 24, 36, 0.25);
+        background-color: rgba($primary-color, 0.25);
         &-inner {
             height: 100%;
             width: 5%;

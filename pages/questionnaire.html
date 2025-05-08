@@ -82,7 +82,7 @@
       </div>
     </header>
     <main class="main">
-        <div class="progress">
+      <div class="progress">
             <div class="progress__container">
                 <div class="progress__exit-button"><button class="icon-cross"></button></div>
                 <div class="progress__progressbar">
@@ -90,13 +90,12 @@
                 </div>
                 <div class="progress__score"><span class="progress__score-value"></span>%</div>
             </div>
-        </div>
-        <div id="quastion-1" class="quastion">
+      </div>
+      <div id="quastion-1" class="quastion">
             <span class="quastion__substract">Анкета</span>
             <div class="quastion__container">
                 <div class="quastion__titlebox">
                     <p class="quastion__title">С какой <span class="quastion__title-accent">проблемой</span> вы столкнулись?</p>
-                    <button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
                 </div>
                 <div class="quastion__form">
                     <div class="quastion__form-titlebox">
@@ -111,39 +110,76 @@
                     <form class="quastion__form-body" action="">
                         <div class="quastion__form-inputbox">
                             <label class="quastion__form-input">
-                                <input id="problem1" type="radio" name="quastion-1" value="">
+                                <input id="" type="radio" name="quastion-1" value="">
                                 <span class="quastion__form-input-text">Банкротство</span>
                             </label>
                             <label class="quastion__form-input">
-                                <input id="problem1" type="radio" name="quastion-1" value="">
+                                <input id="" type="radio" name="quastion-1" value="">
                                 <span class="quastion__form-input-text">Действия мошенников</span>
                             </label>
                             <label class="quastion__form-input">
-                                <input id="problem1" type="radio" name="quastion-1" value="">
+                                <input id="" type="radio" name="quastion-1" value="">
                                 <span class="quastion__form-input-text">Проблемы с выплатой кредита</span>
                             </label>
                             <label class="quastion__form-input">
-                                <input id="problem1" type="radio" name="quastion-1" value="">
+                                <input id="" type="radio" name="quastion-1" value="">
                                 <span class="quastion__form-input-text">Потребительские споры</span>
                             </label>
-                            <textarea id="" class="quastion__form-input--castom" name="" placeholder="Свой вариант ..."></textarea>
+                            <textarea id="" class="quastion__form-input--custom-answer" name="quastion-1" placeholder="Свой вариант ..."></textarea>
                         </div>
                         <button class="quastion__form-button-next">Далее <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
                     </form>
                 </div>
             </div>
-        </div>
-        <div id="quastion-1" class="quastion" style="display: none;">
-            <span class="quastion__substract">Анкета</span>
-            <div class="quastion__container">
-                <div class="quastion__titlebox">
-                    <p class="quastion__title"></p>
-                    <button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
-                </div>
+      </div>
+      <div id="quastion-2" class="quastion">
+          <span class="quastion__substract">Анкета</span>
+          <div class="quastion__container">
+              <div class="quastion__titlebox">
+                  <p class="quastion__title">Уточните, с каким видом <span class="quastion__title-accent">мошенничества</span> вы столкнулись?</p>
+                  <button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
+              </div>
+              <div class="quastion__form">
+                  <div class="quastion__form-titlebox">
+                      <p class="quastion__form-hint">Можно выбрать несколько вариантов</p>
+                      <div class="quastion__form-counter">
+                          <span class="quastion__form-counter--title">Вопрос</span>
+                          <span class="quastion__form-counter--current"></span>
+                          <span class="quastion__form-counter--separator">&ndash;</span>
+                          <span class="quastion__form-counter--total"></span>
+                      </div>
+                  </div>
+                  <form class="quastion__form-body" action="">
+                      <div class="quastion__form-inputbox">
+                          <label class="quastion__form-input">
+                              <input id="" type="checkbox" name="quastion-2" value="">
+                              <span class="quastion__form-input-text">Незаконные взыскания</span>
+                          </label>
+                          <label class="quastion__form-input">
+                              <input id="" type="checkbox" name="quastion-2" value="">
+                              <span class="quastion__form-input-text">Фальсификация документов</span>
+                          </label>
+                          <label class="quastion__form-input">
+                              <input id="" type="checkbox" name="quastion-2" value="">
+                              <span class="quastion__form-input-text">Обман при оформлении займа</span>
+                          </label>
+                          <textarea id="" class="quastion__form-input--custom-answer" name="quastion-2" placeholder="Свой вариант ..."></textarea>
+                      </div>
+                      <button class="quastion__form-button-next">Далее <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div id="quastion-3" class="quastion">
+        <span class="quastion__substract">Анкета</span>
+        <div class="quastion__container">
+            <div class="quastion__titlebox">
+                <p class="quastion__title">Какой размер<span class="quastion__title-accent"> взыскиваемого </span>долга?</p>
+                <button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
             </div>
             <div class="quastion__form">
                 <div class="quastion__form-titlebox">
-                    <p class="quastion__form-hint"></p>
+                    <p class="quastion__form-hint">Выберите один из вариантов</p>
                     <div class="quastion__form-counter">
                         <span class="quastion__form-counter--title">Вопрос</span>
                         <span class="quastion__form-counter--current"></span>
@@ -154,27 +190,102 @@
                 <form class="quastion__form-body" action="">
                     <div class="quastion__form-inputbox">
                         <label class="quastion__form-input">
-                            <input id="problem1" type="radio" name="" value="">
-                            <span class="quastion__form-input-text"></span>
+                            <input id="" type="radio" name="quastion-3" value="">
+                            <span class="quastion__form-input-text">До 500 000 &#8381; </span>
                         </label>
                         <label class="quastion__form-input">
-                            <input id="problem1" type="radio" name="" value="">
-                            <span class="quastion__form-input-text"></span>
+                            <input id="" type="radio" name="quastion-3" value="">
+                            <span class="quastion__form-input-text">0,5 — 1 млн. &#8381;</span>
                         </label>
                         <label class="quastion__form-input">
-                            <input id="problem1" type="radio" name="" value="">
-                            <span class="quastion__form-input-text"></span>
+                            <input id="" type="radio" name="quastion-3" value="">
+                            <span class="quastion__form-input-text">1 — 5 млн. &#8381;</span>
                         </label>
                         <label class="quastion__form-input">
-                            <input id="problem1" type="radio" name="" value="">
-                            <span class="quastion__form-input-text"></span>
+                            <input id="" type="radio" name="quastion-3" value="">
+                            <span class="quastion__form-input-text">Свыше 5 млн. &#8381;</span>
                         </label>
-                        <textarea id="" class="quastion__form-input--castom" name="" placeholder=""></textarea>
                     </div>
                     <button class="quastion__form-button-next">Далее <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
                 </form>
             </div>
         </div>
+      </div>
+      <div id="quastion-4" class="quastion">
+        <span class="quastion__substract">Анкета</span>
+        <div class="quastion__container">
+            <div class="quastion__titlebox">
+                <p class="quastion__title">Текущая <span class="quastion__title-accent">стадия</span> процесса</p>
+                <button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
+            </div>
+            <div class="quastion__form">
+                <div class="quastion__form-titlebox">
+                    <p class="quastion__form-hint">Выберите наиболее подходящий вариант</p>
+                    <div class="quastion__form-counter">
+                        <span class="quastion__form-counter--title">Вопрос</span>
+                        <span class="quastion__form-counter--current"></span>
+                        <span class="quastion__form-counter--separator">&ndash;</span>
+                        <span class="quastion__form-counter--total"></span>
+                    </div>
+                </div>
+                <form class="quastion__form-body" action="">
+                    <div class="quastion__form-inputbox">
+                        <label class="quastion__form-input">
+                            <input id="" type="radio" name="quastion-4" value="">
+                            <span class="quastion__form-input-text">Всё в порядке, хочу подстраховаться</span>
+                        </label>
+                        <label class="quastion__form-input">
+                            <input id="" type="radio" name="quastion-4" value="">
+                            <span class="quastion__form-input-text">Поступают звонки и угрозы от банка или коллекторов</span>
+                        </label>
+                        <label class="quastion__form-input">
+                            <input id="" type="radio" name="quastion-4" value="">
+                            <span class="quastion__form-input-text">Дело передано в суд</span>
+                        </label>
+                        <label class="quastion__form-input">
+                            <input id="" type="radio" name="quastion-4" value="">
+                            <span class="quastion__form-input-text">Судебные приставы заблокировали счета</span>
+                        </label>
+                        <textarea id="" class="quastion__form-input--custom-answer" name="quastion-4" placeholder="Свой вариант ..."></textarea>
+                    </div>
+                    <button class="quastion__form-button-next">Далее <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
+                </form>
+            </div>
+        </div>
+      </div>
+      <div id="quastion-5" class="quastion">
+        <span class="quastion__substract">Анкета</span>
+        <div class="quastion__container">
+            <div class="quastion__titlebox">
+                <p class="quastion__title">Готово! Как нам лучше с вами связаться?</p>
+                <button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
+            </div>
+            <div class="quastion__form">
+                <div class="quastion__form-titlebox">
+                    <p class="quastion__form-hint">Заполните все поля</p>
+                    <div class="quastion__form-counter">
+                        <span class="quastion__form-counter--title">Вопрос</span>
+                        <span class="quastion__form-counter--current"></span>
+                        <span class="quastion__form-counter--separator">&ndash;</span>
+                        <span class="quastion__form-counter--total"></span>
+                    </div>
+                </div>
+                <form class="quastion__form-body" action="">
+                    <div class="quastion__form-inputbox">
+                        <input id="input-name" class="quastion__form-input--info" type="text" name="quastion-5" placeholder="Как вас зовут?" required>
+                        <input id="input-tel" class="quastion__form-input--info" type="tel" name="quastion-5" placeholder="Номер телефона" required>
+                        <textarea id="" class="quastion__form-input--custom-answer" name="quastion-5" placeholder="Хотите что то добавить?"></textarea>
+                        <label for="" class="quastion__form-input--info-checkbox">
+                          <input type="checkbox" name="quastion-5">
+                          <span class="quastion__form-input--info-text">Мне будет удобно получить консультацию по видео-связи</span>
+                        </label>
+                    </div>
+                    <button class="quastion__form-button-submit" type="submit">Отправить <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
+                    <small class="quastion__form-privacy-policy">Отправляя заявку, вы соглашаетесь с <a href="#" class="quastion__form-privacy-policy-link">политикой конфиденциальности</a></small>
+                </form>
+            </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__container">
@@ -303,5 +414,6 @@
     <script src="../js/header.js"></script>
     <script src="../js/burger.js"></script>
     <script src="../js/navigation.js"></script>
+    <script src="../js/numberMask.js"></script>
   </body>
 </html>

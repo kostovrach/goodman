@@ -107,7 +107,7 @@
       background-color: $accent-color;
       transition-duration: $duration;
       width: max-content;
-      border-radius: 1rem;
+      border-radius: 0 0 $border-radius $border-radius;
       padding: 2rem;
       padding-top: 6rem;
       translate: 0 -25rem;

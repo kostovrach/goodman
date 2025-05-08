@@ -10,3 +10,34 @@
 @import "layout/questionnaire/main.scss";
 @import "layout/questionnaire/progress.scss";
 @import "layout/questionnaire/quastion.scss";
+
+@media (max-width: 960px) {
+    .quastion {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media (max-width: 540px) {
+    .quastion {
+        &__title {
+            font-size: 1.75rem;
+            line-height: 2rem;
+        }
+        &__form-input {
+            font-size: 1.125rem;
+            &--custom-answer {
+                font-size: 1.125rem;
+            }
+            &--info {
+                font-size: 1.125rem;
+            }
+        }
+        &__button-prev {
+            font-size: 1rem;
+        }
+        &__form-button-submit {
+            font-size: 1.25rem;
+        }
+    }
+}

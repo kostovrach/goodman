@@ -206,11 +206,11 @@ body {
   transition-duration: 0.6s;
   animation-timing-function: ease-out;
 }
-.header__button:hover::before {
+.header__button:hover::before, .header__button:focus::before {
   scale: 56;
   background: #FFFFFF;
 }
-.header__button:hover {
+.header__button:hover, .header__button:focus {
   color: #000;
   background: none;
   outline-color: none;
@@ -284,7 +284,7 @@ body {
   background-color: #F7624C;
   transition-duration: 0.5s;
   width: max-content;
-  border-radius: 1rem;
+  border-radius: 0 0 2rem 2rem;
   padding: 2rem;
   padding-top: 6rem;
   translate: 0 -25rem;
@@ -341,11 +341,11 @@ body {
   transition-duration: 0.6s;
   animation-timing-function: ease-out;
 }
-.burger__button:hover::before {
+.burger__button:hover::before, .burger__button:focus::before {
   scale: 56;
   background: #FFFFFF;
 }
-.burger__button:hover {
+.burger__button:hover, .burger__button:focus {
   color: #000000;
   background: none;
   outline-color: #FFFFFF;
@@ -744,11 +744,11 @@ body {
   transition-duration: 0.6s;
   animation-timing-function: ease-out;
 }
-.form__button:hover::before {
+.form__button:hover::before, .form__button:focus::before {
   scale: 56;
   background: #F7624C;
 }
-.form__button:hover {
+.form__button:hover, .form__button:focus {
   color: #FFFFFF;
   background: #1C5564;
   outline-color: #F7624C;
