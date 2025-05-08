@@ -1,0 +1,37 @@
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+
+@import "base/reset.scss";
+@import "base/typography.scss";
+
+@import "components/header.scss";
+@import "components/footer.scss";
+
+@import "layout/payment/payment.scss";
+
+@media (max-width: 960px) {
+    .payment {
+        &__container {
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .payment {
+        padding-bottom: 0;
+        &__container {
+            display: contents;
+            text-wrap: wrap;
+        }
+        &__titlebox {
+            padding: 0 2rem;
+        }
+        &__title {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+        &__form {
+            margin-top: 4rem;
+        }
+    }
+}

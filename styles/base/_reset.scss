@@ -40,6 +40,8 @@ input::-ms-clear {
 
 button,
 a {
+  color: inherit;
+  font-weight: inherit;
   cursor: pointer;
   font-size: inherit;
   background: none;
@@ -70,17 +72,22 @@ img {
   vertical-align: top;
 }
 
+html,
 body {
-    font-family: 'Golos', sans-serif;
-    font-size: $fs;
-    line-height: 150%;
-    text-wrap: balance;
-    color: $text-color;
-    background-color: $primary-color;
-    width: 100%;
-    min-height: 100vh;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: 'Golos', sans-serif;
+  font-size: $fs;
+  line-height: 150%;
+  text-wrap: balance;
+  color: $text-color;
+  background-color: $primary-color;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

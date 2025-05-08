@@ -40,6 +40,8 @@ input::-ms-clear {
 
 button,
 a {
+  color: inherit;
+  font-weight: inherit;
   cursor: pointer;
   font-size: inherit;
   background: none;
@@ -68,6 +70,11 @@ ul li {
 
 img {
   vertical-align: top;
+}
+
+html,
+body {
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -884,6 +891,7 @@ body {
   max-height: 2rem;
 }
 .forms__item-icon {
+  color: #ADE5E4;
   font-size: 4rem;
 }
 .forms__item-link {
@@ -894,6 +902,9 @@ body {
   overflow: hidden;
   max-height: 0;
   transition-duration: 0.5s;
+}
+.forms__item-link-icon {
+  color: #F7624C;
 }
 
 @media (max-width: 1100px) {

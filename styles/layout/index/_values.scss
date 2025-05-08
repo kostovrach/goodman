@@ -25,6 +25,7 @@
         justify-content: space-evenly;
         gap: 1.5rem;
         &--icon {
+            color: $accent-color;
             font-size: 2rem;
             text-align: left;
             padding: 2rem;

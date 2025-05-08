@@ -738,6 +738,8 @@ input::-ms-clear {
 
 button,
 a {
+  color: inherit;
+  font-weight: inherit;
   cursor: pointer;
   font-size: inherit;
   background: none;
@@ -766,6 +768,11 @@ ul li {
 
 img {
   vertical-align: top;
+}
+
+html,
+body {
+  scrollbar-gutter: stable;
 }
 
 body {

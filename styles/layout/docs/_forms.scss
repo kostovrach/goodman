@@ -61,6 +61,7 @@
             }
         }
         &-icon {
+            color: $add-color;
             font-size: 4rem;
         }
         &-link {
@@ -71,6 +72,9 @@
             overflow: hidden;
             max-height: 0;
             transition-duration: $duration;
+            &-icon {
+                color: $accent-color;
+            }
         }
     }
 }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body {
+            position: relative;
+            height: 100vh;
+            background-color: #222;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+        .modal-privacy {
+            border: none;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            counter-reset: item-counter;
+            max-width: 40rem;
+            max-height: 90vh;
+            overflow-y: scroll;
+            padding: 2rem;
+            font-size: 1.125rem;
+            font-weight: 550;
+            color: #ADE5E4; /* $add-color */
+            background-color: #1C5564; /* $secondary-color */
+        }
+        .modal-privacy__container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .modal-privacy__title {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+        .modal-privacy__update-time {
+            text-align: right;
+            font-weight: normal;
+            opacity: 0.2;
+        }
+        .modal-privacy__subtitle {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .modal-privacy__body {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .modal-privacy__item {
+            position: relative;
+        }
+        .modal-privacy__item::before {
+            counter-increment: item-counter;
+            content: counter(item-counter) '.';
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 1.5rem;
+        }
+        .modal-privacy__item-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .modal-privacy__item-title {
+            font-size: 1.5rem;
+            text-indent: 1.5rem;
+        }
+    </style>
+</head>
+    <body>
+        <dialog id="modal-privacy" class="modal-privacy" open>
+            <div class="modal-privacy__container">
+                <h3 class="modal-privacy__title">Политика конфиденциальности</h3>
+                <time datetime="2025-02-27" class="modal-privacy__update-time">Последнее обновление 27.02.25</time>
+                <ul class="modal-privacy__subtitle">
+                    <li class="modal-privacy__subtitle-item">Добро пожаловать на goodman.bz!</li>
+                    <li class="modal-privacy__subtitle-item">Ваша конфиденциальность важна для нас. В этой Политике конфиденциальности объясняется, как мы собираем, используем и защищаем вашу личную информацию, когда вы посещаете сайт, взаимодействуете с&nbsp;нашими услугами или связываетесь с&nbsp;нами.</li>
+                    <li class="modal-privacy__subtitle-item">Используя наш веб-сайт и услуги, вы соглашаетесь с&nbsp;практикой, описанной в&nbsp;настоящей Политике конфиденциальности.</li>
+                </ul>
+                <ul class="modal-privacy__body">
+                    <li class="modal-privacy__item">
+                        <ul class="modal-privacy__item-wrapper">
+                            <li class="modal-privacy__item-title">Не упоминать о бойцовском клубе. </li>
+                            <li class="modal-privacy__item-text">В Бойцовском Клубе мы подчеркиваем уважение, дисциплину и товарищество среди наших членов. Этот документ описывает ключевые правила, которые регулируют наш клуб и обеспечивают безопасный и приятный опыт для всех.</li>
+                        </ul>
+                    </li>
+                    <li class="modal-privacy__item">
+                        <ul class="modal-privacy__item-wrapper">
+                            <li class="modal-privacy__item-title">Не упоминать НИГДЕ о бойцовском клубе</li>
+                            <li class="modal-privacy__item-text">Члены должны добровольно соглашаться участвовать в боях и носить подходящее защитное снаряжение. Безопасность является нашим высшим приоритетом.</li>
+                        </ul>
+                    </li>
+                    <li class="modal-privacy__item">
+                        <ul class="modal-privacy__item-wrapper">
+                            <li class="modal-privacy__item-title">Боец крикнул: "стоп", выдохся, отключился — бой окончен</li>
+                            <li class="modal-privacy__item-text">Все бойцы должны проявлять уважение к своим соперникам как внутри, так и вне ринга. Личные нападки или недостойное поведение не будут терпимы.</li>
+                        </ul>
+                    </li>
+                    <li class="modal-privacy__item">
+                        <ul class="modal-privacy__item-wrapper">
+                            <li class="modal-privacy__item-title">В бою участвуют лишь двое</li>
+                            <li class="modal-privacy__item-text">После боя члены поощряются поздравлять своих соперников и оказывать поддержку, независимо от результата.</li>
+                        </ul>
+                    </li>
+                    <li class="modal-privacy__item">
+                        <ul class="modal-privacy__item-wrapper">
+                            <li class="modal-privacy__item-title">Бои идут один за другим</li>
+                            <li class="modal-privacy__item-text">В случае травмы члены должны немедленно сообщить рефери и при необходимости обратиться за медицинской помощью.</li>
+                        </ul>
+                    </li>
+                    <li class="modal-privacy__item">
+                        <ul class="modal-privacy__item-wrapper">
+                            <li class="modal-privacy__item-title">Снимать обувь и рубашку</li>
+                            <li class="modal-privacy__item-text">Все бойцы должны проявлять уважение к своим соперникам как внутри, так и вне ринга. Личные нападки или недостойное поведение не будут терпимы.</li>
+                        </ul>
+                    </li>
+                    <li class="modal-privacy__item">
+                        <ul class="modal-privacy__item-wrapper">
+                            <li class="modal-privacy__item-title">Бой продолжается столько, сколько нужно</li>
+                            <li class="modal-privacy__item-text">Участники должны быть не младше 18 лет, чтобы присоединиться к Бойцовскому Клубу.</li>
+                        </ul>
+                    </li>
+                    <li class="modal-privacy__item">
+                        <ul class="modal-privacy__item-wrapper">
+                            <li class="modal-privacy__item-title">Тот, кто впервые пришел в клуб, примет бой.</li>
+                            <li class="modal-privacy__item-text">По любым вопросам или проблемам, касающимся этих правил, пожалуйста, свяжитесь с нами по адресу info@fightclub.com.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </dialog>
+    </body>
+</html>
