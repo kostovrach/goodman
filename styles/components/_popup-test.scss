@@ -1,0 +1,71 @@
+.popup-test {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    color: inherit;
+    background-color: $primary-color;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        rgba($secondary-color, 0.3),
+        rgba($secondary-color, 0.3) 1.25rem,
+        transparent 1.25rem,
+        transparent 2.5rem
+    );
+    background-size: 7.0625rem 7.0625rem;
+    animation: run calc($duration * 10) linear infinite;
+    &__closeBtn {
+        position: absolute;
+        right: 2rem;
+        top: 0.9rem;
+        transition-duration: $duration;
+        &:hover {
+            rotate: 90deg;
+        }
+    }
+    &__container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 0.6rem;
+    }
+    &__link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: $add-color;
+        &-icon {
+            transition-duration: $duration;
+        }
+        &:hover .popup-test__link-icon {
+            translate: 0.25rem 0;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0.0625rem;
+            background-color: $text-color;
+            border-radius: $border-radius;
+            transition-duration: $duration;
+        }
+        &:hover::before {
+            width: 100%;
+        }
+    }
+}
+
+@keyframes run {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 113px 113px; /* Движение по диагонали */
+  }
+}

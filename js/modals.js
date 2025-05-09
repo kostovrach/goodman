@@ -1,3 +1,8 @@
+const popupTest = document.querySelector('#popup-test');
+const popupTestCloseBtn = popupTest.querySelector('.popup-test__closeBtn');
+
+popupTestCloseBtn.addEventListener('click', () => popupTest.close())
+
 let scrollPosition = 0;
 
 function handleScrollReturn() {

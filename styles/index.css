@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Swiper 11.2.6
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1589,6 +1590,71 @@ body {
   text-decoration: underline;
 }
 
+.popup-test {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  color: inherit;
+  background-color: #001824;
+  background-image: repeating-linear-gradient(-45deg, rgba(28, 85, 100, 0.3), rgba(28, 85, 100, 0.3) 1.25rem, transparent 1.25rem, transparent 2.5rem);
+  background-size: 7.0625rem 7.0625rem;
+  animation: run 5s linear infinite;
+}
+.popup-test__closeBtn {
+  position: absolute;
+  right: 2rem;
+  top: 0.9rem;
+  transition-duration: 0.5s;
+}
+.popup-test__closeBtn:hover {
+  rotate: 90deg;
+}
+.popup-test__container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.6rem;
+}
+.popup-test__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ADE5E4;
+}
+.popup-test__link-icon {
+  transition-duration: 0.5s;
+}
+.popup-test__link:hover .popup-test__link-icon {
+  translate: 0.25rem 0;
+}
+.popup-test__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.0625rem;
+  background-color: #FFFFFF;
+  border-radius: 2rem;
+  transition-duration: 0.5s;
+}
+.popup-test__link:hover::before {
+  width: 100%;
+}
+
+@keyframes run {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 113px 113px; /* Движение по диагонали */
+  }
+}
 body {
   position: relative;
   z-index: 0;
