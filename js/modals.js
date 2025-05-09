@@ -1,8 +1,3 @@
-const popupTest = document.querySelector('#popup-test');
-const popupTestCloseBtn = popupTest.querySelector('.popup-test__closeBtn');
-
-popupTestCloseBtn.addEventListener('click', () => popupTest.close())
-
 let scrollPosition = 0;
 
 function handleScrollReturn() {
@@ -50,3 +45,8 @@ initModal("#modal-privacy", "data-privacy-open", ".modal-privacy__closeBtn");
 initModal("#modal-call", "data-call-open", ".modal-form__closeBtn");
 initModal("#modal-partnership", "data-partnership-open", ".modal-form__closeBtn");
 initModal("#modal-quastion", "data-quastion-open", ".modal-form__closeBtn");
+
+const popupTest = document.querySelector('#popup-test');
+const popupTestCloseBtn = popupTest.querySelector('.popup-test__closeBtn');
+
+popupTestCloseBtn.addEventListener('click', () => popupTest.close())
