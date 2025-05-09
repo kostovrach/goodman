@@ -766,6 +766,11 @@ body {
   background: none;
   outline: 0.09375rem solid #FFFFFF;
 }
+.modal-form__input--custom {
+  resize: none;
+  width: 100%;
+  height: 10rem;
+}
 .modal-form__button {
   display: flex;
   align-items: center;
