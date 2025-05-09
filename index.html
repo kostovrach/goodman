@@ -45,8 +45,8 @@
         </nav>
         <div class="header__connection">
           <a href="tel:+78001014273" class="header__tel">8 (800) 101-42-73</a>
-          <button class="header__button" type="button">
-            Связаться с нами &rarr;
+          <button class="header__button" data-call-open>
+            Связаться с нами<i class="icon-arrow-next"></i>
           </button>
         </div>
 
@@ -74,8 +74,8 @@
                 </li>
               </ul>
             </nav>
-            <button class="burger__button" type="button">
-              Связаться с нами &rarr;
+            <button class="burger__button" data-call-open>
+              Связаться с нами<i class="icon-arrow-next"></i>
             </button>
           </div>
         </div>
@@ -94,7 +94,7 @@
               на&nbsp;каждом этапе. Мы&nbsp;помогаем людям вернуть контроль
               над&nbsp;жизнью
             </p>
-            <button class="intro__button">
+            <button class="intro__button" data-call-open>
               Получить <span>бесплатную</span> консультацию
             </button>
           </div>
@@ -634,7 +634,7 @@
                     данные были точными и полными для успешного рассмотрения
                     дела
                   </p>
-                  <a class="steps__spoiler-item-button" href="#"
+                  <a class="steps__spoiler-item-button" href="./pages/docs.html"
                     >Образцы документов</a
                   >
                 </div>
@@ -1206,6 +1206,33 @@
           </li>
         </ul>
       </div>
+    </dialog>
+    <dialog id="modal-call" class="modal-form">
+          <div class="modal-form__container">
+            <button class="modal-form__closeBtn icon-cross"></button>
+            <div class="modal-form__titlebox">
+              <h3 class="modal-form__title">Нужна помощь или&nbsp;консультация?</h3>
+              <p class="modal-form__subtitle">Отправьте заявку на обратный звонок, и мы перезвоним в течение 15&nbsp;минут или ближайший рабочий день</p>
+            </div>
+            <form class="modal-form__form" action="">
+              <input class="modal-form__input" type="text" placeholder="Имя">
+              <input id="input-tel" class="modal-form__input" type="tel" placeholder="Телефон" required>
+              <button class="modal-form__button" type="submit">Отправить заявку<i class="icon-arrow-next"></i></button>
+              <small class="modal-form__agreement">Отправляя заявку, вы соглашаетесь с <button class="modal-form__agreement-link" data-privacy-open>политикой конфиденциальности</button></small>
+            </form>
+            <div class="modal-form__footer">
+              <p class="modal-form__hint">Вы также можете заполнить <a class="modal-form__hint-link" href="/projects/Goodman/pages/questionnaire.html">небольшую анкету</a>, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым решением.</p>
+              <div class="modal-form__linksbox">
+                <p class="modal-form__links-title">Или свяжитесь с нами в соцсетях</p>
+                <div class="modal-form__socials">
+                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--tg icon-telegram"></a>
+                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--vk icon-vk"></a>
+                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--insta icon-instagram"></a>
+                </div>
+                <a class="modal-form__email" href="mailto:hello@goodman.bz">hello@goodman.bz</a>
+              </div>
+            </div>
+          </div>
     </dialog>
     <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
       <clipPath id="message" clipPathUnits="objectBoundingBox">

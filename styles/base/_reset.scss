@@ -55,7 +55,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
   text-decoration: none;
-  color: inherit;
+  //color: inherit;
   width: fit-content;
   height: fit-content;
 }
@@ -70,11 +70,6 @@ ul li {
 
 img {
   vertical-align: top;
-}
-
-html,
-body {
-  scrollbar-gutter: stable;
 }
 
 body {

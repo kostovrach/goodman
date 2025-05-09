@@ -45,8 +45,8 @@
         </nav>
         <div class="header__connection">
           <a href="tel:+78001014273" class="header__tel">8 (800) 101-42-73</a>
-          <button class="header__button" type="button">
-            Связаться с нами &rarr;
+          <button class="header__button" data-call-open>
+            Связаться с нами<i class="icon-arrow-next"></i>
           </button>
         </div>
 
@@ -74,8 +74,8 @@
                 </li>
               </ul>
             </nav>
-            <button class="burger__button" type="button">
-              Связаться с нами &rarr;
+            <button class="burger__button" data-call-open>
+              Связаться с нами<i class="icon-arrow-next"></i>
             </button>
           </div>
         </div>
@@ -600,6 +600,149 @@
         </div>
       </div>
     </main>
+    <dialog id="modal-privacy" class="modal-privacy">
+      <div class="modal-privacy__container">
+        <button class="modal-privacy__closeBtn icon-cross"></button>
+        <h3 class="modal-privacy__title">Политика конфиденциальности</h3>
+        <time datetime="2025-02-27" class="modal-privacy__update-time"
+          >Последнее обновление 27.02.25</time
+        >
+        <ul class="modal-privacy__subtitle">
+          <li class="modal-privacy__subtitle-item">
+            Добро пожаловать на goodman.bz!
+          </li>
+          <li class="modal-privacy__subtitle-item">
+            Ваша конфиденциальность важна для нас. В этой Политике
+            конфиденциальности объясняется, как мы собираем, используем и
+            защищаем вашу личную информацию, когда вы посещаете сайт,
+            взаимодействуете с&nbsp;нашими услугами или связываетесь
+            с&nbsp;нами.
+          </li>
+          <li class="modal-privacy__subtitle-item">
+            Используя наш веб-сайт и услуги, вы соглашаетесь с&nbsp;практикой,
+            описанной в&nbsp;настоящей Политике конфиденциальности.
+          </li>
+        </ul>
+        <ul class="modal-privacy__body">
+          <li class="modal-privacy__item">
+            <ul class="modal-privacy__item-wrapper">
+              <li class="modal-privacy__item-title">
+                Не упоминать о бойцовском клубе.
+              </li>
+              <li class="modal-privacy__item-text">
+                В Бойцовском Клубе мы подчеркиваем уважение, дисциплину и
+                товарищество среди наших членов. Этот документ описывает
+                ключевые правила, которые регулируют наш клуб и обеспечивают
+                безопасный и приятный опыт для всех.
+              </li>
+            </ul>
+          </li>
+          <li class="modal-privacy__item">
+            <ul class="modal-privacy__item-wrapper">
+              <li class="modal-privacy__item-title">
+                Не упоминать НИГДЕ о бойцовском клубе
+              </li>
+              <li class="modal-privacy__item-text">
+                Члены должны добровольно соглашаться участвовать в боях и носить
+                подходящее защитное снаряжение. Безопасность является нашим
+                высшим приоритетом.
+              </li>
+            </ul>
+          </li>
+          <li class="modal-privacy__item">
+            <ul class="modal-privacy__item-wrapper">
+              <li class="modal-privacy__item-title">
+                Боец крикнул: "стоп", выдохся, отключился — бой окончен
+              </li>
+              <li class="modal-privacy__item-text">
+                Все бойцы должны проявлять уважение к своим соперникам как
+                внутри, так и вне ринга. Личные нападки или недостойное
+                поведение не будут терпимы.
+              </li>
+            </ul>
+          </li>
+          <li class="modal-privacy__item">
+            <ul class="modal-privacy__item-wrapper">
+              <li class="modal-privacy__item-title">
+                В бою участвуют лишь двое
+              </li>
+              <li class="modal-privacy__item-text">
+                После боя члены поощряются поздравлять своих соперников и
+                оказывать поддержку, независимо от результата.
+              </li>
+            </ul>
+          </li>
+          <li class="modal-privacy__item">
+            <ul class="modal-privacy__item-wrapper">
+              <li class="modal-privacy__item-title">Бои идут один за другим</li>
+              <li class="modal-privacy__item-text">
+                В случае травмы члены должны немедленно сообщить рефери и при
+                необходимости обратиться за медицинской помощью.
+              </li>
+            </ul>
+          </li>
+          <li class="modal-privacy__item">
+            <ul class="modal-privacy__item-wrapper">
+              <li class="modal-privacy__item-title">Снимать обувь и рубашку</li>
+              <li class="modal-privacy__item-text">
+                Все бойцы должны проявлять уважение к своим соперникам как
+                внутри, так и вне ринга. Личные нападки или недостойное
+                поведение не будут терпимы.
+              </li>
+            </ul>
+          </li>
+          <li class="modal-privacy__item">
+            <ul class="modal-privacy__item-wrapper">
+              <li class="modal-privacy__item-title">
+                Бой продолжается столько, сколько нужно
+              </li>
+              <li class="modal-privacy__item-text">
+                Участники должны быть не младше 18 лет, чтобы присоединиться к
+                Бойцовскому Клубу.
+              </li>
+            </ul>
+          </li>
+          <li class="modal-privacy__item">
+            <ul class="modal-privacy__item-wrapper">
+              <li class="modal-privacy__item-title">
+                Тот, кто впервые пришел в клуб, примет бой.
+              </li>
+              <li class="modal-privacy__item-text">
+                По любым вопросам или проблемам, касающимся этих правил,
+                пожалуйста, свяжитесь с нами по адресу info@fightclub.com.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+    <dialog id="modal-call" class="modal-form">
+          <div class="modal-form__container">
+            <button class="modal-form__closeBtn icon-cross"></button>
+            <div class="modal-form__titlebox">
+              <h3 class="modal-form__title">Нужна помощь или&nbsp;консультация?</h3>
+              <p class="modal-form__subtitle">Отправьте заявку на обратный звонок, и мы перезвоним в течение 15&nbsp;минут или ближайший рабочий день</p>
+            </div>
+            <form class="modal-form__form" action="">
+              <input class="modal-form__input" type="text" placeholder="Имя">
+              <input id="input-tel" class="modal-form__input" type="tel" placeholder="Телефон" required>
+              <button class="modal-form__button" type="submit">Отправить заявку<i class="icon-arrow-next"></i></button>
+              <small class="modal-form__agreement">Отправляя заявку, вы соглашаетесь с <button class="modal-form__agreement-link" data-privacy-open>политикой конфиденциальности</button></small>
+            </form>
+            <div class="modal-form__footer">
+              <p class="modal-form__hint">Вы также можете заполнить <a class="modal-form__hint-link" href="/projects/Goodman/pages/questionnaire.html">небольшую анкету</a>, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым решением.</p>
+              <div class="modal-form__linksbox">
+                <p class="modal-form__links-title">Или свяжитесь с нами в соцсетях</p>
+                <div class="modal-form__socials">
+                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--tg icon-telegram"></a>
+                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--vk icon-vk"></a>
+                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--insta icon-instagram"></a>
+                </div>
+                <a class="modal-form__email" href="mailto:hello@goodman.bz">hello@goodman.bz</a>
+              </div>
+            </div>
+          </div>
+        </dialog>
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__links">
@@ -695,7 +838,7 @@
             Goodman &copy; 2025. Все права защищены
           </p>
           <a class="footer__docs-link" href="">Правовая информация</a>
-          <a class="footer__docs-link" href="">Политика конфиденциальности</a>
+          <button class="footer__docs-link" data-privacy-open>Политика конфиденциальности</button>
           <picture class="footer__logo-container">
             <source
               class="footer__logo footer__logo--xs"
@@ -727,6 +870,7 @@
     <script src="../js/header.js"></script>
     <script src="../js/burger.js"></script>
     <script src="../js/navigation.js"></script>
+    <script src="../js/modals.js"></script>
     <script src="../js/docsSpoiler.js"></script>
     <script src="../js/docsFormsFilter.js"></script>
   </body>

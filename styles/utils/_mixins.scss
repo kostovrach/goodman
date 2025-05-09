@@ -11,7 +11,10 @@
 }
 
 @mixin button ($outline-color, $outline-color-hover, $bg-color, $bg-color-hover, $t-color, $t-color-hover, $before-bg) {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     position: relative;
     overflow: hidden;
     z-index: 0;
@@ -21,6 +24,9 @@
     background: $bg-color;
     color: $t-color;
     transition-duration: $duration;
+    i {
+        pointer-events: none;
+    }
     &::before {
         content: '';
         position: absolute;
