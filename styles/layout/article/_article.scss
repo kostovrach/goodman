@@ -33,7 +33,7 @@
     }
     &__cover-wrapper {
         @include flex-center();
-        border-radius: 6vw;
+        border-radius: calc($border-radius * 2);
         overflow: hidden;
         height: 50vh;
     }
@@ -103,7 +103,7 @@
             width: 100%;
             overflow: hidden;
             max-height: 23.625rem;
-            border-radius: 6vw 0 0 6vw;
+            border-radius: calc($border-radius * 2) 0 0 calc($border-radius * 2);
         }
         &-video-overlay {
             position: relative;
@@ -135,7 +135,7 @@
             padding: 3rem 2rem;
             padding-top: 6rem;
             background-color: $primary-color;
-            border-radius: 6vw;
+            border-radius: calc($border-radius * 2);
             border-bottom-right-radius: 0;
             &-author {
                 text-transform: uppercase;

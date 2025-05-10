@@ -10,7 +10,7 @@
     }
     &__dark-wrapper {
         background-color: $primary-color;
-        border-radius: 10rem;
+        border-radius: calc($border-radius * 5);
         height: 60rem;
         display: flex;
         flex-direction: column;
@@ -31,12 +31,12 @@
             padding: 2rem;
         }
         &--text {
-            font-weight: 550;
+            font-weight: $font-weight;
         }
         &--index {
             font-size: 2.5rem;
             line-height: 2.5rem;
-            font-weight: 550;
+            font-weight: $font-weight;
             &-number {
                 font-size: 6rem;
             }
@@ -56,8 +56,7 @@
             background-color: $add-color;
             color: $secondary-color;
             font-size: 1.5rem;
-            //padding: 1rem;
-            font-weight: 550;
+            font-weight: $font-weight;
             text-align: center;
             @include flex-center();
             flex-direction: column;

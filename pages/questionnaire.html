@@ -1,563 +1,444 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goodman - Анкета</title>
-    <link rel="stylesheet" href="../media/icons/icon-font/style.css" />
-    <link rel="stylesheet" href="../styles/questionnaire-page.css" />
-  </head>
-  <body id="start">
-    <header class="header">
-      <div class="header__container">
-        <a href="../index.html">
-          <picture class="header__logo-container">
-            <source
-              class="header__logo header__logo--xs"
-              srcset="../media/icons/logo-xs.svg"
-              media="(max-width: 1100px)"
-            />
-            <img
-              class="header__logo header__logo--xl"
-              src="../media/icons/logo-xl.svg"
-              alt="Good Man"
-            />
-          </picture>
-        </a>
-        <nav>
-          <ul class="header__nav">
-            <li class="header__nav-item">
-              <a href="../pages/about.html">О нас</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="../pages/news.html">Новости</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="../pages/docs.html">Документы</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="../pages/faq.html">Вопросы</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="../pages/contact.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__connection">
-          <a href="tel:+78001014273" class="header__tel">8 (800) 101-42-73</a>
-          <button class="header__button" data-call-open>
-            Связаться с нами<i class="icon-arrow-next"></i>
-          </button>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Goodman - Анкета</title>
+		<link rel="stylesheet" href="../media/icons/icon-font/style.css" />
+		<link rel="stylesheet" href="../styles/css/questionnaire-page.css" />
+	</head>
+	<body id="start">
+		<header class="header">
+			<div class="header__container">
+				<a href="../index.html">
+					<picture class="header__logo-container">
+						<source class="header__logo header__logo--xs" srcset="../media/icons/logo-xs.svg" media="(max-width: 1100px)" />
+						<img class="header__logo header__logo--xl" src="../media/icons/logo-xl.svg" alt="Good Man" />
+					</picture>
+				</a>
+				<nav>
+					<ul class="header__nav">
+						<li class="header__nav-item">
+							<a href="../pages/about.html">О нас</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="../pages/news.html">Новости</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="../pages/docs.html">Документы</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="../pages/faq.html">Вопросы</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="../pages/contact.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__connection">
+					<a href="tel:+78001014273" class="header__tel">8 (800) 101-42-73</a>
+					<button class="header__button" data-call-open>Связаться с нами<i class="icon-arrow-next"></i></button>
+				</div>
 
-        <div class="header__burger burger">
-          <div class="burger__icon">
-            <span></span>
-          </div>
-          <div class="burger__wrapper">
-            <nav>
-              <ul class="burger__nav">
-                <li class="burger__nav-item">
-                  <a href="../pages/about.html">О нас</a>
-                </li>
-                <li class="burger__nav-item">
-                  <a href="../pages/news.html">Новости</a>
-                </li>
-                <li class="burger__nav-item">
-                  <a href="../pages/docs.html">Документы</a>
-                </li>
-                <li class="burger__nav-item">
-                  <a href="../pages/faq.html">Вопросы</a>
-                </li>
-                <li class="burger__nav-item">
-                  <a href="../pages/contact.html">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <button class="burger__button" data-call-open>
-              Связаться с нами<i class="icon-arrow-next"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="main">
-      <div class="progress">
-            <div class="progress__container">
-                <div class="progress__exit-button"><button class="icon-cross"></button></div>
-                <div class="progress__progressbar">
-                    <div class="progress__progressbar-inner"></div>
-                </div>
-                <div class="progress__score"><span class="progress__score-value"></span>%</div>
-            </div>
-      </div>
-      <div id="quastion-1" class="quastion">
-            <span class="quastion__substract">Анкета</span>
-            <div class="quastion__container">
-                <div class="quastion__titlebox">
-                    <p class="quastion__title">С какой <span class="quastion__title-accent">проблемой</span> вы столкнулись?</p>
-                </div>
-                <div class="quastion__form">
-                    <div class="quastion__form-titlebox">
-                        <p class="quastion__form-hint">Выберите один из вариантов</p>
-                        <div class="quastion__form-counter">
-                            <span class="quastion__form-counter--title">Вопрос</span>
-                            <span class="quastion__form-counter--current"></span>
-                            <span class="quastion__form-counter--separator">&ndash;</span>
-                            <span class="quastion__form-counter--total"></span>
-                        </div>
-                    </div>
-                    <form class="quastion__form-body" action="">
-                        <div class="quastion__form-inputbox">
-                            <label class="quastion__form-input">
-                                <input id="" type="radio" name="quastion-1" value="">
-                                <span class="quastion__form-input-text">Банкротство</span>
-                            </label>
-                            <label class="quastion__form-input">
-                                <input id="" type="radio" name="quastion-1" value="">
-                                <span class="quastion__form-input-text">Действия мошенников</span>
-                            </label>
-                            <label class="quastion__form-input">
-                                <input id="" type="radio" name="quastion-1" value="">
-                                <span class="quastion__form-input-text">Проблемы с выплатой кредита</span>
-                            </label>
-                            <label class="quastion__form-input">
-                                <input id="" type="radio" name="quastion-1" value="">
-                                <span class="quastion__form-input-text">Потребительские споры</span>
-                            </label>
-                            <textarea id="" class="quastion__form-input--custom-answer" name="quastion-1" placeholder="Свой вариант ..."></textarea>
-                        </div>
-                        <button class="quastion__form-button-next">Далее <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
-                    </form>
-                </div>
-            </div>
-      </div>
-      <div id="quastion-2" class="quastion">
-          <span class="quastion__substract">Анкета</span>
-          <div class="quastion__container">
-              <div class="quastion__titlebox">
-                  <p class="quastion__title">Уточните, с каким видом <span class="quastion__title-accent">мошенничества</span> вы столкнулись?</p>
-                  <button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
-              </div>
-              <div class="quastion__form">
-                  <div class="quastion__form-titlebox">
-                      <p class="quastion__form-hint">Можно выбрать несколько вариантов</p>
-                      <div class="quastion__form-counter">
-                          <span class="quastion__form-counter--title">Вопрос</span>
-                          <span class="quastion__form-counter--current"></span>
-                          <span class="quastion__form-counter--separator">&ndash;</span>
-                          <span class="quastion__form-counter--total"></span>
-                      </div>
-                  </div>
-                  <form class="quastion__form-body" action="">
-                      <div class="quastion__form-inputbox">
-                          <label class="quastion__form-input">
-                              <input id="" type="checkbox" name="quastion-2" value="">
-                              <span class="quastion__form-input-text">Незаконные взыскания</span>
-                          </label>
-                          <label class="quastion__form-input">
-                              <input id="" type="checkbox" name="quastion-2" value="">
-                              <span class="quastion__form-input-text">Фальсификация документов</span>
-                          </label>
-                          <label class="quastion__form-input">
-                              <input id="" type="checkbox" name="quastion-2" value="">
-                              <span class="quastion__form-input-text">Обман при оформлении займа</span>
-                          </label>
-                          <textarea id="" class="quastion__form-input--custom-answer" name="quastion-2" placeholder="Свой вариант ..."></textarea>
-                      </div>
-                      <button class="quastion__form-button-next">Далее <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
-                  </form>
-              </div>
-          </div>
-      </div>
-      <div id="quastion-3" class="quastion">
-        <span class="quastion__substract">Анкета</span>
-        <div class="quastion__container">
-            <div class="quastion__titlebox">
-                <p class="quastion__title">Какой размер<span class="quastion__title-accent"> взыскиваемого </span>долга?</p>
-                <button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
-            </div>
-            <div class="quastion__form">
-                <div class="quastion__form-titlebox">
-                    <p class="quastion__form-hint">Выберите один из вариантов</p>
-                    <div class="quastion__form-counter">
-                        <span class="quastion__form-counter--title">Вопрос</span>
-                        <span class="quastion__form-counter--current"></span>
-                        <span class="quastion__form-counter--separator">&ndash;</span>
-                        <span class="quastion__form-counter--total"></span>
-                    </div>
-                </div>
-                <form class="quastion__form-body" action="">
-                    <div class="quastion__form-inputbox">
-                        <label class="quastion__form-input">
-                            <input id="" type="radio" name="quastion-3" value="">
-                            <span class="quastion__form-input-text">До 500 000 &#8381; </span>
-                        </label>
-                        <label class="quastion__form-input">
-                            <input id="" type="radio" name="quastion-3" value="">
-                            <span class="quastion__form-input-text">0,5 — 1 млн. &#8381;</span>
-                        </label>
-                        <label class="quastion__form-input">
-                            <input id="" type="radio" name="quastion-3" value="">
-                            <span class="quastion__form-input-text">1 — 5 млн. &#8381;</span>
-                        </label>
-                        <label class="quastion__form-input">
-                            <input id="" type="radio" name="quastion-3" value="">
-                            <span class="quastion__form-input-text">Свыше 5 млн. &#8381;</span>
-                        </label>
-                    </div>
-                    <button class="quastion__form-button-next">Далее <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
-                </form>
-            </div>
-        </div>
-      </div>
-      <div id="quastion-4" class="quastion">
-        <span class="quastion__substract">Анкета</span>
-        <div class="quastion__container">
-            <div class="quastion__titlebox">
-                <p class="quastion__title">Текущая <span class="quastion__title-accent">стадия</span> процесса</p>
-                <button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
-            </div>
-            <div class="quastion__form">
-                <div class="quastion__form-titlebox">
-                    <p class="quastion__form-hint">Выберите наиболее подходящий вариант</p>
-                    <div class="quastion__form-counter">
-                        <span class="quastion__form-counter--title">Вопрос</span>
-                        <span class="quastion__form-counter--current"></span>
-                        <span class="quastion__form-counter--separator">&ndash;</span>
-                        <span class="quastion__form-counter--total"></span>
-                    </div>
-                </div>
-                <form class="quastion__form-body" action="">
-                    <div class="quastion__form-inputbox">
-                        <label class="quastion__form-input">
-                            <input id="" type="radio" name="quastion-4" value="">
-                            <span class="quastion__form-input-text">Всё в порядке, хочу подстраховаться</span>
-                        </label>
-                        <label class="quastion__form-input">
-                            <input id="" type="radio" name="quastion-4" value="">
-                            <span class="quastion__form-input-text">Поступают звонки и угрозы от банка или коллекторов</span>
-                        </label>
-                        <label class="quastion__form-input">
-                            <input id="" type="radio" name="quastion-4" value="">
-                            <span class="quastion__form-input-text">Дело передано в суд</span>
-                        </label>
-                        <label class="quastion__form-input">
-                            <input id="" type="radio" name="quastion-4" value="">
-                            <span class="quastion__form-input-text">Судебные приставы заблокировали счета</span>
-                        </label>
-                        <textarea id="" class="quastion__form-input--custom-answer" name="quastion-4" placeholder="Свой вариант ..."></textarea>
-                    </div>
-                    <button class="quastion__form-button-next">Далее <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
-                </form>
-            </div>
-        </div>
-      </div>
-      <div id="quastion-5" class="quastion">
-        <span class="quastion__substract">Анкета</span>
-        <div class="quastion__container">
-            <div class="quastion__titlebox">
-                <p class="quastion__title">Готово! Как нам лучше с вами связаться?</p>
-                <button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
-            </div>
-            <div class="quastion__form">
-                <div class="quastion__form-titlebox">
-                    <p class="quastion__form-hint">Заполните все поля</p>
-                    <div class="quastion__form-counter">
-                        <span class="quastion__form-counter--title">Вопрос</span>
-                        <span class="quastion__form-counter--current"></span>
-                        <span class="quastion__form-counter--separator">&ndash;</span>
-                        <span class="quastion__form-counter--total"></span>
-                    </div>
-                </div>
-                <form class="quastion__form-body" action="">
-                    <div class="quastion__form-inputbox">
-                        <input id="input-name" class="quastion__form-input--info" type="text" name="quastion-5" placeholder="Как вас зовут?" required>
-                        <input id="input-tel" class="quastion__form-input--info" type="tel" name="quastion-5" placeholder="Номер телефона" required>
-                        <textarea id="" class="quastion__form-input--custom-answer" name="quastion-5" placeholder="Хотите что то добавить?"></textarea>
-                        <label for="" class="quastion__form-input--info-checkbox">
-                          <input type="checkbox" name="quastion-5">
-                          <span class="quastion__form-input--info-text">Мне будет удобно получить консультацию по видео-связи</span>
-                        </label>
-                    </div>
-                    <button class="quastion__form-button-submit" type="submit">Отправить <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
-                    <small class="quastion__form-privacy-policy">Отправляя заявку, вы соглашаетесь с <button class="quastion__form-privacy-policy-link" data-privacy-open>политикой конфиденциальности</button></small>
-                </form>
-            </div>
-        </div>
-      </div>
-    </main>
-    <dialog id="modal-privacy" class="modal-privacy">
-      <div class="modal-privacy__container">
-        <button class="modal-privacy__closeBtn icon-cross"></button>
-        <h3 class="modal-privacy__title">Политика конфиденциальности</h3>
-        <time datetime="2025-02-27" class="modal-privacy__update-time"
-          >Последнее обновление 27.02.25</time
-        >
-        <ul class="modal-privacy__subtitle">
-          <li class="modal-privacy__subtitle-item">
-            Добро пожаловать на goodman.bz!
-          </li>
-          <li class="modal-privacy__subtitle-item">
-            Ваша конфиденциальность важна для нас. В этой Политике
-            конфиденциальности объясняется, как мы собираем, используем и
-            защищаем вашу личную информацию, когда вы посещаете сайт,
-            взаимодействуете с&nbsp;нашими услугами или связываетесь
-            с&nbsp;нами.
-          </li>
-          <li class="modal-privacy__subtitle-item">
-            Используя наш веб-сайт и услуги, вы соглашаетесь с&nbsp;практикой,
-            описанной в&nbsp;настоящей Политике конфиденциальности.
-          </li>
-        </ul>
-        <ul class="modal-privacy__body">
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Не упоминать о бойцовском клубе.
-              </li>
-              <li class="modal-privacy__item-text">
-                В Бойцовском Клубе мы подчеркиваем уважение, дисциплину и
-                товарищество среди наших членов. Этот документ описывает
-                ключевые правила, которые регулируют наш клуб и обеспечивают
-                безопасный и приятный опыт для всех.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Не упоминать НИГДЕ о бойцовском клубе
-              </li>
-              <li class="modal-privacy__item-text">
-                Члены должны добровольно соглашаться участвовать в боях и носить
-                подходящее защитное снаряжение. Безопасность является нашим
-                высшим приоритетом.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Боец крикнул: "стоп", выдохся, отключился — бой окончен
-              </li>
-              <li class="modal-privacy__item-text">
-                Все бойцы должны проявлять уважение к своим соперникам как
-                внутри, так и вне ринга. Личные нападки или недостойное
-                поведение не будут терпимы.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                В бою участвуют лишь двое
-              </li>
-              <li class="modal-privacy__item-text">
-                После боя члены поощряются поздравлять своих соперников и
-                оказывать поддержку, независимо от результата.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">Бои идут один за другим</li>
-              <li class="modal-privacy__item-text">
-                В случае травмы члены должны немедленно сообщить рефери и при
-                необходимости обратиться за медицинской помощью.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">Снимать обувь и рубашку</li>
-              <li class="modal-privacy__item-text">
-                Все бойцы должны проявлять уважение к своим соперникам как
-                внутри, так и вне ринга. Личные нападки или недостойное
-                поведение не будут терпимы.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Бой продолжается столько, сколько нужно
-              </li>
-              <li class="modal-privacy__item-text">
-                Участники должны быть не младше 18 лет, чтобы присоединиться к
-                Бойцовскому Клубу.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Тот, кто впервые пришел в клуб, примет бой.
-              </li>
-              <li class="modal-privacy__item-text">
-                По любым вопросам или проблемам, касающимся этих правил,
-                пожалуйста, свяжитесь с нами по адресу info@fightclub.com.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </dialog>
-    <dialog id="modal-call" class="modal-form">
-          <div class="modal-form__container">
-            <button class="modal-form__closeBtn icon-cross"></button>
-            <div class="modal-form__titlebox">
-              <h3 class="modal-form__title">Нужна помощь или&nbsp;консультация?</h3>
-              <p class="modal-form__subtitle">Отправьте заявку на обратный звонок, и мы перезвоним в течение 15&nbsp;минут или ближайший рабочий день</p>
-            </div>
-            <form class="modal-form__form" action="">
-              <input class="modal-form__input" type="text" placeholder="Имя">
-              <input id="input-tel" class="modal-form__input" type="tel" placeholder="Телефон" required>
-              <button class="modal-form__button" type="submit">Отправить заявку<i class="icon-arrow-next"></i></button>
-              <small class="modal-form__agreement">Отправляя заявку, вы соглашаетесь с <button class="modal-form__agreement-link" data-privacy-open>политикой конфиденциальности</button></small>
-            </form>
-            <div class="modal-form__footer">
-              <p class="modal-form__hint">Вы также можете заполнить <a class="modal-form__hint-link" href="/projects/Goodman/pages/questionnaire.html">небольшую анкету</a>, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым решением.</p>
-              <div class="modal-form__linksbox">
-                <p class="modal-form__links-title">Или свяжитесь с нами в соцсетях</p>
-                <div class="modal-form__socials">
-                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--tg icon-telegram"></a>
-                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--vk icon-vk"></a>
-                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--insta icon-instagram"></a>
-                </div>
-                <a class="modal-form__email" href="mailto:hello@goodman.bz">hello@goodman.bz</a>
-              </div>
-            </div>
-          </div>
-        </dialog>
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__links">
-          <div class="footer__socials">
-            <p class="footer__socials-title">
-              Следите за нами в&nbsp;соцсетях:
-            </p>
-            <div class="footer__socials-wrapper">
-              <a
-                class="footer__socials-icon footer__socials-icon--zen icon-zen"
-                href=""
-              ></a>
-              <a
-                class="footer__socials-icon footer__socials-icon--telegram icon-telegram"
-                href=""
-              ></a>
-              <a
-                class="footer__socials-icon footer__socials-icon--youtube icon-youtube"
-                href=""
-              ></a>
-              <a
-                class="footer__socials-icon footer__socials-icon--vk icon-vk"
-                href=""
-              ></a>
-              <a
-                class="footer__socials-icon footer__socials-icon--instagram icon-instagram"
-                href=""
-              ></a>
-            </div>
-          </div>
-          <nav>
-            <ul class="footer__nav">
-              <li class="footer__nav-item">
-                <a href="../pages/about.html">О нас</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="../pages/news.html">Новости</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="../pages/faq.html">Вопросы и ответы</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="../pages/docs.html">Полезное</a>
-              </li>
-              <li class="footer__nav-item"><a href="../pages/partnership.html">Партнёрам</a></li>
-              <li class="footer__nav-item"><a href="../pages/payment.html">Оплата</a></li>
-              <li class="footer__nav-item">
-                <a href="../pages/contact.html">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer__location">
-            <div class="footer__location-linksbox">
-              <a
-                class="footer__location-item footer__location-item--tel"
-                href="tel:+79998461709"
-                ><i class="icon-tel"></i>+7 (999) 846-17-09</a
-              >
-              <a
-                class="footer__location-item footer__location-item--mail"
-                href="mailto:hello@goodman.bz"
-                ><i class="icon-mail"></i>hello@goodman.bz</a
-              >
-            </div>
-            <div
-              class="footer__location-adress footer__location-adress--general"
-            >
-              <p class="footer__location-title">Головной офис:</p>
-              <div class="footer__location-item footer__location-item--mark">
-                <i class="icon-mark"></i>Самара, ул. Пушкина, д. 15а, офис 22
-              </div>
-            </div>
-            <div class="footer__location-adress footer__location-adress--add">
-              <p class="footer__location-title">Филиалы:</p>
-              <div class="footer__location-item footer__location-item--mark">
-                <i class="icon-mark"></i>Краснодар, Красная ул., 118, этаж 8
-              </div>
-              <div class="footer__location-item footer__location-item--mark">
-                <i class="icon-mark"></i>Тольятти, ул. 70 лет Октября, 3
-              </div>
-            </div>
-          </div>
-          <div class="footer__worktime-wrapper">
-            <p class="footer__worktime">
-              Часы работы:<br /><br />Понедельник – четверг: 10:00 – 19:00<br />Пятница:
-              10:00 – 16:00
-            </p>
-          </div>
-          <a class="footer__button icon-arrow-prev" href="#start"></a>
-        </div>
-        <div class="footer__docs">
-          <p class="footer__copyright">
-            Goodman &copy; 2025. Все права защищены
-          </p>
-          <a class="footer__docs-link" href="">Правовая информация</a>
-          <button class="footer__docs-link" data-privacy-open>Политика конфиденциальности</button>
-          <picture class="footer__logo-container">
-            <source
-              class="footer__logo footer__logo--xs"
-              srcset="../media/icons/logo-xs.svg"
-              media="(max-width: 1100px)"
-            />
-            <img
-              class="footer__logo footer__logo--xl"
-              src="../media/icons/logo-xl.svg"
-              alt="Good Man"
-            />
-          </picture>
-        </div>
-      </div>
-      <div class="footer__badge">
-        <div class="footer__badge-container">
-          <small class="footer__badge-title"
-            >Разработка и поддержка сайта:</small
-          >
-          <a href="https://intheplace.ru"
-            ><img
-              class="footer__badge-logo"
-              src="../media/icons/studio-logo.svg"
-              alt="#"
-          /></a>
-        </div>
-      </div>
-    </footer>
-    <script src="../js/header.js"></script>
-    <script src="../js/burger.js"></script>
-    <script src="../js/navigation.js"></script>
-    <script src="../js/numberMask.js"></script>
-    <script src="../js/modals.js"></script>
-  </body>
+				<div class="header__burger burger">
+					<div class="burger__icon">
+						<span></span>
+					</div>
+					<div class="burger__wrapper">
+						<nav>
+							<ul class="burger__nav">
+								<li class="burger__nav-item">
+									<a href="../pages/about.html">О нас</a>
+								</li>
+								<li class="burger__nav-item">
+									<a href="../pages/news.html">Новости</a>
+								</li>
+								<li class="burger__nav-item">
+									<a href="../pages/docs.html">Документы</a>
+								</li>
+								<li class="burger__nav-item">
+									<a href="../pages/faq.html">Вопросы</a>
+								</li>
+								<li class="burger__nav-item">
+									<a href="../pages/contact.html">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<button class="burger__button" data-call-open>Связаться с нами<i class="icon-arrow-next"></i></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="progress">
+				<div class="progress__container">
+					<div class="progress__exit-button"><button class="icon-cross"></button></div>
+					<div class="progress__progressbar">
+						<div class="progress__progressbar-inner"></div>
+					</div>
+					<div class="progress__score"><span class="progress__score-value"></span>%</div>
+				</div>
+			</div>
+			<div id="quastion-1" class="quastion">
+				<span class="quastion__substract">Анкета</span>
+				<div class="quastion__container">
+					<div class="quastion__titlebox">
+						<p class="quastion__title">С какой <span class="quastion__title-accent">проблемой</span> вы столкнулись?</p>
+					</div>
+					<div class="quastion__form">
+						<div class="quastion__form-titlebox">
+							<p class="quastion__form-hint">Выберите один из вариантов</p>
+							<div class="quastion__form-counter">
+								<span class="quastion__form-counter--title">Вопрос</span>
+								<span class="quastion__form-counter--current"></span>
+								<span class="quastion__form-counter--separator">&ndash;</span>
+								<span class="quastion__form-counter--total"></span>
+							</div>
+						</div>
+						<form class="quastion__form-body" action="">
+							<div class="quastion__form-inputbox">
+								<label class="quastion__form-input">
+									<input id="" type="radio" name="quastion-1" value="" />
+									<span class="quastion__form-input-text">Банкротство</span>
+								</label>
+								<label class="quastion__form-input">
+									<input id="" type="radio" name="quastion-1" value="" />
+									<span class="quastion__form-input-text">Действия мошенников</span>
+								</label>
+								<label class="quastion__form-input">
+									<input id="" type="radio" name="quastion-1" value="" />
+									<span class="quastion__form-input-text">Проблемы с выплатой кредита</span>
+								</label>
+								<label class="quastion__form-input">
+									<input id="" type="radio" name="quastion-1" value="" />
+									<span class="quastion__form-input-text">Потребительские споры</span>
+								</label>
+								<textarea id="" class="quastion__form-input--custom-answer" name="quastion-1" placeholder="Свой вариант ..."></textarea>
+							</div>
+							<button class="quastion__form-button-next">Далее <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="quastion-2" class="quastion">
+				<span class="quastion__substract">Анкета</span>
+				<div class="quastion__container">
+					<div class="quastion__titlebox">
+						<p class="quastion__title">Уточните, с каким видом <span class="quastion__title-accent">мошенничества</span> вы столкнулись?</p>
+						<button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
+					</div>
+					<div class="quastion__form">
+						<div class="quastion__form-titlebox">
+							<p class="quastion__form-hint">Можно выбрать несколько вариантов</p>
+							<div class="quastion__form-counter">
+								<span class="quastion__form-counter--title">Вопрос</span>
+								<span class="quastion__form-counter--current"></span>
+								<span class="quastion__form-counter--separator">&ndash;</span>
+								<span class="quastion__form-counter--total"></span>
+							</div>
+						</div>
+						<form class="quastion__form-body" action="">
+							<div class="quastion__form-inputbox">
+								<label class="quastion__form-input">
+									<input id="" type="checkbox" name="quastion-2" value="" />
+									<span class="quastion__form-input-text">Незаконные взыскания</span>
+								</label>
+								<label class="quastion__form-input">
+									<input id="" type="checkbox" name="quastion-2" value="" />
+									<span class="quastion__form-input-text">Фальсификация документов</span>
+								</label>
+								<label class="quastion__form-input">
+									<input id="" type="checkbox" name="quastion-2" value="" />
+									<span class="quastion__form-input-text">Обман при оформлении займа</span>
+								</label>
+								<textarea id="" class="quastion__form-input--custom-answer" name="quastion-2" placeholder="Свой вариант ..."></textarea>
+							</div>
+							<button class="quastion__form-button-next">Далее <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="quastion-3" class="quastion">
+				<span class="quastion__substract">Анкета</span>
+				<div class="quastion__container">
+					<div class="quastion__titlebox">
+						<p class="quastion__title">Какой размер<span class="quastion__title-accent"> взыскиваемого </span>долга?</p>
+						<button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
+					</div>
+					<div class="quastion__form">
+						<div class="quastion__form-titlebox">
+							<p class="quastion__form-hint">Выберите один из вариантов</p>
+							<div class="quastion__form-counter">
+								<span class="quastion__form-counter--title">Вопрос</span>
+								<span class="quastion__form-counter--current"></span>
+								<span class="quastion__form-counter--separator">&ndash;</span>
+								<span class="quastion__form-counter--total"></span>
+							</div>
+						</div>
+						<form class="quastion__form-body" action="">
+							<div class="quastion__form-inputbox">
+								<label class="quastion__form-input">
+									<input id="" type="radio" name="quastion-3" value="" />
+									<span class="quastion__form-input-text">До 500 000 &#8381; </span>
+								</label>
+								<label class="quastion__form-input">
+									<input id="" type="radio" name="quastion-3" value="" />
+									<span class="quastion__form-input-text">0,5 — 1 млн. &#8381;</span>
+								</label>
+								<label class="quastion__form-input">
+									<input id="" type="radio" name="quastion-3" value="" />
+									<span class="quastion__form-input-text">1 — 5 млн. &#8381;</span>
+								</label>
+								<label class="quastion__form-input">
+									<input id="" type="radio" name="quastion-3" value="" />
+									<span class="quastion__form-input-text">Свыше 5 млн. &#8381;</span>
+								</label>
+							</div>
+							<button class="quastion__form-button-next">Далее <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="quastion-4" class="quastion">
+				<span class="quastion__substract">Анкета</span>
+				<div class="quastion__container">
+					<div class="quastion__titlebox">
+						<p class="quastion__title">Текущая <span class="quastion__title-accent">стадия</span> процесса</p>
+						<button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
+					</div>
+					<div class="quastion__form">
+						<div class="quastion__form-titlebox">
+							<p class="quastion__form-hint">Выберите наиболее подходящий вариант</p>
+							<div class="quastion__form-counter">
+								<span class="quastion__form-counter--title">Вопрос</span>
+								<span class="quastion__form-counter--current"></span>
+								<span class="quastion__form-counter--separator">&ndash;</span>
+								<span class="quastion__form-counter--total"></span>
+							</div>
+						</div>
+						<form class="quastion__form-body" action="">
+							<div class="quastion__form-inputbox">
+								<label class="quastion__form-input">
+									<input id="" type="radio" name="quastion-4" value="" />
+									<span class="quastion__form-input-text">Всё в порядке, хочу подстраховаться</span>
+								</label>
+								<label class="quastion__form-input">
+									<input id="" type="radio" name="quastion-4" value="" />
+									<span class="quastion__form-input-text">Поступают звонки и угрозы от банка или коллекторов</span>
+								</label>
+								<label class="quastion__form-input">
+									<input id="" type="radio" name="quastion-4" value="" />
+									<span class="quastion__form-input-text">Дело передано в суд</span>
+								</label>
+								<label class="quastion__form-input">
+									<input id="" type="radio" name="quastion-4" value="" />
+									<span class="quastion__form-input-text">Судебные приставы заблокировали счета</span>
+								</label>
+								<textarea id="" class="quastion__form-input--custom-answer" name="quastion-4" placeholder="Свой вариант ..."></textarea>
+							</div>
+							<button class="quastion__form-button-next">Далее <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="quastion-5" class="quastion">
+				<span class="quastion__substract">Анкета</span>
+				<div class="quastion__container">
+					<div class="quastion__titlebox">
+						<p class="quastion__title">Готово! Как нам лучше с вами связаться?</p>
+						<button class="quastion__button-prev"><i class="quastion__button-prev-icon icon-arrow-prev"></i>Назад</button>
+					</div>
+					<div class="quastion__form">
+						<div class="quastion__form-titlebox">
+							<p class="quastion__form-hint">Заполните все поля</p>
+							<div class="quastion__form-counter">
+								<span class="quastion__form-counter--title">Вопрос</span>
+								<span class="quastion__form-counter--current"></span>
+								<span class="quastion__form-counter--separator">&ndash;</span>
+								<span class="quastion__form-counter--total"></span>
+							</div>
+						</div>
+						<form class="quastion__form-body" action="">
+							<div class="quastion__form-inputbox">
+								<input id="input-name" class="quastion__form-input--info" type="text" name="quastion-5" placeholder="Как вас зовут?" required />
+								<input id="input-tel" class="quastion__form-input--info" type="tel" name="quastion-5" placeholder="Номер телефона" required />
+								<textarea id="" class="quastion__form-input--custom-answer" name="quastion-5" placeholder="Хотите что то добавить?"></textarea>
+								<label for="" class="quastion__form-input--info-checkbox">
+									<input type="checkbox" name="quastion-5" />
+									<span class="quastion__form-input--info-text">Мне будет удобно получить консультацию по видео-связи</span>
+								</label>
+							</div>
+							<button class="quastion__form-button-submit" type="submit">Отправить <i class="quastion__form-button-next-icon icon-arrow-next"></i></button>
+							<small class="quastion__form-privacy-policy">Отправляя заявку, вы соглашаетесь с <button class="quastion__form-privacy-policy-link" data-privacy-open>политикой конфиденциальности</button></small>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<dialog id="modal-privacy" class="modal-privacy">
+			<div class="modal-privacy__container">
+				<button class="modal-privacy__closeBtn icon-cross"></button>
+				<h3 class="modal-privacy__title">Политика конфиденциальности</h3>
+				<time datetime="2025-02-27" class="modal-privacy__update-time">Последнее обновление 27.02.25</time>
+				<ul class="modal-privacy__subtitle">
+					<li class="modal-privacy__subtitle-item">Добро пожаловать на goodman.bz!</li>
+					<li class="modal-privacy__subtitle-item">Ваша конфиденциальность важна для нас. В этой Политике конфиденциальности объясняется, как мы собираем, используем и защищаем вашу личную информацию, когда вы посещаете сайт, взаимодействуете с&nbsp;нашими услугами или связываетесь с&nbsp;нами.</li>
+					<li class="modal-privacy__subtitle-item">Используя наш веб-сайт и услуги, вы соглашаетесь с&nbsp;практикой, описанной в&nbsp;настоящей Политике конфиденциальности.</li>
+				</ul>
+				<ul class="modal-privacy__body">
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Не упоминать о бойцовском клубе.</li>
+							<li class="modal-privacy__item-text">В Бойцовском Клубе мы подчеркиваем уважение, дисциплину и товарищество среди наших членов. Этот документ описывает ключевые правила, которые регулируют наш клуб и обеспечивают безопасный и приятный опыт для всех.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Не упоминать НИГДЕ о бойцовском клубе</li>
+							<li class="modal-privacy__item-text">Члены должны добровольно соглашаться участвовать в боях и носить подходящее защитное снаряжение. Безопасность является нашим высшим приоритетом.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Боец крикнул: "стоп", выдохся, отключился — бой окончен</li>
+							<li class="modal-privacy__item-text">Все бойцы должны проявлять уважение к своим соперникам как внутри, так и вне ринга. Личные нападки или недостойное поведение не будут терпимы.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">В бою участвуют лишь двое</li>
+							<li class="modal-privacy__item-text">После боя члены поощряются поздравлять своих соперников и оказывать поддержку, независимо от результата.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Бои идут один за другим</li>
+							<li class="modal-privacy__item-text">В случае травмы члены должны немедленно сообщить рефери и при необходимости обратиться за медицинской помощью.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Снимать обувь и рубашку</li>
+							<li class="modal-privacy__item-text">Все бойцы должны проявлять уважение к своим соперникам как внутри, так и вне ринга. Личные нападки или недостойное поведение не будут терпимы.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Бой продолжается столько, сколько нужно</li>
+							<li class="modal-privacy__item-text">Участники должны быть не младше 18 лет, чтобы присоединиться к Бойцовскому Клубу.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Тот, кто впервые пришел в клуб, примет бой.</li>
+							<li class="modal-privacy__item-text">По любым вопросам или проблемам, касающимся этих правил, пожалуйста, свяжитесь с нами по адресу info@fightclub.com.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</dialog>
+		<dialog id="modal-call" class="modal-form">
+			<div class="modal-form__container">
+				<button class="modal-form__closeBtn icon-cross"></button>
+				<div class="modal-form__titlebox">
+					<h3 class="modal-form__title">Нужна помощь или&nbsp;консультация?</h3>
+					<p class="modal-form__subtitle">Отправьте заявку на обратный звонок, и мы перезвоним в течение 15&nbsp;минут или ближайший рабочий день</p>
+				</div>
+				<form class="modal-form__form" action="">
+					<input class="modal-form__input" type="text" placeholder="Имя" />
+					<input id="input-tel" class="modal-form__input" type="tel" placeholder="Телефон" required />
+					<button class="modal-form__button" type="submit">Отправить заявку<i class="icon-arrow-next"></i></button>
+					<small class="modal-form__agreement">Отправляя заявку, вы соглашаетесь с <button class="modal-form__agreement-link" data-privacy-open>политикой конфиденциальности</button></small>
+				</form>
+				<div class="modal-form__footer">
+					<p class="modal-form__hint">Вы также можете заполнить <a class="modal-form__hint-link" href="/projects/Goodman/pages/questionnaire.html">небольшую анкету</a>, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым решением.</p>
+					<div class="modal-form__linksbox">
+						<p class="modal-form__links-title">Или свяжитесь с нами в соцсетях</p>
+						<div class="modal-form__socials">
+							<a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--tg icon-telegram"></a>
+							<a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--vk icon-vk"></a>
+							<a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--insta icon-instagram"></a>
+						</div>
+						<a class="modal-form__email" href="mailto:hello@goodman.bz">hello@goodman.bz</a>
+					</div>
+				</div>
+			</div>
+		</dialog>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__links">
+					<div class="footer__socials">
+						<p class="footer__socials-title">Следите за нами в&nbsp;соцсетях:</p>
+						<div class="footer__socials-wrapper">
+							<a class="footer__socials-icon footer__socials-icon--zen icon-zen" href=""></a>
+							<a class="footer__socials-icon footer__socials-icon--telegram icon-telegram" href=""></a>
+							<a class="footer__socials-icon footer__socials-icon--youtube icon-youtube" href=""></a>
+							<a class="footer__socials-icon footer__socials-icon--vk icon-vk" href=""></a>
+							<a class="footer__socials-icon footer__socials-icon--instagram icon-instagram" href=""></a>
+						</div>
+					</div>
+					<nav>
+						<ul class="footer__nav">
+							<li class="footer__nav-item">
+								<a href="../pages/about.html">О нас</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="../pages/news.html">Новости</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="../pages/faq.html">Вопросы и ответы</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="../pages/docs.html">Полезное</a>
+							</li>
+							<li class="footer__nav-item"><a href="../pages/partnership.html">Партнёрам</a></li>
+							<li class="footer__nav-item"><a href="../pages/payment.html">Оплата</a></li>
+							<li class="footer__nav-item">
+								<a href="../pages/contact.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__location">
+						<div class="footer__location-linksbox">
+							<a class="footer__location-item footer__location-item--tel" href="tel:+79998461709"><i class="icon-tel"></i>+7 (999) 846-17-09</a>
+							<a class="footer__location-item footer__location-item--mail" href="mailto:hello@goodman.bz"><i class="icon-mail"></i>hello@goodman.bz</a>
+						</div>
+						<div class="footer__location-adress footer__location-adress--general">
+							<p class="footer__location-title">Головной офис:</p>
+							<div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Самара, ул. Пушкина, д. 15а, офис 22</div>
+						</div>
+						<div class="footer__location-adress footer__location-adress--add">
+							<p class="footer__location-title">Филиалы:</p>
+							<div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Краснодар, Красная ул., 118, этаж 8</div>
+							<div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Тольятти, ул. 70 лет Октября, 3</div>
+						</div>
+					</div>
+					<div class="footer__worktime-wrapper">
+						<p class="footer__worktime">Часы работы:<br /><br />Понедельник – четверг: 10:00 – 19:00<br />Пятница: 10:00 – 16:00</p>
+					</div>
+					<a class="footer__button icon-arrow-prev" href="#start"></a>
+				</div>
+				<div class="footer__docs">
+					<p class="footer__copyright">Goodman &copy; 2025. Все права защищены</p>
+					<a class="footer__docs-link" href="">Правовая информация</a>
+					<button class="footer__docs-link" data-privacy-open>Политика конфиденциальности</button>
+					<picture class="footer__logo-container">
+						<source class="footer__logo footer__logo--xs" srcset="../media/icons/logo-xs.svg" media="(max-width: 1100px)" />
+						<img class="footer__logo footer__logo--xl" src="../media/icons/logo-xl.svg" alt="Good Man" />
+					</picture>
+				</div>
+			</div>
+			<div class="footer__badge">
+				<div class="footer__badge-container">
+					<small class="footer__badge-title">Разработка и поддержка сайта:</small>
+					<a href="https://intheplace.ru"><img class="footer__badge-logo" src="../media/icons/studio-logo.svg" alt="#" /></a>
+				</div>
+			</div>
+		</footer>
+		<script src="../js/components/header.js"></script>
+		<script src="../js/components/burger.js"></script>
+		<script src="../js/components/navigation.js"></script>
+		<script src="../js/components/numberMask.js"></script>
+		<script src="../js/components/modals.js"></script>
+	</body>
 </html>

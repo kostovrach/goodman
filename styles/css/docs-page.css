@@ -1169,7 +1169,7 @@ body {
 }
 .forms__item:hover .forms__item-icon::before {
   transition-duration: 0.5s;
-  filter: drop-shadow(0px 0px 20px rgb(28, 85, 100));
+  filter: drop-shadow(0 0 1.25rem #1c5564);
 }
 .forms__item:hover .forms__item-link {
   max-height: 2rem;

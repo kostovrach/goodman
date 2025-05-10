@@ -1,1428 +1,805 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goodman - юристы для людей</title>
-    <link rel="stylesheet" href="media/icons/icon-font/style.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-  </head>
-  <body id="start">
-    <header class="header">
-      <div class="header__container">
-        <a href="">
-          <picture class="header__logo-container">
-            <source
-              class="header__logo header__logo--xs"
-              srcset="media/icons/logo-xs.svg"
-              media="(max-width: 1100px)"
-            />
-            <img
-              class="header__logo header__logo--xl"
-              src="media/icons/logo-xl.svg"
-              alt="Good Man"
-            />
-          </picture>
-        </a>
-        <nav>
-          <ul class="header__nav">
-            <li class="header__nav-item">
-              <a href="pages/about.html">О нас</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="pages/news.html">Новости</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="pages/docs.html">Документы</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="pages/faq.html">Вопросы</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="pages/contact.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__connection">
-          <a href="tel:+78001014273" class="header__tel">8 (800) 101-42-73</a>
-          <button class="header__button" data-call-open>
-            Связаться с нами<i class="icon-arrow-next"></i>
-          </button>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Goodman - юристы для людей</title>
+		<link rel="stylesheet" href="media/icons/icon-font/style.css" />
+		<link rel="stylesheet" href="styles/css/index.css" />
+	</head>
+	<body id="start">
+		<header class="header">
+			<div class="header__container">
+				<a href="">
+					<picture class="header__logo-container">
+						<source class="header__logo header__logo--xs" srcset="media/icons/logo-xs.svg" media="(max-width: 1100px)" />
+						<img class="header__logo header__logo--xl" src="media/icons/logo-xl.svg" alt="Good Man" />
+					</picture>
+				</a>
+				<nav>
+					<ul class="header__nav">
+						<li class="header__nav-item">
+							<a href="pages/about.html">О нас</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="pages/news.html">Новости</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="pages/docs.html">Документы</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="pages/faq.html">Вопросы</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="pages/contact.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__connection">
+					<a href="tel:+78001014273" class="header__tel">8 (800) 101-42-73</a>
+					<button class="header__button" data-call-open>Связаться с нами<i class="icon-arrow-next"></i></button>
+				</div>
 
-        <div class="header__burger burger">
-          <div class="burger__icon">
-            <span></span>
-          </div>
-          <div class="burger__wrapper">
-            <nav>
-              <ul class="burger__nav">
-                <li class="burger__nav-item">
-                  <a href="pages/about.html">О нас</a>
-                </li>
-                <li class="burger__nav-item">
-                  <a href="pages/news.html">Новости</a>
-                </li>
-                <li class="burger__nav-item">
-                  <a href="pages/docs.html">Документы</a>
-                </li>
-                <li class="burger__nav-item">
-                  <a href="pages/faq.html">Вопросы</a>
-                </li>
-                <li class="burger__nav-item">
-                  <a href="pages/contact.html">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <button class="burger__button" data-call-open>
-              Связаться с нами<i class="icon-arrow-next"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="main">
-      <section id="intro" class="intro">
-        <img class="intro__substract" src="media/img/substract.svg" alt="" />
-        <div class="intro__container">
-          <div class="intro__title-box">
-            <h1 class="intro__title">
-              Помогаем списывать долги. Законно и безопасно
-            </h1>
-            <p class="intro__descripton">
-              7 лет успешной практики, реальные кейсы, и&nbsp;поддержка
-              на&nbsp;каждом этапе. Мы&nbsp;помогаем людям вернуть контроль
-              над&nbsp;жизнью
-            </p>
-            <button class="intro__button" data-call-open>
-              Получить <span>бесплатную</span> консультацию
-            </button>
-          </div>
-          <div class="intro__slider-box">
-            <div class="feedback swiper">
-              <div class="feedback__wrapper swiper-wrapper">
-                <div class="feedback__slide swiper-slide">
-                  <div class="feedback__video-wrapper">
-                    <video
-                      class="feedback__video"
-                      muted
-                      autoplay
-                      loop
-                      playsinline
-                    >
-                      <source
-                        src="media/video/feedback/video-feedback1.webm"
-                        type="video/webm"
-                      />
-                      <source
-                        src="media/video/feedback/video-feedback1.mp4"
-                        type="video/mp4"
-                      />
-                      <img
-                        src="media/video/feedback/video-feedback1Fallback.JPG"
-                        alt="Видео недоступно в вашем браузере"
-                      />
-                    </video>
-                    <div class="feedback__overlay overlay">
-                      <div
-                        class="overlay__mute icon-mute"
-                        data-video-mute
-                      ></div>
-                      <div class="overlay__controls">
-                        <span
-                          class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"
-                        ></span>
-                        <span
-                          class="overlay__full-screen icon-full-screen"
-                          data-video-fullscreen
-                        ></span>
-                        <span
-                          class="overlay__arrow-next swiper-button-next icon-arrow-next"
-                        ></span>
-                      </div>
-                      <div class="overlay__title">
-                        Я долго не решалась на банкротство
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feedback__resume">
-                    <p class="feedback__title">Антонина Петровна, 38 лет</p>
-                    <p class="feedback__description">
-                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
-                      квартиру внучке. Команда Goodman обязала банк признать
-                      случай страховым и возместить 6 500 000 ₽
-                    </p>
-                  </div>
-                </div>
-                <div class="feedback__slide swiper-slide">
-                  <div class="feedback__video-wrapper">
-                    <video
-                      class="feedback__video"
-                      muted
-                      autoplay
-                      loop
-                      playsinline
-                    >
-                      <source
-                        src="media/video/feedback/video-feedback1.webm"
-                        type="video/webm"
-                      />
-                      <source
-                        src="media/video/feedback/video-feedback1.mp4"
-                        type="video/mp4"
-                      />
-                      <img
-                        src="media/video/feedback/video-feedback1Fallback.JPG"
-                        alt="Видео недоступно в вашем браузере"
-                      />
-                    </video>
-                    <div class="feedback__overlay overlay">
-                      <div
-                        class="overlay__mute icon-mute"
-                        data-video-mute
-                      ></div>
-                      <div class="overlay__controls">
-                        <span
-                          class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"
-                        ></span>
-                        <span
-                          class="overlay__full-screen icon-full-screen"
-                          data-video-fullscreen
-                        ></span>
-                        <span
-                          class="overlay__arrow-next swiper-button-next icon-arrow-next"
-                        ></span>
-                      </div>
-                      <div class="overlay__title">
-                        Я долго не решалась на банкротство
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feedback__resume">
-                    <p class="feedback__title">Антонина Петровна, 38 лет</p>
-                    <p class="feedback__description">
-                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
-                      квартиру внучке. Команда Goodman обязала банк признать
-                      случай страховым и возместить 6 500 000 ₽
-                    </p>
-                  </div>
-                </div>
-                <div class="feedback__slide swiper-slide">
-                  <div class="feedback__video-wrapper">
-                    <video
-                      class="feedback__video"
-                      muted
-                      autoplay
-                      loop
-                      playsinline
-                    >
-                      <source
-                        src="media/video/feedback/video-feedback1.webm"
-                        type="video/webm"
-                      />
-                      <source
-                        src="media/video/feedback/video-feedback1.mp4"
-                        type="video/mp4"
-                      />
-                      <img
-                        src="media/video/feedback/video-feedback1Fallback.JPG"
-                        alt="Видео недоступно в вашем браузере"
-                      />
-                    </video>
-                    <div class="feedback__overlay overlay">
-                      <div
-                        class="overlay__mute icon-mute"
-                        data-video-mute
-                      ></div>
-                      <div class="overlay__controls">
-                        <span
-                          class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"
-                        ></span>
-                        <span
-                          class="overlay__full-screen icon-full-screen"
-                          data-video-fullscreen
-                        ></span>
-                        <span
-                          class="overlay__arrow-next swiper-button-next icon-arrow-next"
-                        ></span>
-                      </div>
-                      <div class="overlay__title">
-                        Я долго не решалась на банкротство
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feedback__resume">
-                    <p class="feedback__title">Антонина Петровна, 38 лет</p>
-                    <p class="feedback__description">
-                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
-                      квартиру внучке. Команда Goodman обязала банк признать
-                      случай страховым и возместить 6 500 000 ₽
-                    </p>
-                  </div>
-                </div>
-                <div class="feedback__slide swiper-slide">
-                  <div class="feedback__video-wrapper">
-                    <video
-                      class="feedback__video"
-                      muted
-                      autoplay
-                      loop
-                      playsinline
-                    >
-                      <source
-                        src="media/video/feedback/video-feedback1.webm"
-                        type="video/webm"
-                      />
-                      <source
-                        src="media/video/feedback/video-feedback1.mp4"
-                        type="video/mp4"
-                      />
-                      <img
-                        src="media/video/feedback/video-feedback1Fallback.JPG"
-                        alt="Видео недоступно в вашем браузере"
-                      />
-                    </video>
-                    <div class="feedback__overlay overlay">
-                      <div
-                        class="overlay__mute icon-mute"
-                        data-video-mute
-                      ></div>
-                      <div class="overlay__controls">
-                        <span
-                          class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"
-                        ></span>
-                        <span
-                          class="overlay__full-screen icon-full-screen"
-                          data-video-fullscreen
-                        ></span>
-                        <span
-                          class="overlay__arrow-next swiper-button-next icon-arrow-next"
-                        ></span>
-                      </div>
-                      <div class="overlay__title">
-                        Я долго не решалась на банкротство
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feedback__resume">
-                    <p class="feedback__title">Антонина Петровна, 38 лет</p>
-                    <p class="feedback__description">
-                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
-                      квартиру внучке. Команда Goodman обязала банк признать
-                      случай страховым и возместить 6 500 000 ₽
-                    </p>
-                  </div>
-                </div>
-                <div class="feedback__slide swiper-slide">
-                  <div class="feedback__video-wrapper">
-                    <video
-                      class="feedback__video"
-                      muted
-                      autoplay
-                      loop
-                      playsinline
-                    >
-                      <source
-                        src="media/video/feedback/video-feedback1.webm"
-                        type="video/webm"
-                      />
-                      <source
-                        src="media/video/feedback/video-feedback1.mp4"
-                        type="video/mp4"
-                      />
-                      <img
-                        src="media/video/feedback/video-feedback1Fallback.JPG"
-                        alt="Видео недоступно в вашем браузере"
-                      />
-                    </video>
-                    <div class="feedback__overlay overlay">
-                      <div
-                        class="overlay__mute icon-mute"
-                        data-video-mute
-                      ></div>
-                      <div class="overlay__controls">
-                        <span
-                          class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"
-                        ></span>
-                        <span
-                          class="overlay__full-screen icon-full-screen"
-                          data-video-fullscreen
-                        ></span>
-                        <span
-                          class="overlay__arrow-next swiper-button-next icon-arrow-next"
-                        ></span>
-                      </div>
-                      <div class="overlay__title">
-                        Я долго не решалась на банкротство
-                      </div>
-                    </div>
-                  </div>
-                  <div class="feedback__resume">
-                    <p class="feedback__title">Антонина Петровна, 38 лет</p>
-                    <p class="feedback__description">
-                      Перевела мошенникам 5 000 000 ₽, которые откладывала на
-                      квартиру внучке. Команда Goodman обязала банк признать
-                      случай страховым и возместить 6 500 000 ₽
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="feedback__footer">
-              <div class="feedback__pagination swiper-pagination"></div>
-              <a href="#clients" class="feedback__button">Все отзывы &darr;</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="team" class="team"></section>
-      <section id="about" class="about">
-        <div class="about__container">
-          <div class="about__quastion">
-            <div class="about__message">
-              <div class="about__message--shape"></div>
-              <picture>
-                <img
-                  class="about__message--image"
-                  src="media/img/staff/staff1.jpg"
-                  alt="#"
-                />
-              </picture>
-              <div class="about__message--title">
-                Хотите закрыть долги<br />
-                и&nbsp;начать новую жизнь?
-              </div>
-              <p class="about__message--text">
-                Если вы задаётесь вопросом: «Как закрыть долги и&nbsp;начать
-                новую жизнь?», ответ прост — с правильной поддержкой этот путь
-                становится понятным и&nbsp;достижимым. В компании Goodman мы
-                верим, что каждый заслуживает свободы от долгов и возможности
-                начать всё с чистого листа. Мы не просто юридическая фирма – мы
-                ваш надёжный проводник в мир финансовой независимости
-              </p>
-            </div>
-          </div>
-          <div class="about__answer">
-            <h2 class="about__title">
-              Наша команда работает по&nbsp;всей&nbsp;России
-            </h2>
-            <p class="about__text">
-              Goodman – это не просто ответ на проблему, а возможность для
-              начала новой жизни. Мы помогаем вам разобраться в тонкостях
-              законодательства, разобраться с накопившимися обязательствами и,
-              главное, вернуть себе спокойствие и уверенность в завтрашнем дне.
-              С&nbsp;нами вы научитесь смотреть в&nbsp;будущее с оптимизмом,
-              ведь закрыть долги – это первый шаг к новой главе вашей жизни.
-              <br /><br />Мы внимательно анализируем вашу ситуацию, подбираем
-              индивидуальную стратегию и шаг за шагом воплощаем план по закрытию
-              долгов. Наш опыт, проверенный за 7 лет успешной практики, и
-              реальные истории наших клиентов говорят сами за&nbsp;себя.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="values" class="values">
-        <div class="values__wrapper">
-          <div class="values__item">
-            <i class="values__item--icon icon-message"></i>
-            <div class="values__item--index">
-              <span class="values__item--index-number">7</span>лет
-            </div>
-            <div class="values__item--text">Экспертизы и судебной практики</div>
-            <picture>
-              <img
-                class="values__item--image"
-                src="media/img/staff/staff2.jpg"
-                alt="#"
-              />
-            </picture>
-          </div>
-          <div class="values__item">
-            <div class="values__dark-wrapper">
-              <div class="values__item--text">Нам можно доверять!</div>
-              <picture>
-                <img
-                  class="values__item--image"
-                  src="media/img/staff/staff3.jpg"
-                  alt="#"
-                />
-              </picture>
-            </div>
-            <div class="values__item--slogan">
-              Банкротство без&nbsp;стресса<span> — мы&nbsp;всегда рядом</span>
-            </div>
-          </div>
-          <div class="values__item">
-            <i class="values__item--icon icon-message"></i>
-            <div class="values__item--index">
-              <span class="values__item--index-number">2</span> млрд&#8381;
-            </div>
-            <div class="values__item--text">
-              Размер списанного долга у всех наших клиентов
-            </div>
-            <picture>
-              <img
-                class="values__item--image"
-                src="media/img/staff/staff4.jpg"
-                alt="#"
-              />
-            </picture>
-          </div>
-          <div class="values__item">
-            <div class="values__item--slogan">
-              Начните жизнь с&nbsp;чистого листа!
-            </div>
-            <div class="values__dark-wrapper">
-              <i class="values__item--icon icon-message"></i>
-              <div class="values__item--index">
-                ><span class="values__item--index-number">1</span> тыс.
-              </div>
-              <div class="values__item--text">Завершенных клиентов</div>
-            </div>
-          </div>
-          <div class="values__item">
-            <picture>
-              <img
-                class="values__item--image"
-                src="media/img/staff/staff5.jpg"
-                alt="#"
-              />
-            </picture>
-            <i class="values__item--icon icon-message"></i>
-            <div class="values__item--index">
-              <span class="values__item--index-number">100</span>%
-            </div>
-            <div class="values__item--text">
-              Процент успешных судебных дел за&nbsp;2020-2024 гг
-            </div>
-          </div>
-        </div>
-      </section>
-      <article class="opinion">
-        <div class="opinion__container">
-          <p class="opinion__text">
-            Как показала практика, секрет отсутствия долгов&nbsp;—
-            это&nbsp;не&nbsp;тратить больше, чем способен заработать.
-            <span class="opinion__text--accent"
-              >Это&nbsp;позволяет с легкостью масштабировать любой бизнес</span
-            >
-          </p>
-          <div class="opinion__author">
-            <img
-              class="opinion__author--image"
-              src="media/img/staff/staff1.jpg"
-              alt="#"
-            />
-            <div class="opinion__author--infobox">
-              <div class="opinion__author--post">
-                Арбитражный&nbsp;управляющий
-              </div>
-              <div class="opinion__author--name">Павел&nbsp;Прасолов</div>
-            </div>
-          </div>
-        </div>
-      </article>
-      <section id="cases" class="cases">
-        <div class="cases__container">
-          <h2 class="cases__title">Как мы решаем проблемы наших клиентов</h2>
-          <div class="cases__controls">
-            <div class="cases__tags" id="cases-tags"></div>
-            <div class="cases__slider-navigation">
-              <div class="cases__counter">
-                <span class="cases__counter--current"></span>
-                <span class="cases__counter--separator">/</span>
-                <span class="cases__counter--total"></span>
-              </div>
-              <div
-                class="cases__slider-button cases__slider-button--prev icon-arrow-prev swiper-button-prev"
-              ></div>
-              <div
-                class="cases__slider-button cases__slider-button--next icon-arrow-next swiper-button-next"
-              ></div>
-            </div>
-          </div>
-          <div class="cases__sliders" id="cases-sliders"></div>
-        </div>
-      </section>
-      <section id="steps" class="steps">
-        <div class="steps__container">
-          <h2 class="steps__title">4 шага к банкротству</h2>
-          <p class="steps__subtitle">
-            Правильная подготовка и поддержка на каждом этапе обеспечивают
-            защиту интересов клиента и&nbsp;способствуют восстановлению
-            финансовой стабильности
-          </p>
-          <div class="steps__spoiler">
-            <div class="steps__spoiler-item">
-              <div
-                class="steps__spoiler-item-preview steps__spoiler-item-preview--first active"
-              >
-                <div class="steps__spoiler-item-preview-number">1</div>
-                <div class="steps__spoiler-item-preview-titlebox">
-                  <div class="steps__spoiler-item-preview-title">
-                    Знакомство
-                  </div>
-                  <i class="steps__spoiler-item-preview-icon icon-cross"></i>
-                </div>
-              </div>
-              <div
-                class="steps__spoiler-item-content steps__spoiler-item-content--first active"
-              >
-                <div class="steps__spoiler-item-title">
-                  1. Первичный звонок и знакомство
-                </div>
-                <div class="steps__spoiler-item-text-wrapper">
-                  <p class="steps__spoiler-item-text">
-                    Знакомство с делом клиента, обсуждение финансового положения
-                    и причин банкротства. Выясняем цели и ожидания от процедуры
-                    банкротства
-                  </p>
-                  <a class="steps__spoiler-item-button" href="#"
-                    >Заказать консультацию &rarr;</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="steps__spoiler-item">
-              <div
-                class="steps__spoiler-item-preview steps__spoiler-item-preview--second"
-              >
-                <div class="steps__spoiler-item-preview-number">2</div>
-                <div class="steps__spoiler-item-preview-titlebox">
-                  <div class="steps__spoiler-item-preview-title">
-                    Консультация
-                  </div>
-                  <i class="steps__spoiler-item-preview-icon icon-cross"></i>
-                </div>
-              </div>
-              <div
-                class="steps__spoiler-item-content steps__spoiler-item-content--second"
-              >
-                <div class="steps__spoiler-item-title">2. Консультация</div>
-                <div class="steps__spoiler-item-text-wrapper">
-                  <p class="steps__spoiler-item-text">
-                    Детальная видео-консультация для личного ознакомления с
-                    нюансами вашего дела.<br /><br />Ответим на ваши вопросы и
-                    поможем разобраться в&nbsp;сложившейся ситуации
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="steps__spoiler-item">
-              <div
-                class="steps__spoiler-item-preview steps__spoiler-item-preview--third"
-              >
-                <div class="steps__spoiler-item-preview-number">3</div>
-                <div class="steps__spoiler-item-preview-titlebox">
-                  <div class="steps__spoiler-item-preview-title">
-                    Подготовка документов
-                  </div>
-                  <i class="steps__spoiler-item-preview-icon icon-cross"></i>
-                </div>
-              </div>
-              <div
-                class="steps__spoiler-item-content steps__spoiler-item-content--third"
-              >
-                <div class="steps__spoiler-item-title">
-                  3. Подготовка документов
-                </div>
-                <div class="steps__spoiler-item-text-wrapper">
-                  <p class="steps__spoiler-item-text">
-                    Это включает в себя составление финансового отчета,
-                    деклараций о доходах и расходах, а также документов,
-                    подтверждающих наличие долгов и активов. Важно, чтобы все
-                    данные были точными и полными для успешного рассмотрения
-                    дела
-                  </p>
-                  <a class="steps__spoiler-item-button" href="./pages/docs.html"
-                    >Образцы документов</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="steps__spoiler-item">
-              <div
-                class="steps__spoiler-item-preview steps__spoiler-item-preview--fourth"
-              >
-                <div class="steps__spoiler-item-preview-number">4</div>
-                <div class="steps__spoiler-item-preview-titlebox">
-                  <div class="steps__spoiler-item-preview-title">
-                    Ведение дела в суде
-                  </div>
-                  <i class="steps__spoiler-item-preview-icon icon-cross"></i>
-                </div>
-              </div>
-              <div
-                class="steps__spoiler-item-content steps__spoiler-item-content--fourth"
-              >
-                <div class="steps__spoiler-item-title">
-                  4. Ведение дела в суде
-                </div>
-                <div class="steps__spoiler-item-text-wrapper">
-                  <p class="steps__spoiler-item-text">
-                    Представление интересов клиента в суде, участие в заседаниях
-                    и ответы на вопросы судьи. Обеспечим соблюдение всех
-                    процедурных норм и&nbsp;требований законодательства, а также
-                    взаимодействует с кредиторами и другими заинтересованными
-                    сторонами
-                  </p>
-                  <a class="steps__spoiler-item-button" href="#"
-                    >Все кейсы &rarr;</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="clients" class="clients">
-        <div class="clients__container">
-          <div class="clients__titlebox">
-            <h2 class="clients__title">
-              <span class="clients__title--accent">>1000</span> отзывов от
-              клиентов
-            </h2>
-            <p class="clients__subtitle">
-              И это не просто благодарности — это истории об обретённой свободе
-              и новой надежде. Каждый отзыв подтверждает, что помощь агентства
-              «Goodman» реально меняет жизни
-            </p>
-            <div class="clients__controls">
-              <button class="clients__controls--checkbox" data-only-video>
-                Только видео-отзывы
-              </button>
-              <button class="clients__controls--checkbox" data-only-text>
-                Только текстовые отзывы
-              </button>
-            </div>
-          </div>
-          <div class="clients__sliderbox">
-            <div
-              class="clients__slider-container clients__slider-container--1 swiper"
-            >
-              <div class="clients__slider-wrapper swiper-wrapper">
-                <div
-                  class="clients__slider-slide clients-slide swiper-slide"
-                  data-feedback-negative
-                >
-                  <div class="clients-slide__wrapper">
-                    <div class="clients-slide__video-wrapper icon-play">
-                      <video class="clients-slide__video" mute playsinline>
-                        <source
-                          src="media/video/feedback/video-feedback1.webm"
-                          type="video/webm"
-                        />
-                        <source
-                          src="media/video/feedback/video-feedback1.mp4"
-                          type="video/mp4"
-                        />
-                        <img
-                          src="media/video/feedback/video-feedback1Fallback.JPG"
-                          alt="Видео недоступно в вашем браузере"
-                        />
-                      </video>
-                    </div>
-                    <div class="clients-slide__personal-data">
-                      <picture class="clients-slide__personal-data-image">
-                        <img
-                          src="media/img/clients/clientPlaceholder.jpg"
-                          alt="#"
-                        />
-                      </picture>
-                      <div>
-                        <div class="clients-slide__personal-data-name">
-                          Джон Траволта
-                        </div>
-                        <div class="clients-slide__personal-data-status">
-                          71 год, безработный
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="clients__slider-slide clients-slide swiper-slide"
-                  data-feedback-positive
-                >
-                  <div class="clients-slide__wrapper">
-                    <p class="clients-slide__text">
-                      Профессионализм команды на высшем уровне! Они взяли на
-                      себя все заботы по оформлению банкротства, и я наконец-то
-                      могу вздохнуть свободно. Благодаря их помощи я смог начать
-                      новую жизнь без долгов и финансовых проблем. Огромное
-                      спасибо за поддержку!
-                    </p>
-                    <div class="clients-slide__personal-data">
-                      <picture class="clients-slide__personal-data-image">
-                        <img
-                          src="media/img/clients/clientPlaceholder.jpg"
-                          alt="#"
-                        />
-                      </picture>
-                      <div>
-                        <div class="clients-slide__personal-data-name">
-                          Маргарита Робова
-                        </div>
-                        <div class="clients-slide__personal-data-status">
-                          34 года, предприниматель
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="clients__slider-slide clients-slide swiper-slide"
-                  data-feedback-positive
-                >
-                  <div class="clients-slide__wrapper">
-                    <div class="clients-slide__video-wrapper icon-play">
-                      <video class="clients-slide__video" mute playsinline>
-                        <source
-                          src="media/video/feedback/video-feedback1.webm"
-                          type="video/webm"
-                        />
-                        <source
-                          src="media/video/feedback/video-feedback1.mp4"
-                          type="video/mp4"
-                        />
-                        <img
-                          src="media/video/feedback/video-feedback1Fallback.JPG"
-                          alt="Видео недоступно в вашем браузере"
-                        />
-                      </video>
-                    </div>
-                    <div class="clients-slide__personal-data">
-                      <picture class="clients-slide__personal-data-image">
-                        <img
-                          src="media/img/clients/clientPlaceholder.jpg"
-                          alt="#"
-                        />
-                      </picture>
-                      <div>
-                        <div class="clients-slide__personal-data-name">
-                          Джон Траволта
-                        </div>
-                        <div class="clients-slide__personal-data-status">
-                          71 год, безработный
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="clients__slider-slide clients-slide swiper-slide"
-                  data-feedback-positive
-                >
-                  <div class="clients-slide__wrapper">
-                    <div class="clients-slide__video-wrapper icon-play">
-                      <video class="clients-slide__video" mute playsinline>
-                        <source
-                          src="media/video/feedback/video-feedback1.webm"
-                          type="video/webm"
-                        />
-                        <source
-                          src="media/video/feedback/video-feedback1.mp4"
-                          type="video/mp4"
-                        />
-                        <img
-                          src="media/video/feedback/video-feedback1Fallback.JPG"
-                          alt="Видео недоступно в вашем браузере"
-                        />
-                      </video>
-                    </div>
-                    <div class="clients-slide__personal-data">
-                      <picture class="clients-slide__personal-data-image">
-                        <img
-                          src="media/img/clients/clientPlaceholder.jpg"
-                          alt="#"
-                        />
-                      </picture>
-                      <div>
-                        <div class="clients-slide__personal-data-name">
-                          Джон Траволта
-                        </div>
-                        <div class="clients-slide__personal-data-status">
-                          71 год, безработный
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="clients__slider-container clients__slider-container--2 swiper"
-            >
-              <div class="clients__slider-wrapper swiper-wrapper">
-                <div
-                  class="clients__slider-slide clients-slide swiper-slide"
-                  data-feedback-positive
-                >
-                  <div class="clients-slide__wrapper">
-                    <p class="clients-slide__text">
-                      Профессионализм команды на высшем уровне! Они взяли на
-                      себя все заботы по оформлению банкротства, и я наконец-то
-                      могу вздохнуть свободно. Благодаря их помощи я смог начать
-                      новую жизнь без долгов и финансовых проблем. Огромное
-                      спасибо за поддержку!
-                    </p>
-                    <div class="clients-slide__personal-data">
-                      <picture class="clients-slide__personal-data-image">
-                        <img
-                          src="media/img/clients/clientPlaceholder.jpg"
-                          alt="#"
-                        />
-                      </picture>
-                      <div>
-                        <div class="clients-slide__personal-data-name">
-                          Маргарита Робова
-                        </div>
-                        <div class="clients-slide__personal-data-status">
-                          34 года, предприниматель
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="clients__slider-slide clients-slide swiper-slide"
-                  data-feedback-negative
-                >
-                  <div class="clients-slide__wrapper">
-                    <div class="clients-slide__video-wrapper icon-play">
-                      <video class="clients-slide__video" mute playsinline>
-                        <source
-                          src="media/video/feedback/video-feedback1.webm"
-                          type="video/webm"
-                        />
-                        <source
-                          src="media/video/feedback/video-feedback1.mp4"
-                          type="video/mp4"
-                        />
-                        <img
-                          src="media/video/feedback/video-feedback1Fallback.JPG"
-                          alt="Видео недоступно в вашем браузере"
-                        />
-                      </video>
-                    </div>
-                    <div class="clients-slide__personal-data">
-                      <picture class="clients-slide__personal-data-image">
-                        <img
-                          src="media/img/clients/clientPlaceholder.jpg"
-                          alt="#"
-                        />
-                      </picture>
-                      <div>
-                        <div class="clients-slide__personal-data-name">
-                          Джон Траволта
-                        </div>
-                        <div class="clients-slide__personal-data-status">
-                          71 год, безработный
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="clients__slider-slide clients-slide swiper-slide"
-                  data-feedback-positive
-                >
-                  <div class="clients-slide__wrapper">
-                    <p class="clients-slide__text">
-                      Профессионализм команды на высшем уровне! Они взяли на
-                      себя все заботы по оформлению банкротства, и я наконец-то
-                      могу вздохнуть свободно. Благодаря их помощи я смог начать
-                      новую жизнь без долгов и финансовых проблем. Огромное
-                      спасибо за поддержку!
-                    </p>
-                    <div class="clients-slide__personal-data">
-                      <picture class="clients-slide__personal-data-image">
-                        <img
-                          src="media/img/clients/clientPlaceholder.jpg"
-                          alt="#"
-                        />
-                      </picture>
-                      <div>
-                        <div class="clients-slide__personal-data-name">
-                          Маргарита Робова
-                        </div>
-                        <div class="clients-slide__personal-data-status">
-                          34 года, предприниматель
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="clients__slider-slide clients-slide swiper-slide"
-                  data-feedback-positive
-                >
-                  <div class="clients-slide__wrapper">
-                    <div class="clients-slide__video-wrapper icon-play">
-                      <video class="clients-slide__video" mute playsinline>
-                        <source
-                          src="media/video/feedback/video-feedback1.webm"
-                          type="video/webm"
-                        />
-                        <source
-                          src="media/video/feedback/video-feedback1.mp4"
-                          type="video/mp4"
-                        />
-                        <img
-                          src="media/video/feedback/video-feedback1Fallback.JPG"
-                          alt="Видео недоступно в вашем браузере"
-                        />
-                      </video>
-                    </div>
-                    <div class="clients-slide__personal-data">
-                      <picture class="clients-slide__personal-data-image">
-                        <img
-                          src="media/img/clients/clientPlaceholder.jpg"
-                          alt="#"
-                        />
-                      </picture>
-                      <div>
-                        <div class="clients-slide__personal-data-name">
-                          Джон Траволта
-                        </div>
-                        <div class="clients-slide__personal-data-status">
-                          71 год, безработный
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="request" class="request">
-        <div class="request__container">
-          <div class="request__titlebox">
-            <h2 class="request__title">
-              Готовы закрыть долги и&nbsp;начать новую жизнь?
-            </h2>
-            <div class="request__linksbox">
-              <div class="request__email">
-                Свяжитесь с нами:
-                <a
-                  class="request__email-link"
-                  href="mailto:hello@goodman.bz"
-                  target="_blank"
-                  >hello@goodman.bz</a
-                >
-              </div>
-              <div class="request__socials">
-                <a
-                  class="request__link request__link--telegram icon-telegram"
-                  href=""
-                  target="_blank"
-                ></a>
-                <a
-                  class="request__link request__link--vk icon-vk"
-                  href=""
-                  target="_blank"
-                ></a>
-                <a
-                  class="request__link request__link--instagram icon-instagram"
-                  href=""
-                  target="_blank"
-                ></a>
-              </div>
-            </div>
-            <p class="request__questionnairye">
-              Или заполните
-              <a class="request__questionnairye-link" href="pages/questionnaire.html"
-                >небольшую анкету</a
-              >, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым
-              решением
-            </p>
-          </div>
-          <form
-            id="request-form"
-            class="request__form form"
-            action=""
-            method=""
-          >
-            <h3 class="form__title">
-              Отправьте заявку для&nbsp;получения
-              <span class="form__title-accent">бесплатной</span> консультации
-            </h3>
-            <div class="form__input-wrapper">
-              <div class="form__inputbox">
-                <label class="form__label input__label--name" for="input-name"
-                  >Как вас зовут?</label
-                >
-                <input
-                  id="input-name"
-                  class="form__input form__input--name"
-                  type="text"
-                  name="name"
-                  placeholder="Иван Иванов"
-                />
-              </div>
-              <div class="form__inputbox">
-                <label class="form__label input__label--tel" for="input-tel"
-                  >Ваш номер телефона</label
-                >
-                <input
-                  id="input-tel"
-                  class="form__input form__input--tel"
-                  type="tel"
-                  name="tel"
-                  required
-                  data-masked
-                />
-              </div>
-            </div>
-            <div>
-              <p class="form__privacy-policy">
-                Отправляя заявку, вы соглашаетесь с
-                <button class="form__privacy-policy-link" data-privacy-open
-                  >политикой конфиденциальности</button
-                >
-              </p>
-              <button id="request-submit" class="form__button" type="submit">
-                Начать работать с нами &rarr;
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-    <dialog id="popup-test" class="popup-test" open>
-      <button class="popup-test__closeBtn icon-cross"></button>
-      <div class="popup-test__container">
-        <span class="popup-test__text">Готовы ли вы к процедуре банкротства?</span>
-        <a class="popup-test__link" href="./pages/questionnaire.html">Пройти тест<i class="popup-test__link-icon icon-arrow-next"></i></a>
-      </div>
-    </dialog>
-    <dialog id="modal-privacy" class="modal-privacy">
-      <div class="modal-privacy__container">
-        <button class="modal-privacy__closeBtn icon-cross"></button>
-        <h3 class="modal-privacy__title">Политика конфиденциальности</h3>
-        <time datetime="2025-02-27" class="modal-privacy__update-time"
-          >Последнее обновление 27.02.25</time
-        >
-        <ul class="modal-privacy__subtitle">
-          <li class="modal-privacy__subtitle-item">
-            Добро пожаловать на goodman.bz!
-          </li>
-          <li class="modal-privacy__subtitle-item">
-            Ваша конфиденциальность важна для нас. В этой Политике
-            конфиденциальности объясняется, как мы собираем, используем и
-            защищаем вашу личную информацию, когда вы посещаете сайт,
-            взаимодействуете с&nbsp;нашими услугами или связываетесь
-            с&nbsp;нами.
-          </li>
-          <li class="modal-privacy__subtitle-item">
-            Используя наш веб-сайт и услуги, вы соглашаетесь с&nbsp;практикой,
-            описанной в&nbsp;настоящей Политике конфиденциальности.
-          </li>
-        </ul>
-        <ul class="modal-privacy__body">
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Не упоминать о бойцовском клубе.
-              </li>
-              <li class="modal-privacy__item-text">
-                В Бойцовском Клубе мы подчеркиваем уважение, дисциплину и
-                товарищество среди наших членов. Этот документ описывает
-                ключевые правила, которые регулируют наш клуб и обеспечивают
-                безопасный и приятный опыт для всех.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Не упоминать НИГДЕ о бойцовском клубе
-              </li>
-              <li class="modal-privacy__item-text">
-                Члены должны добровольно соглашаться участвовать в боях и носить
-                подходящее защитное снаряжение. Безопасность является нашим
-                высшим приоритетом.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Боец крикнул: "стоп", выдохся, отключился — бой окончен
-              </li>
-              <li class="modal-privacy__item-text">
-                Все бойцы должны проявлять уважение к своим соперникам как
-                внутри, так и вне ринга. Личные нападки или недостойное
-                поведение не будут терпимы.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                В бою участвуют лишь двое
-              </li>
-              <li class="modal-privacy__item-text">
-                После боя члены поощряются поздравлять своих соперников и
-                оказывать поддержку, независимо от результата.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">Бои идут один за другим</li>
-              <li class="modal-privacy__item-text">
-                В случае травмы члены должны немедленно сообщить рефери и при
-                необходимости обратиться за медицинской помощью.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">Снимать обувь и рубашку</li>
-              <li class="modal-privacy__item-text">
-                Все бойцы должны проявлять уважение к своим соперникам как
-                внутри, так и вне ринга. Личные нападки или недостойное
-                поведение не будут терпимы.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Бой продолжается столько, сколько нужно
-              </li>
-              <li class="modal-privacy__item-text">
-                Участники должны быть не младше 18 лет, чтобы присоединиться к
-                Бойцовскому Клубу.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Тот, кто впервые пришел в клуб, примет бой.
-              </li>
-              <li class="modal-privacy__item-text">
-                По любым вопросам или проблемам, касающимся этих правил,
-                пожалуйста, свяжитесь с нами по адресу info@fightclub.com.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </dialog>
-    <dialog id="modal-call" class="modal-form">
-          <div class="modal-form__container">
-            <button class="modal-form__closeBtn icon-cross"></button>
-            <div class="modal-form__titlebox">
-              <h3 class="modal-form__title">Нужна помощь или&nbsp;консультация?</h3>
-              <p class="modal-form__subtitle">Отправьте заявку на обратный звонок, и мы перезвоним в течение 15&nbsp;минут или ближайший рабочий день</p>
-            </div>
-            <form class="modal-form__form" action="">
-              <input class="modal-form__input" type="text" placeholder="Имя">
-              <input id="input-tel" class="modal-form__input" type="tel" placeholder="Телефон" required>
-              <button class="modal-form__button" type="submit">Отправить заявку<i class="icon-arrow-next"></i></button>
-              <small class="modal-form__agreement">Отправляя заявку, вы соглашаетесь с <button class="modal-form__agreement-link" data-privacy-open>политикой конфиденциальности</button></small>
-            </form>
-            <div class="modal-form__footer">
-              <p class="modal-form__hint">Вы также можете заполнить <a class="modal-form__hint-link" href="/projects/Goodman/pages/questionnaire.html">небольшую анкету</a>, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым решением.</p>
-              <div class="modal-form__linksbox">
-                <p class="modal-form__links-title">Или свяжитесь с нами в соцсетях</p>
-                <div class="modal-form__socials">
-                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--tg icon-telegram"></a>
-                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--vk icon-vk"></a>
-                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--insta icon-instagram"></a>
-                </div>
-                <a class="modal-form__email" href="mailto:hello@goodman.bz">hello@goodman.bz</a>
-              </div>
-            </div>
-          </div>
-    </dialog>
-    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-      <clipPath id="message" clipPathUnits="objectBoundingBox">
-        <path
-          d="M0.214 0 C0.107 0 0.02 0.087 0.02 0.195 V0.427 C0.02 0.571 0.107 0.658 0.214 0.658 H0.757 L1 0.905 L1 0.195 C1 0.087 0.915 0 0.808 0 H0.214 Z"
-        />
-      </clipPath>
-    </svg>
-    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <clipPath id="arrow" clipPathUnits="objectBoundingBox">
-          <path
-            d="M 0,0 L 1,0 L 1,0.523 C 1,0.75 1,0.8 0.8,0.8 L 0.6,0.8 L 0.5,1 L 0.4,0.8 L 0.2,0.8 C 0,0.8 0,0.75 0,0.523 L 0,0 Z"
-          />
-        </clipPath>
-      </defs>
-    </svg>
-    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <clipPath id="clip-lb" clipPathUnits="objectBoundingBox">
-          <path
-            d="M1 0.5C1 0.776 0.776 1 0.5 1C0.396 1 0.299 0.968 0.219 0.914L0.086 0.914L0.086 0.781C0.032 0.701 0 0.604 0 0.5C0 0.224 0.224 0 0.5 0C0.776 0 1 0.224 1 0.5Z"
-          />
-        </clipPath>
-      </defs>
-    </svg>
-    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <clipPath id="clip-rt" clipPathUnits="objectBoundingBox">
-          <path
-            d="M1 0.5C1 0.776 0.776 1 0.5 1C0.396 1 0.299 0.968 0.219 0.914L0.086 0.914L0.086 0.781C0.032 0.701 0 0.604 0 0.5C0 0.224 0.224 0 0.5 0C0.776 0 1 0.224 1 0.5Z"
-            transform="rotate(180 0.5 0.5)"
-          />
-        </clipPath>
-      </defs>
-    </svg>
-    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <clipPath id="clip-rb" clipPathUnits="objectBoundingBox">
-          <path
-            d="M1 0.5C1 0.776 0.776 1 0.5 1C0.396 1 0.299 0.968 0.219 0.914L0.086 0.914L0.086 0.781C0.032 0.701 0 0.604 0 0.5C0 0.224 0.224 0 0.5 0C0.776 0 1 0.224 1 0.5Z"
-            transform="rotate(270 0.5 0.5)"
-          />
-        </clipPath>
-      </defs>
-    </svg>
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__links">
-          <div class="footer__socials">
-            <p class="footer__socials-title">
-              Следите за нами в&nbsp;соцсетях:
-            </p>
-            <div class="footer__socials-wrapper">
-              <a
-                class="footer__socials-icon footer__socials-icon--zen icon-zen"
-                href=""
-              ></a>
-              <a
-                class="footer__socials-icon footer__socials-icon--telegram icon-telegram"
-                href=""
-              ></a>
-              <a
-                class="footer__socials-icon footer__socials-icon--youtube icon-youtube"
-                href=""
-              ></a>
-              <a
-                class="footer__socials-icon footer__socials-icon--vk icon-vk"
-                href=""
-              ></a>
-              <a
-                class="footer__socials-icon footer__socials-icon--instagram icon-instagram"
-                href=""
-              ></a>
-            </div>
-          </div>
-          <nav>
-            <ul class="footer__nav">
-              <li class="footer__nav-item">
-                <a href="pages/about.html">О нас</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="pages/news.html">Новости</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="pages/faq.html">Вопросы и ответы</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="pages/docs.html">Полезное</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="pages/partnership.html">Партнёрам</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="pages/payment.html">Оплата</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="pages/contact.html">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer__location">
-            <div class="footer__location-linksbox">
-              <a
-                class="footer__location-item footer__location-item--tel"
-                href="tel:+79998461709"
-                ><i class="icon-tel"></i>+7 (999) 846-17-09</a
-              >
-              <a
-                class="footer__location-item footer__location-item--mail"
-                href="mailto:hello@goodman.bz"
-                ><i class="icon-mail"></i>hello@goodman.bz</a
-              >
-            </div>
-            <div
-              class="footer__location-adress footer__location-adress--general"
-            >
-              <p class="footer__location-title">Головной офис:</p>
-              <div class="footer__location-item footer__location-item--mark">
-                <i class="icon-mark"></i>Самара, ул. Пушкина, д. 15а, офис 22
-              </div>
-            </div>
-            <div class="footer__location-adress footer__location-adress--add">
-              <p class="footer__location-title">Филиалы:</p>
-              <div class="footer__location-item footer__location-item--mark">
-                <i class="icon-mark"></i>Краснодар, Красная ул., 118, этаж 8
-              </div>
-              <div class="footer__location-item footer__location-item--mark">
-                <i class="icon-mark"></i>Тольятти, ул. 70 лет Октября, 3
-              </div>
-            </div>
-          </div>
-          <div class="footer__worktime-wrapper">
-            <p class="footer__worktime">
-              Часы работы:<br /><br />Понедельник – четверг: 10:00 – 19:00<br />Пятница:
-              10:00 – 16:00
-            </p>
-          </div>
-          <a class="footer__button icon-arrow-prev" href="#start"></a>
-        </div>
-        <div class="footer__docs">
-          <p class="footer__copyright">
-            Goodman &copy; 2025. Все права защищены
-          </p>
-          <a class="footer__docs-link" href="#">Правовая информация</a>
-          <button class="footer__docs-link" data-privacy-open>Политика конфиденциальности</button>
-          <picture class="footer__logo-container">
-            <source
-              class="footer__logo footer__logo--xs"
-              srcset="media/icons/logo-xs.svg"
-              media="(max-width: 1100px)"
-            />
-            <img
-              class="footer__logo footer__logo--xl"
-              src="media/icons/logo-xl.svg"
-              alt="Good Man"
-            />
-          </picture>
-        </div>
-      </div>
-      <div class="footer__badge">
-        <div class="footer__badge-container">
-          <small class="footer__badge-title"
-            >Разработка и поддержка сайта:</small
-          >
-          <a href="https://intheplace.ru"
-            ><img
-              class="footer__badge-logo"
-              src="media/icons/studio-logo.svg"
-              alt="#"
-          /></a>
-        </div>
-      </div>
-    </footer>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/burger.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/feedbackSlider.js"></script>
-    <script src="js/casesSlider.js"></script>
-    <script src="js/steps.js"></script>
-    <script src="js/clientsSlider.js"></script>
-    <script src="js/numberMask.js"></script>
-    <script src="js/modals.js"></script>
-  </body>
+				<div class="header__burger burger">
+					<div class="burger__icon">
+						<span></span>
+					</div>
+					<div class="burger__wrapper">
+						<nav>
+							<ul class="burger__nav">
+								<li class="burger__nav-item">
+									<a href="pages/about.html">О нас</a>
+								</li>
+								<li class="burger__nav-item">
+									<a href="pages/news.html">Новости</a>
+								</li>
+								<li class="burger__nav-item">
+									<a href="pages/docs.html">Документы</a>
+								</li>
+								<li class="burger__nav-item">
+									<a href="pages/faq.html">Вопросы</a>
+								</li>
+								<li class="burger__nav-item">
+									<a href="pages/contact.html">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<button class="burger__button" data-call-open>Связаться с нами<i class="icon-arrow-next"></i></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section id="intro" class="intro">
+				<img class="intro__substract" src="media/img/substract.svg" alt="" />
+				<div class="intro__container">
+					<div class="intro__title-box">
+						<h1 class="intro__title">Помогаем списывать долги. Законно и безопасно</h1>
+						<p class="intro__descripton">7 лет успешной практики, реальные кейсы, и&nbsp;поддержка на&nbsp;каждом этапе. Мы&nbsp;помогаем людям вернуть контроль над&nbsp;жизнью</p>
+						<button class="intro__button" data-call-open>Получить <span>бесплатную</span> консультацию</button>
+					</div>
+					<div class="intro__slider-box">
+						<div class="feedback swiper">
+							<div class="feedback__wrapper swiper-wrapper">
+								<div class="feedback__slide swiper-slide">
+									<div class="feedback__video-wrapper">
+										<video class="feedback__video" muted autoplay loop playsinline>
+											<source src="media/video/feedback/video-feedback1.webm" type="video/webm" />
+											<source src="media/video/feedback/video-feedback1.mp4" type="video/mp4" />
+											<img src="media/video/feedback/video-feedback1Fallback.JPG" alt="Видео недоступно в вашем браузере" />
+										</video>
+										<div class="feedback__overlay overlay">
+											<div class="overlay__mute icon-mute" data-video-mute></div>
+											<div class="overlay__controls">
+												<span class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"></span>
+												<span class="overlay__full-screen icon-full-screen" data-video-fullscreen></span>
+												<span class="overlay__arrow-next swiper-button-next icon-arrow-next"></span>
+											</div>
+											<div class="overlay__title">Я долго не решалась на банкротство</div>
+										</div>
+									</div>
+									<div class="feedback__resume">
+										<p class="feedback__title">Антонина Петровна, 38 лет</p>
+										<p class="feedback__description">Перевела мошенникам 5 000 000 ₽, которые откладывала на квартиру внучке. Команда Goodman обязала банк признать случай страховым и возместить 6 500 000 ₽</p>
+									</div>
+								</div>
+								<div class="feedback__slide swiper-slide">
+									<div class="feedback__video-wrapper">
+										<video class="feedback__video" muted autoplay loop playsinline>
+											<source src="media/video/feedback/video-feedback1.webm" type="video/webm" />
+											<source src="media/video/feedback/video-feedback1.mp4" type="video/mp4" />
+											<img src="media/video/feedback/video-feedback1Fallback.JPG" alt="Видео недоступно в вашем браузере" />
+										</video>
+										<div class="feedback__overlay overlay">
+											<div class="overlay__mute icon-mute" data-video-mute></div>
+											<div class="overlay__controls">
+												<span class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"></span>
+												<span class="overlay__full-screen icon-full-screen" data-video-fullscreen></span>
+												<span class="overlay__arrow-next swiper-button-next icon-arrow-next"></span>
+											</div>
+											<div class="overlay__title">Я долго не решалась на банкротство</div>
+										</div>
+									</div>
+									<div class="feedback__resume">
+										<p class="feedback__title">Антонина Петровна, 38 лет</p>
+										<p class="feedback__description">Перевела мошенникам 5 000 000 ₽, которые откладывала на квартиру внучке. Команда Goodman обязала банк признать случай страховым и возместить 6 500 000 ₽</p>
+									</div>
+								</div>
+								<div class="feedback__slide swiper-slide">
+									<div class="feedback__video-wrapper">
+										<video class="feedback__video" muted autoplay loop playsinline>
+											<source src="media/video/feedback/video-feedback1.webm" type="video/webm" />
+											<source src="media/video/feedback/video-feedback1.mp4" type="video/mp4" />
+											<img src="media/video/feedback/video-feedback1Fallback.JPG" alt="Видео недоступно в вашем браузере" />
+										</video>
+										<div class="feedback__overlay overlay">
+											<div class="overlay__mute icon-mute" data-video-mute></div>
+											<div class="overlay__controls">
+												<span class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"></span>
+												<span class="overlay__full-screen icon-full-screen" data-video-fullscreen></span>
+												<span class="overlay__arrow-next swiper-button-next icon-arrow-next"></span>
+											</div>
+											<div class="overlay__title">Я долго не решалась на банкротство</div>
+										</div>
+									</div>
+									<div class="feedback__resume">
+										<p class="feedback__title">Антонина Петровна, 38 лет</p>
+										<p class="feedback__description">Перевела мошенникам 5 000 000 ₽, которые откладывала на квартиру внучке. Команда Goodman обязала банк признать случай страховым и возместить 6 500 000 ₽</p>
+									</div>
+								</div>
+								<div class="feedback__slide swiper-slide">
+									<div class="feedback__video-wrapper">
+										<video class="feedback__video" muted autoplay loop playsinline>
+											<source src="media/video/feedback/video-feedback1.webm" type="video/webm" />
+											<source src="media/video/feedback/video-feedback1.mp4" type="video/mp4" />
+											<img src="media/video/feedback/video-feedback1Fallback.JPG" alt="Видео недоступно в вашем браузере" />
+										</video>
+										<div class="feedback__overlay overlay">
+											<div class="overlay__mute icon-mute" data-video-mute></div>
+											<div class="overlay__controls">
+												<span class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"></span>
+												<span class="overlay__full-screen icon-full-screen" data-video-fullscreen></span>
+												<span class="overlay__arrow-next swiper-button-next icon-arrow-next"></span>
+											</div>
+											<div class="overlay__title">Я долго не решалась на банкротство</div>
+										</div>
+									</div>
+									<div class="feedback__resume">
+										<p class="feedback__title">Антонина Петровна, 38 лет</p>
+										<p class="feedback__description">Перевела мошенникам 5 000 000 ₽, которые откладывала на квартиру внучке. Команда Goodman обязала банк признать случай страховым и возместить 6 500 000 ₽</p>
+									</div>
+								</div>
+								<div class="feedback__slide swiper-slide">
+									<div class="feedback__video-wrapper">
+										<video class="feedback__video" muted autoplay loop playsinline>
+											<source src="media/video/feedback/video-feedback1.webm" type="video/webm" />
+											<source src="media/video/feedback/video-feedback1.mp4" type="video/mp4" />
+											<img src="media/video/feedback/video-feedback1Fallback.JPG" alt="Видео недоступно в вашем браузере" />
+										</video>
+										<div class="feedback__overlay overlay">
+											<div class="overlay__mute icon-mute" data-video-mute></div>
+											<div class="overlay__controls">
+												<span class="overlay__arrow-prev swiper-button-prev icon-arrow-prev"></span>
+												<span class="overlay__full-screen icon-full-screen" data-video-fullscreen></span>
+												<span class="overlay__arrow-next swiper-button-next icon-arrow-next"></span>
+											</div>
+											<div class="overlay__title">Я долго не решалась на банкротство</div>
+										</div>
+									</div>
+									<div class="feedback__resume">
+										<p class="feedback__title">Антонина Петровна, 38 лет</p>
+										<p class="feedback__description">Перевела мошенникам 5 000 000 ₽, которые откладывала на квартиру внучке. Команда Goodman обязала банк признать случай страховым и возместить 6 500 000 ₽</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="feedback__footer">
+							<div class="feedback__pagination swiper-pagination"></div>
+							<a href="#clients" class="feedback__button">Все отзывы &darr;</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="team" class="team"></section>
+			<section id="about" class="about">
+				<div class="about__container">
+					<div class="about__quastion">
+						<div class="about__message">
+							<div class="about__message--shape"></div>
+							<picture>
+								<img class="about__message--image" src="media/img/staff/staff1.jpg" alt="#" />
+							</picture>
+							<div class="about__message--title">
+								Хотите закрыть долги<br />
+								и&nbsp;начать новую жизнь?
+							</div>
+							<p class="about__message--text">
+								Если вы задаётесь вопросом: «Как закрыть долги и&nbsp;начать новую жизнь?», ответ прост — с правильной поддержкой этот путь становится понятным и&nbsp;достижимым. В компании Goodman мы верим, что каждый заслуживает свободы от долгов и возможности начать всё с чистого листа. Мы не просто юридическая фирма – мы ваш надёжный проводник в мир финансовой независимости
+							</p>
+						</div>
+					</div>
+					<div class="about__answer">
+						<h2 class="about__title">Наша команда работает по&nbsp;всей&nbsp;России</h2>
+						<p class="about__text">
+							Goodman – это не просто ответ на проблему, а возможность для начала новой жизни. Мы помогаем вам разобраться в тонкостях законодательства, разобраться с накопившимися обязательствами и, главное, вернуть себе спокойствие и уверенность в завтрашнем дне. С&nbsp;нами вы научитесь смотреть в&nbsp;будущее с оптимизмом, ведь закрыть долги – это первый шаг к новой главе вашей
+							жизни.
+							<br /><br />Мы внимательно анализируем вашу ситуацию, подбираем индивидуальную стратегию и шаг за шагом воплощаем план по закрытию долгов. Наш опыт, проверенный за 7 лет успешной практики, и реальные истории наших клиентов говорят сами за&nbsp;себя.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="values" class="values">
+				<div class="values__wrapper">
+					<div class="values__item">
+						<i class="values__item--icon icon-message"></i>
+						<div class="values__item--index"><span class="values__item--index-number">7</span>лет</div>
+						<div class="values__item--text">Экспертизы и судебной практики</div>
+						<picture>
+							<img class="values__item--image" src="media/img/staff/staff2.jpg" alt="#" />
+						</picture>
+					</div>
+					<div class="values__item">
+						<div class="values__dark-wrapper">
+							<div class="values__item--text">Нам можно доверять!</div>
+							<picture>
+								<img class="values__item--image" src="media/img/staff/staff3.jpg" alt="#" />
+							</picture>
+						</div>
+						<div class="values__item--slogan">Банкротство без&nbsp;стресса<span> — мы&nbsp;всегда рядом</span></div>
+					</div>
+					<div class="values__item">
+						<i class="values__item--icon icon-message"></i>
+						<div class="values__item--index"><span class="values__item--index-number">2</span> млрд&#8381;</div>
+						<div class="values__item--text">Размер списанного долга у всех наших клиентов</div>
+						<picture>
+							<img class="values__item--image" src="media/img/staff/staff4.jpg" alt="#" />
+						</picture>
+					</div>
+					<div class="values__item">
+						<div class="values__item--slogan">Начните жизнь с&nbsp;чистого листа!</div>
+						<div class="values__dark-wrapper">
+							<i class="values__item--icon icon-message"></i>
+							<div class="values__item--index">><span class="values__item--index-number">1</span> тыс.</div>
+							<div class="values__item--text">Завершенных клиентов</div>
+						</div>
+					</div>
+					<div class="values__item">
+						<picture>
+							<img class="values__item--image" src="media/img/staff/staff5.jpg" alt="#" />
+						</picture>
+						<i class="values__item--icon icon-message"></i>
+						<div class="values__item--index"><span class="values__item--index-number">100</span>%</div>
+						<div class="values__item--text">Процент успешных судебных дел за&nbsp;2020-2024 гг</div>
+					</div>
+				</div>
+			</section>
+			<article class="opinion">
+				<div class="opinion__container">
+					<p class="opinion__text">
+						Как показала практика, секрет отсутствия долгов&nbsp;— это&nbsp;не&nbsp;тратить больше, чем способен заработать.
+						<span class="opinion__text--accent">Это&nbsp;позволяет с легкостью масштабировать любой бизнес</span>
+					</p>
+					<div class="opinion__author">
+						<img class="opinion__author--image" src="media/img/staff/staff1.jpg" alt="#" />
+						<div class="opinion__author--infobox">
+							<div class="opinion__author--post">Арбитражный&nbsp;управляющий</div>
+							<div class="opinion__author--name">Павел&nbsp;Прасолов</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<section id="cases" class="cases">
+				<div class="cases__container">
+					<h2 class="cases__title">Как мы решаем проблемы наших клиентов</h2>
+					<div class="cases__controls">
+						<div class="cases__tags" id="cases-tags"></div>
+						<div class="cases__slider-navigation">
+							<div class="cases__counter">
+								<span class="cases__counter--current"></span>
+								<span class="cases__counter--separator">/</span>
+								<span class="cases__counter--total"></span>
+							</div>
+							<div class="cases__slider-button cases__slider-button--prev icon-arrow-prev swiper-button-prev"></div>
+							<div class="cases__slider-button cases__slider-button--next icon-arrow-next swiper-button-next"></div>
+						</div>
+					</div>
+					<div class="cases__sliders" id="cases-sliders"></div>
+				</div>
+			</section>
+			<section id="steps" class="steps">
+				<div class="steps__container">
+					<h2 class="steps__title">4 шага к банкротству</h2>
+					<p class="steps__subtitle">Правильная подготовка и поддержка на каждом этапе обеспечивают защиту интересов клиента и&nbsp;способствуют восстановлению финансовой стабильности</p>
+					<div class="steps__spoiler">
+						<div class="steps__spoiler-item">
+							<div class="steps__spoiler-item-preview steps__spoiler-item-preview--first active">
+								<div class="steps__spoiler-item-preview-number">1</div>
+								<div class="steps__spoiler-item-preview-titlebox">
+									<div class="steps__spoiler-item-preview-title">Знакомство</div>
+									<i class="steps__spoiler-item-preview-icon icon-cross"></i>
+								</div>
+							</div>
+							<div class="steps__spoiler-item-content steps__spoiler-item-content--first active">
+								<div class="steps__spoiler-item-title">1. Первичный звонок и знакомство</div>
+								<div class="steps__spoiler-item-text-wrapper">
+									<p class="steps__spoiler-item-text">Знакомство с делом клиента, обсуждение финансового положения и причин банкротства. Выясняем цели и ожидания от процедуры банкротства</p>
+									<a class="steps__spoiler-item-button" href="#">Заказать консультацию &rarr;</a>
+								</div>
+							</div>
+						</div>
+						<div class="steps__spoiler-item">
+							<div class="steps__spoiler-item-preview steps__spoiler-item-preview--second">
+								<div class="steps__spoiler-item-preview-number">2</div>
+								<div class="steps__spoiler-item-preview-titlebox">
+									<div class="steps__spoiler-item-preview-title">Консультация</div>
+									<i class="steps__spoiler-item-preview-icon icon-cross"></i>
+								</div>
+							</div>
+							<div class="steps__spoiler-item-content steps__spoiler-item-content--second">
+								<div class="steps__spoiler-item-title">2. Консультация</div>
+								<div class="steps__spoiler-item-text-wrapper">
+									<p class="steps__spoiler-item-text">Детальная видео-консультация для личного ознакомления с нюансами вашего дела.<br /><br />Ответим на ваши вопросы и поможем разобраться в&nbsp;сложившейся ситуации</p>
+								</div>
+							</div>
+						</div>
+						<div class="steps__spoiler-item">
+							<div class="steps__spoiler-item-preview steps__spoiler-item-preview--third">
+								<div class="steps__spoiler-item-preview-number">3</div>
+								<div class="steps__spoiler-item-preview-titlebox">
+									<div class="steps__spoiler-item-preview-title">Подготовка документов</div>
+									<i class="steps__spoiler-item-preview-icon icon-cross"></i>
+								</div>
+							</div>
+							<div class="steps__spoiler-item-content steps__spoiler-item-content--third">
+								<div class="steps__spoiler-item-title">3. Подготовка документов</div>
+								<div class="steps__spoiler-item-text-wrapper">
+									<p class="steps__spoiler-item-text">Это включает в себя составление финансового отчета, деклараций о доходах и расходах, а также документов, подтверждающих наличие долгов и активов. Важно, чтобы все данные были точными и полными для успешного рассмотрения дела</p>
+									<a class="steps__spoiler-item-button" href="./pages/docs.html">Образцы документов</a>
+								</div>
+							</div>
+						</div>
+						<div class="steps__spoiler-item">
+							<div class="steps__spoiler-item-preview steps__spoiler-item-preview--fourth">
+								<div class="steps__spoiler-item-preview-number">4</div>
+								<div class="steps__spoiler-item-preview-titlebox">
+									<div class="steps__spoiler-item-preview-title">Ведение дела в суде</div>
+									<i class="steps__spoiler-item-preview-icon icon-cross"></i>
+								</div>
+							</div>
+							<div class="steps__spoiler-item-content steps__spoiler-item-content--fourth">
+								<div class="steps__spoiler-item-title">4. Ведение дела в суде</div>
+								<div class="steps__spoiler-item-text-wrapper">
+									<p class="steps__spoiler-item-text">Представление интересов клиента в суде, участие в заседаниях и ответы на вопросы судьи. Обеспечим соблюдение всех процедурных норм и&nbsp;требований законодательства, а также взаимодействует с кредиторами и другими заинтересованными сторонами</p>
+									<a class="steps__spoiler-item-button" href="#">Все кейсы &rarr;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="clients" class="clients">
+				<div class="clients__container">
+					<div class="clients__titlebox">
+						<h2 class="clients__title"><span class="clients__title--accent">>1000</span> отзывов от клиентов</h2>
+						<p class="clients__subtitle">И это не просто благодарности — это истории об обретённой свободе и новой надежде. Каждый отзыв подтверждает, что помощь агентства «Goodman» реально меняет жизни</p>
+						<div class="clients__controls">
+							<button class="clients__controls--checkbox" data-only-video>Только видео-отзывы</button>
+							<button class="clients__controls--checkbox" data-only-text>Только текстовые отзывы</button>
+						</div>
+					</div>
+					<div class="clients__sliderbox">
+						<div class="clients__slider-container clients__slider-container--1 swiper">
+							<div class="clients__slider-wrapper swiper-wrapper">
+								<div class="clients__slider-slide clients-slide swiper-slide" data-feedback-negative>
+									<div class="clients-slide__wrapper">
+										<div class="clients-slide__video-wrapper icon-play">
+											<video class="clients-slide__video" mute playsinline>
+												<source src="media/video/feedback/video-feedback1.webm" type="video/webm" />
+												<source src="media/video/feedback/video-feedback1.mp4" type="video/mp4" />
+												<img src="media/video/feedback/video-feedback1Fallback.JPG" alt="Видео недоступно в вашем браузере" />
+											</video>
+										</div>
+										<div class="clients-slide__personal-data">
+											<picture class="clients-slide__personal-data-image">
+												<img src="media/img/clients/clientPlaceholder.jpg" alt="#" />
+											</picture>
+											<div>
+												<div class="clients-slide__personal-data-name">Джон Траволта</div>
+												<div class="clients-slide__personal-data-status">71 год, безработный</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clients__slider-slide clients-slide swiper-slide" data-feedback-positive>
+									<div class="clients-slide__wrapper">
+										<p class="clients-slide__text">Профессионализм команды на высшем уровне! Они взяли на себя все заботы по оформлению банкротства, и я наконец-то могу вздохнуть свободно. Благодаря их помощи я смог начать новую жизнь без долгов и финансовых проблем. Огромное спасибо за поддержку!</p>
+										<div class="clients-slide__personal-data">
+											<picture class="clients-slide__personal-data-image">
+												<img src="media/img/clients/clientPlaceholder.jpg" alt="#" />
+											</picture>
+											<div>
+												<div class="clients-slide__personal-data-name">Маргарита Робова</div>
+												<div class="clients-slide__personal-data-status">34 года, предприниматель</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clients__slider-slide clients-slide swiper-slide" data-feedback-positive>
+									<div class="clients-slide__wrapper">
+										<div class="clients-slide__video-wrapper icon-play">
+											<video class="clients-slide__video" mute playsinline>
+												<source src="media/video/feedback/video-feedback1.webm" type="video/webm" />
+												<source src="media/video/feedback/video-feedback1.mp4" type="video/mp4" />
+												<img src="media/video/feedback/video-feedback1Fallback.JPG" alt="Видео недоступно в вашем браузере" />
+											</video>
+										</div>
+										<div class="clients-slide__personal-data">
+											<picture class="clients-slide__personal-data-image">
+												<img src="media/img/clients/clientPlaceholder.jpg" alt="#" />
+											</picture>
+											<div>
+												<div class="clients-slide__personal-data-name">Джон Траволта</div>
+												<div class="clients-slide__personal-data-status">71 год, безработный</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clients__slider-slide clients-slide swiper-slide" data-feedback-positive>
+									<div class="clients-slide__wrapper">
+										<div class="clients-slide__video-wrapper icon-play">
+											<video class="clients-slide__video" mute playsinline>
+												<source src="media/video/feedback/video-feedback1.webm" type="video/webm" />
+												<source src="media/video/feedback/video-feedback1.mp4" type="video/mp4" />
+												<img src="media/video/feedback/video-feedback1Fallback.JPG" alt="Видео недоступно в вашем браузере" />
+											</video>
+										</div>
+										<div class="clients-slide__personal-data">
+											<picture class="clients-slide__personal-data-image">
+												<img src="media/img/clients/clientPlaceholder.jpg" alt="#" />
+											</picture>
+											<div>
+												<div class="clients-slide__personal-data-name">Джон Траволта</div>
+												<div class="clients-slide__personal-data-status">71 год, безработный</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clients__slider-container clients__slider-container--2 swiper">
+							<div class="clients__slider-wrapper swiper-wrapper">
+								<div class="clients__slider-slide clients-slide swiper-slide" data-feedback-positive>
+									<div class="clients-slide__wrapper">
+										<p class="clients-slide__text">Профессионализм команды на высшем уровне! Они взяли на себя все заботы по оформлению банкротства, и я наконец-то могу вздохнуть свободно. Благодаря их помощи я смог начать новую жизнь без долгов и финансовых проблем. Огромное спасибо за поддержку!</p>
+										<div class="clients-slide__personal-data">
+											<picture class="clients-slide__personal-data-image">
+												<img src="media/img/clients/clientPlaceholder.jpg" alt="#" />
+											</picture>
+											<div>
+												<div class="clients-slide__personal-data-name">Маргарита Робова</div>
+												<div class="clients-slide__personal-data-status">34 года, предприниматель</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clients__slider-slide clients-slide swiper-slide" data-feedback-negative>
+									<div class="clients-slide__wrapper">
+										<div class="clients-slide__video-wrapper icon-play">
+											<video class="clients-slide__video" mute playsinline>
+												<source src="media/video/feedback/video-feedback1.webm" type="video/webm" />
+												<source src="media/video/feedback/video-feedback1.mp4" type="video/mp4" />
+												<img src="media/video/feedback/video-feedback1Fallback.JPG" alt="Видео недоступно в вашем браузере" />
+											</video>
+										</div>
+										<div class="clients-slide__personal-data">
+											<picture class="clients-slide__personal-data-image">
+												<img src="media/img/clients/clientPlaceholder.jpg" alt="#" />
+											</picture>
+											<div>
+												<div class="clients-slide__personal-data-name">Джон Траволта</div>
+												<div class="clients-slide__personal-data-status">71 год, безработный</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clients__slider-slide clients-slide swiper-slide" data-feedback-positive>
+									<div class="clients-slide__wrapper">
+										<p class="clients-slide__text">Профессионализм команды на высшем уровне! Они взяли на себя все заботы по оформлению банкротства, и я наконец-то могу вздохнуть свободно. Благодаря их помощи я смог начать новую жизнь без долгов и финансовых проблем. Огромное спасибо за поддержку!</p>
+										<div class="clients-slide__personal-data">
+											<picture class="clients-slide__personal-data-image">
+												<img src="media/img/clients/clientPlaceholder.jpg" alt="#" />
+											</picture>
+											<div>
+												<div class="clients-slide__personal-data-name">Маргарита Робова</div>
+												<div class="clients-slide__personal-data-status">34 года, предприниматель</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clients__slider-slide clients-slide swiper-slide" data-feedback-positive>
+									<div class="clients-slide__wrapper">
+										<div class="clients-slide__video-wrapper icon-play">
+											<video class="clients-slide__video" mute playsinline>
+												<source src="media/video/feedback/video-feedback1.webm" type="video/webm" />
+												<source src="media/video/feedback/video-feedback1.mp4" type="video/mp4" />
+												<img src="media/video/feedback/video-feedback1Fallback.JPG" alt="Видео недоступно в вашем браузере" />
+											</video>
+										</div>
+										<div class="clients-slide__personal-data">
+											<picture class="clients-slide__personal-data-image">
+												<img src="media/img/clients/clientPlaceholder.jpg" alt="#" />
+											</picture>
+											<div>
+												<div class="clients-slide__personal-data-name">Джон Траволта</div>
+												<div class="clients-slide__personal-data-status">71 год, безработный</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="request" class="request">
+				<div class="request__container">
+					<div class="request__titlebox">
+						<h2 class="request__title">Готовы закрыть долги и&nbsp;начать новую жизнь?</h2>
+						<div class="request__linksbox">
+							<div class="request__email">
+								Свяжитесь с нами:
+								<a class="request__email-link" href="mailto:hello@goodman.bz" target="_blank">hello@goodman.bz</a>
+							</div>
+							<div class="request__socials">
+								<a class="request__link request__link--telegram icon-telegram" href="" target="_blank"></a>
+								<a class="request__link request__link--vk icon-vk" href="" target="_blank"></a>
+								<a class="request__link request__link--instagram icon-instagram" href="" target="_blank"></a>
+							</div>
+						</div>
+						<p class="request__questionnairye">
+							Или заполните
+							<a class="request__questionnairye-link" href="pages/questionnaire.html">небольшую анкету</a>, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым решением
+						</p>
+					</div>
+					<form id="request-form" class="request__form form" action="" method="">
+						<h3 class="form__title">
+							Отправьте заявку для&nbsp;получения
+							<span class="form__title-accent">бесплатной</span> консультации
+						</h3>
+						<div class="form__input-wrapper">
+							<div class="form__inputbox">
+								<label class="form__label input__label--name" for="input-name">Как вас зовут?</label>
+								<input id="input-name" class="form__input form__input--name" type="text" name="name" placeholder="Иван Иванов" />
+							</div>
+							<div class="form__inputbox">
+								<label class="form__label input__label--tel" for="input-tel">Ваш номер телефона</label>
+								<input id="input-tel" class="form__input form__input--tel" type="tel" name="tel" required data-masked />
+							</div>
+						</div>
+						<div>
+							<p class="form__privacy-policy">
+								Отправляя заявку, вы соглашаетесь с
+								<button class="form__privacy-policy-link" data-privacy-open>политикой конфиденциальности</button>
+							</p>
+							<button id="request-submit" class="form__button" type="submit">Начать работать с нами &rarr;</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<dialog id="popup-test" class="popup-test" open>
+			<button class="popup-test__closeBtn icon-cross"></button>
+			<div class="popup-test__container">
+				<span class="popup-test__text">Готовы ли вы к процедуре банкротства?</span>
+				<a class="popup-test__link" href="./pages/questionnaire.html">Пройти тест<i class="popup-test__link-icon icon-arrow-next"></i></a>
+			</div>
+		</dialog>
+		<dialog id="modal-privacy" class="modal-privacy">
+			<div class="modal-privacy__container">
+				<button class="modal-privacy__closeBtn icon-cross"></button>
+				<h3 class="modal-privacy__title">Политика конфиденциальности</h3>
+				<time datetime="2025-02-27" class="modal-privacy__update-time">Последнее обновление 27.02.25</time>
+				<ul class="modal-privacy__subtitle">
+					<li class="modal-privacy__subtitle-item">Добро пожаловать на goodman.bz!</li>
+					<li class="modal-privacy__subtitle-item">Ваша конфиденциальность важна для нас. В этой Политике конфиденциальности объясняется, как мы собираем, используем и защищаем вашу личную информацию, когда вы посещаете сайт, взаимодействуете с&nbsp;нашими услугами или связываетесь с&nbsp;нами.</li>
+					<li class="modal-privacy__subtitle-item">Используя наш веб-сайт и услуги, вы соглашаетесь с&nbsp;практикой, описанной в&nbsp;настоящей Политике конфиденциальности.</li>
+				</ul>
+				<ul class="modal-privacy__body">
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Не упоминать о бойцовском клубе.</li>
+							<li class="modal-privacy__item-text">В Бойцовском Клубе мы подчеркиваем уважение, дисциплину и товарищество среди наших членов. Этот документ описывает ключевые правила, которые регулируют наш клуб и обеспечивают безопасный и приятный опыт для всех.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Не упоминать НИГДЕ о бойцовском клубе</li>
+							<li class="modal-privacy__item-text">Члены должны добровольно соглашаться участвовать в боях и носить подходящее защитное снаряжение. Безопасность является нашим высшим приоритетом.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Боец крикнул: "стоп", выдохся, отключился — бой окончен</li>
+							<li class="modal-privacy__item-text">Все бойцы должны проявлять уважение к своим соперникам как внутри, так и вне ринга. Личные нападки или недостойное поведение не будут терпимы.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">В бою участвуют лишь двое</li>
+							<li class="modal-privacy__item-text">После боя члены поощряются поздравлять своих соперников и оказывать поддержку, независимо от результата.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Бои идут один за другим</li>
+							<li class="modal-privacy__item-text">В случае травмы члены должны немедленно сообщить рефери и при необходимости обратиться за медицинской помощью.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Снимать обувь и рубашку</li>
+							<li class="modal-privacy__item-text">Все бойцы должны проявлять уважение к своим соперникам как внутри, так и вне ринга. Личные нападки или недостойное поведение не будут терпимы.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Бой продолжается столько, сколько нужно</li>
+							<li class="modal-privacy__item-text">Участники должны быть не младше 18 лет, чтобы присоединиться к Бойцовскому Клубу.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Тот, кто впервые пришел в клуб, примет бой.</li>
+							<li class="modal-privacy__item-text">По любым вопросам или проблемам, касающимся этих правил, пожалуйста, свяжитесь с нами по адресу info@fightclub.com.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</dialog>
+		<dialog id="modal-call" class="modal-form">
+			<div class="modal-form__container">
+				<button class="modal-form__closeBtn icon-cross"></button>
+				<div class="modal-form__titlebox">
+					<h3 class="modal-form__title">Нужна помощь или&nbsp;консультация?</h3>
+					<p class="modal-form__subtitle">Отправьте заявку на обратный звонок, и мы перезвоним в течение 15&nbsp;минут или ближайший рабочий день</p>
+				</div>
+				<form class="modal-form__form" action="">
+					<input class="modal-form__input" type="text" placeholder="Имя" />
+					<input id="input-tel" class="modal-form__input" type="tel" placeholder="Телефон" required />
+					<button class="modal-form__button" type="submit">Отправить заявку<i class="icon-arrow-next"></i></button>
+					<small class="modal-form__agreement">Отправляя заявку, вы соглашаетесь с <button class="modal-form__agreement-link" data-privacy-open>политикой конфиденциальности</button></small>
+				</form>
+				<div class="modal-form__footer">
+					<p class="modal-form__hint">Вы также можете заполнить <a class="modal-form__hint-link" href="/projects/Goodman/pages/questionnaire.html">небольшую анкету</a>, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым решением.</p>
+					<div class="modal-form__linksbox">
+						<p class="modal-form__links-title">Или свяжитесь с нами в соцсетях</p>
+						<div class="modal-form__socials">
+							<a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--tg icon-telegram"></a>
+							<a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--vk icon-vk"></a>
+							<a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--insta icon-instagram"></a>
+						</div>
+						<a class="modal-form__email" href="mailto:hello@goodman.bz">hello@goodman.bz</a>
+					</div>
+				</div>
+			</div>
+		</dialog>
+		<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+			<clipPath id="message" clipPathUnits="objectBoundingBox">
+				<path d="M0.214 0 C0.107 0 0.02 0.087 0.02 0.195 V0.427 C0.02 0.571 0.107 0.658 0.214 0.658 H0.757 L1 0.905 L1 0.195 C1 0.087 0.915 0 0.808 0 H0.214 Z" />
+			</clipPath>
+		</svg>
+		<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<clipPath id="arrow" clipPathUnits="objectBoundingBox">
+					<path d="M 0,0 L 1,0 L 1,0.523 C 1,0.75 1,0.8 0.8,0.8 L 0.6,0.8 L 0.5,1 L 0.4,0.8 L 0.2,0.8 C 0,0.8 0,0.75 0,0.523 L 0,0 Z" />
+				</clipPath>
+			</defs>
+		</svg>
+		<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<clipPath id="clip-lb" clipPathUnits="objectBoundingBox">
+					<path d="M1 0.5C1 0.776 0.776 1 0.5 1C0.396 1 0.299 0.968 0.219 0.914L0.086 0.914L0.086 0.781C0.032 0.701 0 0.604 0 0.5C0 0.224 0.224 0 0.5 0C0.776 0 1 0.224 1 0.5Z" />
+				</clipPath>
+			</defs>
+		</svg>
+		<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<clipPath id="clip-rt" clipPathUnits="objectBoundingBox">
+					<path d="M1 0.5C1 0.776 0.776 1 0.5 1C0.396 1 0.299 0.968 0.219 0.914L0.086 0.914L0.086 0.781C0.032 0.701 0 0.604 0 0.5C0 0.224 0.224 0 0.5 0C0.776 0 1 0.224 1 0.5Z" transform="rotate(180 0.5 0.5)" />
+				</clipPath>
+			</defs>
+		</svg>
+		<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<clipPath id="clip-rb" clipPathUnits="objectBoundingBox">
+					<path d="M1 0.5C1 0.776 0.776 1 0.5 1C0.396 1 0.299 0.968 0.219 0.914L0.086 0.914L0.086 0.781C0.032 0.701 0 0.604 0 0.5C0 0.224 0.224 0 0.5 0C0.776 0 1 0.224 1 0.5Z" transform="rotate(270 0.5 0.5)" />
+				</clipPath>
+			</defs>
+		</svg>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__links">
+					<div class="footer__socials">
+						<p class="footer__socials-title">Следите за нами в&nbsp;соцсетях:</p>
+						<div class="footer__socials-wrapper">
+							<a class="footer__socials-icon footer__socials-icon--zen icon-zen" href=""></a>
+							<a class="footer__socials-icon footer__socials-icon--telegram icon-telegram" href=""></a>
+							<a class="footer__socials-icon footer__socials-icon--youtube icon-youtube" href=""></a>
+							<a class="footer__socials-icon footer__socials-icon--vk icon-vk" href=""></a>
+							<a class="footer__socials-icon footer__socials-icon--instagram icon-instagram" href=""></a>
+						</div>
+					</div>
+					<nav>
+						<ul class="footer__nav">
+							<li class="footer__nav-item">
+								<a href="pages/about.html">О нас</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="pages/news.html">Новости</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="pages/faq.html">Вопросы и ответы</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="pages/docs.html">Полезное</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="pages/partnership.html">Партнёрам</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="pages/payment.html">Оплата</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="pages/contact.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__location">
+						<div class="footer__location-linksbox">
+							<a class="footer__location-item footer__location-item--tel" href="tel:+79998461709"><i class="icon-tel"></i>+7 (999) 846-17-09</a>
+							<a class="footer__location-item footer__location-item--mail" href="mailto:hello@goodman.bz"><i class="icon-mail"></i>hello@goodman.bz</a>
+						</div>
+						<div class="footer__location-adress footer__location-adress--general">
+							<p class="footer__location-title">Головной офис:</p>
+							<div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Самара, ул. Пушкина, д. 15а, офис 22</div>
+						</div>
+						<div class="footer__location-adress footer__location-adress--add">
+							<p class="footer__location-title">Филиалы:</p>
+							<div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Краснодар, Красная ул., 118, этаж 8</div>
+							<div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Тольятти, ул. 70 лет Октября, 3</div>
+						</div>
+					</div>
+					<div class="footer__worktime-wrapper">
+						<p class="footer__worktime">Часы работы:<br /><br />Понедельник – четверг: 10:00 – 19:00<br />Пятница: 10:00 – 16:00</p>
+					</div>
+					<a class="footer__button icon-arrow-prev" href="#start"></a>
+				</div>
+				<div class="footer__docs">
+					<p class="footer__copyright">Goodman &copy; 2025. Все права защищены</p>
+					<a class="footer__docs-link" href="#">Правовая информация</a>
+					<button class="footer__docs-link" data-privacy-open>Политика конфиденциальности</button>
+					<picture class="footer__logo-container">
+						<source class="footer__logo footer__logo--xs" srcset="media/icons/logo-xs.svg" media="(max-width: 1100px)" />
+						<img class="footer__logo footer__logo--xl" src="media/icons/logo-xl.svg" alt="Good Man" />
+					</picture>
+				</div>
+			</div>
+			<div class="footer__badge">
+				<div class="footer__badge-container">
+					<small class="footer__badge-title">Разработка и поддержка сайта:</small>
+					<a href="https://intheplace.ru"><img class="footer__badge-logo" src="media/icons/studio-logo.svg" alt="#" /></a>
+				</div>
+			</div>
+		</footer>
+		<script src="js/libs/swiper.min.js"></script>
+		<script src="js/components/header.js"></script>
+		<script src="js/components/burger.js"></script>
+		<script src="js/components/navigation.js"></script>
+		<script src="js/components/numberMask.js"></script>
+		<script src="js/components/modals.js"></script>
+		<script src="js/pages/index/feedbackSlider.js"></script>
+		<script src="js/pages/index/casesSlider.js"></script>
+		<script src="js/pages/index/steps.js"></script>
+		<script src="js/pages/index/clientsSlider.js"></script>
+	</body>
 </html>

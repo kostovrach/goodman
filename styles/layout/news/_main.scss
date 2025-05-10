@@ -1,7 +1,7 @@
 .main {
     background-color: $secondary-color;
     padding-top: 10rem;
-    border-radius: $block-border-radius;
+    border-radius: 0 0 calc($border-radius * 2) calc($border-radius * 2);
     &__container {
         @include content-width();
     }

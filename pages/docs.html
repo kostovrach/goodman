@@ -1,877 +1,658 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goodman - Документы</title>
-    <link rel="stylesheet" href="../media/icons/icon-font/style.css" />
-    <link rel="stylesheet" href="../styles/docs-page.css" />
-  </head>
-  <body id="start">
-    <header class="header">
-      <div class="header__container">
-        <a href="../index.html">
-          <picture class="header__logo-container">
-            <source
-              class="header__logo header__logo--xs"
-              srcset="../media/icons/logo-xs.svg"
-              media="(max-width: 1100px)"
-            />
-            <img
-              class="header__logo header__logo--xl"
-              src="../media/icons/logo-xl.svg"
-              alt="Good Man"
-            />
-          </picture>
-        </a>
-        <nav>
-          <ul class="header__nav">
-            <li class="header__nav-item">
-              <a href="../pages/about.html">О нас</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="../pages/news.html">Новости</a>
-            </li>
-            <li class="header__nav-item" data-force-hover>
-              <a href="../pages/docs.html">Документы</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="../pages/faq.html">Вопросы</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="../pages/contact.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__connection">
-          <a href="tel:+78001014273" class="header__tel">8 (800) 101-42-73</a>
-          <button class="header__button" data-call-open>
-            Связаться с нами<i class="icon-arrow-next"></i>
-          </button>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Goodman - Документы</title>
+		<link rel="stylesheet" href="../media/icons/icon-font/style.css" />
+		<link rel="stylesheet" href="../styles/css/docs-page.css" />
+	</head>
+	<body id="start">
+		<header class="header">
+			<div class="header__container">
+				<a href="../index.html">
+					<picture class="header__logo-container">
+						<source class="header__logo header__logo--xs" srcset="../media/icons/logo-xs.svg" media="(max-width: 1100px)" />
+						<img class="header__logo header__logo--xl" src="../media/icons/logo-xl.svg" alt="Good Man" />
+					</picture>
+				</a>
+				<nav>
+					<ul class="header__nav">
+						<li class="header__nav-item">
+							<a href="../pages/about.html">О нас</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="../pages/news.html">Новости</a>
+						</li>
+						<li class="header__nav-item" data-force-hover>
+							<a href="../pages/docs.html">Документы</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="../pages/faq.html">Вопросы</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="../pages/contact.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__connection">
+					<a href="tel:+78001014273" class="header__tel">8 (800) 101-42-73</a>
+					<button class="header__button" data-call-open>Связаться с нами<i class="icon-arrow-next"></i></button>
+				</div>
 
-        <div class="header__burger burger">
-          <div class="burger__icon">
-            <span></span>
-          </div>
-          <div class="burger__wrapper">
-            <nav>
-              <ul class="burger__nav">
-                <li class="burger__nav-item">
-                  <a href="../pages/about.html">О нас</a>
-                </li>
-                <li class="burger__nav-item">
-                  <a href="../pages/news.html">Новости</a>
-                </li>
-                <li class="burger__nav-item">
-                  <a href="../pages/docs.html">Документы</a>
-                </li>
-                <li class="burger__nav-item">
-                  <a href="../pages/faq.html">Вопросы</a>
-                </li>
-                <li class="burger__nav-item">
-                  <a href="../pages/contact.html">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <button class="burger__button" data-call-open>
-              Связаться с нами<i class="icon-arrow-next"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="docs">
-        <div class="docs__container">
-          <aside class="docs__sider">
-            <nav class="docs__nav">
-              <p class="docs__nav-title">Группы:</p>
-              <ul>
-                <li class="docs__nav-item">
-                  <a href="#docs-individual">Банкротство физических лиц</a>
-                </li>
-                <li class="docs__nav-item">
-                  <a href="#docs-juridical">Банкротство юридических лиц</a>
-                </li>
-                <li class="docs__nav-item">
-                  <a href="#docs-credit">Оспаривание кредитного договора</a>
-                </li>
-                <li class="docs__nav-item">
-                  <a href="#docs-collectors">Защита от коллекторов и банков</a>
-                </li>
-                <li class="docs__nav-item">
-                  <a href="#forms">Бланки документов</a>
-                </li>
-              </ul>
-            </nav>
-          </aside>
+				<div class="header__burger burger">
+					<div class="burger__icon">
+						<span></span>
+					</div>
+					<div class="burger__wrapper">
+						<nav>
+							<ul class="burger__nav">
+								<li class="burger__nav-item">
+									<a href="../pages/about.html">О нас</a>
+								</li>
+								<li class="burger__nav-item">
+									<a href="../pages/news.html">Новости</a>
+								</li>
+								<li class="burger__nav-item">
+									<a href="../pages/docs.html">Документы</a>
+								</li>
+								<li class="burger__nav-item">
+									<a href="../pages/faq.html">Вопросы</a>
+								</li>
+								<li class="burger__nav-item">
+									<a href="../pages/contact.html">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<button class="burger__button" data-call-open>Связаться с нами<i class="icon-arrow-next"></i></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="docs">
+				<div class="docs__container">
+					<aside class="docs__sider">
+						<nav class="docs__nav">
+							<p class="docs__nav-title">Группы:</p>
+							<ul>
+								<li class="docs__nav-item">
+									<a href="#docs-individual">Банкротство физических лиц</a>
+								</li>
+								<li class="docs__nav-item">
+									<a href="#docs-juridical">Банкротство юридических лиц</a>
+								</li>
+								<li class="docs__nav-item">
+									<a href="#docs-credit">Оспаривание кредитного договора</a>
+								</li>
+								<li class="docs__nav-item">
+									<a href="#docs-collectors">Защита от коллекторов и банков</a>
+								</li>
+								<li class="docs__nav-item">
+									<a href="#forms">Бланки документов</a>
+								</li>
+							</ul>
+						</nav>
+					</aside>
 
-          <div class="docs__body">
-            <div class="docs__titlebox">
-              <h1 class="docs__title">Документы</h1>
-              <ul class="docs__subtitle">
-                <li>⚠️Важно:</li>
-                <li>
-                  Чем больше информации о ваших финансовых обязательствах и
-                  текущем положении вы предоставите, тем быстрее пройдет
-                  процедура. В компании "Goodman" вам помогут правильно оформить
-                  документы и подготовить всё необходимое для подачи заявления.
-                </li>
-              </ul>
-            </div>
+					<div class="docs__body">
+						<div class="docs__titlebox">
+							<h1 class="docs__title">Документы</h1>
+							<ul class="docs__subtitle">
+								<li>⚠️Важно:</li>
+								<li>Чем больше информации о ваших финансовых обязательствах и текущем положении вы предоставите, тем быстрее пройдет процедура. В компании "Goodman" вам помогут правильно оформить документы и подготовить всё необходимое для подачи заявления.</li>
+							</ul>
+						</div>
 
-            <section id="docs-individual" class="docs__section">
-              <h2 class="docs__section-title">
-                Документы, необходимые для&nbsp;банкротства физических лиц
-              </h2>
-              <p class="docs__section-description">
-                Чтобы суд рассмотрел ваше заявление о банкротстве, необходимо
-                собрать пакет документов. Вот основные бумаги, которые вам
-                понадобятся:
-              </p>
+						<section id="docs-individual" class="docs__section">
+							<h2 class="docs__section-title">Документы, необходимые для&nbsp;банкротства физических лиц</h2>
+							<p class="docs__section-description">Чтобы суд рассмотрел ваше заявление о банкротстве, необходимо собрать пакет документов. Вот основные бумаги, которые вам понадобятся:</p>
 
-              <ul class="docs__spoiler">
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Документы, удостоверяющие личность и статус<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Кредитные и долговые обязательства<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Имущество и обязательства<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Судебные и исполнительные документы<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </section>
+							<ul class="docs__spoiler">
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Документы, удостоверяющие личность и статус<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Кредитные и долговые обязательства<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Имущество и обязательства<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Судебные и исполнительные документы<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
 
-            <div class="docs__banner">
-              <p class="docs__banner-title">
-                Уже готовы к процедуре банкротства?
-              </p>
-              <p class="docs__banner-subtitle">
-                Проверьте по чек-листу, чтобы проверить, все ли документы у вас
-                есть для оформления процедуры банкротства
-              </p>
-              <a class="docs__banner-button" href="" target=""
-                >Скачать чек-лист &rarr;</a
-              >
-            </div>
+						<div class="docs__banner">
+							<p class="docs__banner-title">Уже готовы к процедуре банкротства?</p>
+							<p class="docs__banner-subtitle">Проверьте по чек-листу, чтобы проверить, все ли документы у вас есть для оформления процедуры банкротства</p>
+							<a class="docs__banner-button" href="" target="">Скачать чек-лист &rarr;</a>
+						</div>
 
-            <section id="docs-juridical" class="docs__section">
-              <h2 class="docs__section-title">
-                Документы, необходимые для&nbsp;банкротства юридических лиц
-              </h2>
-              <p class="docs__section-description">
-                Чтобы суд рассмотрел ваше заявление о банкротстве, необходимо
-                собрать пакет документов. Вот основные бумаги, которые вам
-                понадобятся:
-              </p>
+						<section id="docs-juridical" class="docs__section">
+							<h2 class="docs__section-title">Документы, необходимые для&nbsp;банкротства юридических лиц</h2>
+							<p class="docs__section-description">Чтобы суд рассмотрел ваше заявление о банкротстве, необходимо собрать пакет документов. Вот основные бумаги, которые вам понадобятся:</p>
 
-              <ul class="docs__spoiler">
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Документы, удостоверяющие личность и статус<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Кредитные и долговые обязательства<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Имущество и обязательства<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Судебные и исполнительные документы<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </section>
+							<ul class="docs__spoiler">
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Документы, удостоверяющие личность и статус<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Кредитные и долговые обязательства<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Имущество и обязательства<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Судебные и исполнительные документы<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
 
-            <section id="docs-credit" class="docs__section">
-              <h2 class="docs__section-title">
-                Оспаривание кредитного договора
-              </h2>
-              <p class="docs__section-description">
-                Чтобы суд рассмотрел ваше заявление о банкротстве, необходимо
-                собрать пакет документов. Вот основные бумаги, которые вам
-                понадобятся:
-              </p>
+						<section id="docs-credit" class="docs__section">
+							<h2 class="docs__section-title">Оспаривание кредитного договора</h2>
+							<p class="docs__section-description">Чтобы суд рассмотрел ваше заявление о банкротстве, необходимо собрать пакет документов. Вот основные бумаги, которые вам понадобятся:</p>
 
-              <ul class="docs__spoiler">
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Документы, удостоверяющие личность и статус<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Кредитные и долговые обязательства<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Имущество и обязательства<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Судебные и исполнительные документы<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </section>
+							<ul class="docs__spoiler">
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Документы, удостоверяющие личность и статус<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Кредитные и долговые обязательства<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Имущество и обязательства<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Судебные и исполнительные документы<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
 
-            <section id="docs-collectors" class="docs__section">
-              <h2 class="docs__section-title">
-                Защита от коллекторов и банков
-              </h2>
-              <p class="docs__section-description">
-                Чтобы суд рассмотрел ваше заявление о банкротстве, необходимо
-                собрать пакет документов. Вот основные бумаги, которые вам
-                понадобятся:
-              </p>
+						<section id="docs-collectors" class="docs__section">
+							<h2 class="docs__section-title">Защита от коллекторов и банков</h2>
+							<p class="docs__section-description">Чтобы суд рассмотрел ваше заявление о банкротстве, необходимо собрать пакет документов. Вот основные бумаги, которые вам понадобятся:</p>
 
-              <ul class="docs__spoiler">
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Документы, удостоверяющие личность и статус<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Кредитные и долговые обязательства<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Имущество и обязательства<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="docs__spoiler-item">
-                  <p class="docs__spoiler-item-title">
-                    Судебные и исполнительные документы<i
-                      class="docs__spoiler-item-icon icon-cross"
-                    ></i>
-                  </p>
-                  <ul class="docs__spoiler-list">
-                    <li class="docs__spoiler-list-item">
-                      Справка о доходах (2-НДФЛ за последние 3 года)
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Выписка с банковских счетов за последние 3 года
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                    <li class="docs__spoiler-list-item">
-                      Сведения о наличии или отсутствии трудового договора
-                      <a href="" target="">Скачать образец &darr;</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </section>
-          </div>
-        </div>
-      </div>
-      <div id="forms" class="forms">
-        <div class="forms__container">
-          <div class="forms__titlebox">
-            <h3 class="forms__title">Бланки документов</h3>
-            <div class="forms__tagsbox">
-              <button class="forms__tag active" data-type="all">Все</button>
-              <button class="forms__tag" data-type="bankruptcy">Банкротство</button>
-              <button class="forms__tag" data-type="scammers">Жертвы мошенников</button>
-              <button class="forms__tag" data-type="mfo">Споры с МФО</button>
-              <button class="forms__tag" data-type="consumer-rights">Нарушение прав потребителей</button>
-            </div>
-          </div>
-          <div class="forms__itembox">
-            <div class="forms__item" data-type="bankruptcy">
-              <p class="forms__item-title">Патент на юридическую деятельность</p>
-              <i class="forms__item-icon icon-form"></i>
-              <a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
-            </div>
-            <div class="forms__item" data-type="scammers">
-              <p class="forms__item-title">Договор-оферта аренды</p>
-              <i class="forms__item-icon icon-form"></i>
-              <a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
-            </div>
-            <div class="forms__item" data-type="bankruptcy">
-              <p class="forms__item-title">Договор поставки</p>
-              <i class="forms__item-icon icon-form"></i>
-              <a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
-            </div>
-            <div class="forms__item" data-type="scammers">
-              <p class="forms__item-title">Патент на юридическую деятельность</p>
-              <i class="forms__item-icon icon-form"></i>
-              <a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
-            </div>
-            <div class="forms__item" data-type="bankruptcy">
-              <p class="forms__item-title">Договор-оферта аренды</p>
-              <i class="forms__item-icon icon-form"></i>
-              <a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
-            </div>
-            <div class="forms__item" data-type="bankruptcy">
-              <p class="forms__item-title">Договор поставки</p>
-              <i class="forms__item-icon icon-form"></i>
-              <a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
-            </div>
-            <div class="forms__item" data-type="mfo">
-              <p class="forms__item-title">Договор-оферта аренды</p>
-              <i class="forms__item-icon icon-form"></i>
-              <a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
-            </div>
-            <div class="forms__item" data-type="mfo">
-              <p class="forms__item-title">Соглашение о конфиденциальности данных</p>
-              <i class="forms__item-icon icon-form"></i>
-              <a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
-            </div>
-            <div class="forms__item" data-type="mfo">
-              <p class="forms__item-title">Договор поставки</p>
-              <i class="forms__item-icon icon-form"></i>
-              <a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
-            </div>
-            <div class="forms__item" data-type="bankruptcy">
-              <p class="forms__item-title">Соглашение о конфиденциальности данных</p>
-              <i class="forms__item-icon icon-form"></i>
-              <a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
-            </div>
-            <div class="forms__item" data-type="bankruptcy">
-              <p class="forms__item-title">Соглашение о конфиденциальности данных</p>
-              <i class="forms__item-icon icon-form"></i>
-              <a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <dialog id="modal-privacy" class="modal-privacy">
-      <div class="modal-privacy__container">
-        <button class="modal-privacy__closeBtn icon-cross"></button>
-        <h3 class="modal-privacy__title">Политика конфиденциальности</h3>
-        <time datetime="2025-02-27" class="modal-privacy__update-time"
-          >Последнее обновление 27.02.25</time
-        >
-        <ul class="modal-privacy__subtitle">
-          <li class="modal-privacy__subtitle-item">
-            Добро пожаловать на goodman.bz!
-          </li>
-          <li class="modal-privacy__subtitle-item">
-            Ваша конфиденциальность важна для нас. В этой Политике
-            конфиденциальности объясняется, как мы собираем, используем и
-            защищаем вашу личную информацию, когда вы посещаете сайт,
-            взаимодействуете с&nbsp;нашими услугами или связываетесь
-            с&nbsp;нами.
-          </li>
-          <li class="modal-privacy__subtitle-item">
-            Используя наш веб-сайт и услуги, вы соглашаетесь с&nbsp;практикой,
-            описанной в&nbsp;настоящей Политике конфиденциальности.
-          </li>
-        </ul>
-        <ul class="modal-privacy__body">
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Не упоминать о бойцовском клубе.
-              </li>
-              <li class="modal-privacy__item-text">
-                В Бойцовском Клубе мы подчеркиваем уважение, дисциплину и
-                товарищество среди наших членов. Этот документ описывает
-                ключевые правила, которые регулируют наш клуб и обеспечивают
-                безопасный и приятный опыт для всех.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Не упоминать НИГДЕ о бойцовском клубе
-              </li>
-              <li class="modal-privacy__item-text">
-                Члены должны добровольно соглашаться участвовать в боях и носить
-                подходящее защитное снаряжение. Безопасность является нашим
-                высшим приоритетом.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Боец крикнул: "стоп", выдохся, отключился — бой окончен
-              </li>
-              <li class="modal-privacy__item-text">
-                Все бойцы должны проявлять уважение к своим соперникам как
-                внутри, так и вне ринга. Личные нападки или недостойное
-                поведение не будут терпимы.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                В бою участвуют лишь двое
-              </li>
-              <li class="modal-privacy__item-text">
-                После боя члены поощряются поздравлять своих соперников и
-                оказывать поддержку, независимо от результата.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">Бои идут один за другим</li>
-              <li class="modal-privacy__item-text">
-                В случае травмы члены должны немедленно сообщить рефери и при
-                необходимости обратиться за медицинской помощью.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">Снимать обувь и рубашку</li>
-              <li class="modal-privacy__item-text">
-                Все бойцы должны проявлять уважение к своим соперникам как
-                внутри, так и вне ринга. Личные нападки или недостойное
-                поведение не будут терпимы.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Бой продолжается столько, сколько нужно
-              </li>
-              <li class="modal-privacy__item-text">
-                Участники должны быть не младше 18 лет, чтобы присоединиться к
-                Бойцовскому Клубу.
-              </li>
-            </ul>
-          </li>
-          <li class="modal-privacy__item">
-            <ul class="modal-privacy__item-wrapper">
-              <li class="modal-privacy__item-title">
-                Тот, кто впервые пришел в клуб, примет бой.
-              </li>
-              <li class="modal-privacy__item-text">
-                По любым вопросам или проблемам, касающимся этих правил,
-                пожалуйста, свяжитесь с нами по адресу info@fightclub.com.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </dialog>
-    <dialog id="modal-call" class="modal-form">
-          <div class="modal-form__container">
-            <button class="modal-form__closeBtn icon-cross"></button>
-            <div class="modal-form__titlebox">
-              <h3 class="modal-form__title">Нужна помощь или&nbsp;консультация?</h3>
-              <p class="modal-form__subtitle">Отправьте заявку на обратный звонок, и мы перезвоним в течение 15&nbsp;минут или ближайший рабочий день</p>
-            </div>
-            <form class="modal-form__form" action="">
-              <input class="modal-form__input" type="text" placeholder="Имя">
-              <input id="input-tel" class="modal-form__input" type="tel" placeholder="Телефон" required>
-              <button class="modal-form__button" type="submit">Отправить заявку<i class="icon-arrow-next"></i></button>
-              <small class="modal-form__agreement">Отправляя заявку, вы соглашаетесь с <button class="modal-form__agreement-link" data-privacy-open>политикой конфиденциальности</button></small>
-            </form>
-            <div class="modal-form__footer">
-              <p class="modal-form__hint">Вы также можете заполнить <a class="modal-form__hint-link" href="/projects/Goodman/pages/questionnaire.html">небольшую анкету</a>, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым решением.</p>
-              <div class="modal-form__linksbox">
-                <p class="modal-form__links-title">Или свяжитесь с нами в соцсетях</p>
-                <div class="modal-form__socials">
-                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--tg icon-telegram"></a>
-                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--vk icon-vk"></a>
-                  <a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--insta icon-instagram"></a>
-                </div>
-                <a class="modal-form__email" href="mailto:hello@goodman.bz">hello@goodman.bz</a>
-              </div>
-            </div>
-          </div>
-        </dialog>
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__links">
-          <div class="footer__socials">
-            <p class="footer__socials-title">
-              Следите за нами в&nbsp;соцсетях:
-            </p>
-            <div class="footer__socials-wrapper">
-              <a
-                class="footer__socials-icon footer__socials-icon--zen icon-zen"
-                href=""
-              ></a>
-              <a
-                class="footer__socials-icon footer__socials-icon--telegram icon-telegram"
-                href=""
-              ></a>
-              <a
-                class="footer__socials-icon footer__socials-icon--youtube icon-youtube"
-                href=""
-              ></a>
-              <a
-                class="footer__socials-icon footer__socials-icon--vk icon-vk"
-                href=""
-              ></a>
-              <a
-                class="footer__socials-icon footer__socials-icon--instagram icon-instagram"
-                href=""
-              ></a>
-            </div>
-          </div>
-          <nav>
-            <ul class="footer__nav">
-              <li class="footer__nav-item">
-                <a href="../pages/about.html">О нас</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="../pages/news.html">Новости</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="../pages/faq.html">Вопросы и ответы</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="../pages/docs.html">Полезное</a>
-              </li>
-              <li class="footer__nav-item"><a href="../pages/partnership.html">Партнёрам</a></li>
-              <li class="footer__nav-item"><a href="../pages/payment.html">Оплата</a></li>
-              <li class="footer__nav-item">
-                <a href="../pages/contact.html">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer__location">
-            <div class="footer__location-linksbox">
-              <a
-                class="footer__location-item footer__location-item--tel"
-                href="tel:+79998461709"
-                ><i class="icon-tel"></i>+7 (999) 846-17-09</a
-              >
-              <a
-                class="footer__location-item footer__location-item--mail"
-                href="mailto:hello@goodman.bz"
-                ><i class="icon-mail"></i>hello@goodman.bz</a
-              >
-            </div>
-            <div
-              class="footer__location-adress footer__location-adress--general"
-            >
-              <p class="footer__location-title">Головной офис:</p>
-              <div class="footer__location-item footer__location-item--mark">
-                <i class="icon-mark"></i>Самара, ул. Пушкина, д. 15а, офис 22
-              </div>
-            </div>
-            <div class="footer__location-adress footer__location-adress--add">
-              <p class="footer__location-title">Филиалы:</p>
-              <div class="footer__location-item footer__location-item--mark">
-                <i class="icon-mark"></i>Краснодар, Красная ул., 118, этаж 8
-              </div>
-              <div class="footer__location-item footer__location-item--mark">
-                <i class="icon-mark"></i>Тольятти, ул. 70 лет Октября, 3
-              </div>
-            </div>
-          </div>
-          <div class="footer__worktime-wrapper">
-            <p class="footer__worktime">
-              Часы работы:<br /><br />Понедельник – четверг: 10:00 – 19:00<br />Пятница:
-              10:00 – 16:00
-            </p>
-          </div>
-          <a class="footer__button icon-arrow-prev" href="#start"></a>
-        </div>
-        <div class="footer__docs">
-          <p class="footer__copyright">
-            Goodman &copy; 2025. Все права защищены
-          </p>
-          <a class="footer__docs-link" href="">Правовая информация</a>
-          <button class="footer__docs-link" data-privacy-open>Политика конфиденциальности</button>
-          <picture class="footer__logo-container">
-            <source
-              class="footer__logo footer__logo--xs"
-              srcset="../media/icons/logo-xs.svg"
-              media="(max-width: 1100px)"
-            />
-            <img
-              class="footer__logo footer__logo--xl"
-              src="../media/icons/logo-xl.svg"
-              alt="Good Man"
-            />
-          </picture>
-        </div>
-      </div>
-      <div class="footer__badge">
-        <div class="footer__badge-container">
-          <small class="footer__badge-title"
-            >Разработка и поддержка сайта:</small
-          >
-          <a href="https://intheplace.ru"
-            ><img
-              class="footer__badge-logo"
-              src="../media/icons/studio-logo.svg"
-              alt="#"
-          /></a>
-        </div>
-      </div>
-    </footer>
-    <script src="../js/header.js"></script>
-    <script src="../js/burger.js"></script>
-    <script src="../js/navigation.js"></script>
-    <script src="../js/modals.js"></script>
-    <script src="../js/docsSpoiler.js"></script>
-    <script src="../js/docsFormsFilter.js"></script>
-  </body>
+							<ul class="docs__spoiler">
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Документы, удостоверяющие личность и статус<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Кредитные и долговые обязательства<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Имущество и обязательства<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+								<li class="docs__spoiler-item">
+									<p class="docs__spoiler-item-title">Судебные и исполнительные документы<i class="docs__spoiler-item-icon icon-cross"></i></p>
+									<ul class="docs__spoiler-list">
+										<li class="docs__spoiler-list-item">
+											Справка о доходах (2-НДФЛ за последние 3 года)
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Выписка с банковских счетов за последние 3 года
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+										<li class="docs__spoiler-list-item">
+											Сведения о наличии или отсутствии трудового договора
+											<a href="" target="">Скачать образец &darr;</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div id="forms" class="forms">
+				<div class="forms__container">
+					<div class="forms__titlebox">
+						<h3 class="forms__title">Бланки документов</h3>
+						<div class="forms__tagsbox">
+							<button class="forms__tag active" data-type="all">Все</button>
+							<button class="forms__tag" data-type="bankruptcy">Банкротство</button>
+							<button class="forms__tag" data-type="scammers">Жертвы мошенников</button>
+							<button class="forms__tag" data-type="mfo">Споры с МФО</button>
+							<button class="forms__tag" data-type="consumer-rights">Нарушение прав потребителей</button>
+						</div>
+					</div>
+					<div class="forms__itembox">
+						<div class="forms__item" data-type="bankruptcy">
+							<p class="forms__item-title">Патент на юридическую деятельность</p>
+							<i class="forms__item-icon icon-form"></i>
+							<a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
+						</div>
+						<div class="forms__item" data-type="scammers">
+							<p class="forms__item-title">Договор-оферта аренды</p>
+							<i class="forms__item-icon icon-form"></i>
+							<a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
+						</div>
+						<div class="forms__item" data-type="bankruptcy">
+							<p class="forms__item-title">Договор поставки</p>
+							<i class="forms__item-icon icon-form"></i>
+							<a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
+						</div>
+						<div class="forms__item" data-type="scammers">
+							<p class="forms__item-title">Патент на юридическую деятельность</p>
+							<i class="forms__item-icon icon-form"></i>
+							<a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
+						</div>
+						<div class="forms__item" data-type="bankruptcy">
+							<p class="forms__item-title">Договор-оферта аренды</p>
+							<i class="forms__item-icon icon-form"></i>
+							<a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
+						</div>
+						<div class="forms__item" data-type="bankruptcy">
+							<p class="forms__item-title">Договор поставки</p>
+							<i class="forms__item-icon icon-form"></i>
+							<a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
+						</div>
+						<div class="forms__item" data-type="mfo">
+							<p class="forms__item-title">Договор-оферта аренды</p>
+							<i class="forms__item-icon icon-form"></i>
+							<a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
+						</div>
+						<div class="forms__item" data-type="mfo">
+							<p class="forms__item-title">Соглашение о конфиденциальности данных</p>
+							<i class="forms__item-icon icon-form"></i>
+							<a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
+						</div>
+						<div class="forms__item" data-type="mfo">
+							<p class="forms__item-title">Договор поставки</p>
+							<i class="forms__item-icon icon-form"></i>
+							<a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
+						</div>
+						<div class="forms__item" data-type="bankruptcy">
+							<p class="forms__item-title">Соглашение о конфиденциальности данных</p>
+							<i class="forms__item-icon icon-form"></i>
+							<a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
+						</div>
+						<div class="forms__item" data-type="bankruptcy">
+							<p class="forms__item-title">Соглашение о конфиденциальности данных</p>
+							<i class="forms__item-icon icon-form"></i>
+							<a class="forms__item-link" href=""><i class="forms__item-link-icon icon-see"></i>Открыть</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<dialog id="modal-privacy" class="modal-privacy">
+			<div class="modal-privacy__container">
+				<button class="modal-privacy__closeBtn icon-cross"></button>
+				<h3 class="modal-privacy__title">Политика конфиденциальности</h3>
+				<time datetime="2025-02-27" class="modal-privacy__update-time">Последнее обновление 27.02.25</time>
+				<ul class="modal-privacy__subtitle">
+					<li class="modal-privacy__subtitle-item">Добро пожаловать на goodman.bz!</li>
+					<li class="modal-privacy__subtitle-item">Ваша конфиденциальность важна для нас. В этой Политике конфиденциальности объясняется, как мы собираем, используем и защищаем вашу личную информацию, когда вы посещаете сайт, взаимодействуете с&nbsp;нашими услугами или связываетесь с&nbsp;нами.</li>
+					<li class="modal-privacy__subtitle-item">Используя наш веб-сайт и услуги, вы соглашаетесь с&nbsp;практикой, описанной в&nbsp;настоящей Политике конфиденциальности.</li>
+				</ul>
+				<ul class="modal-privacy__body">
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Не упоминать о бойцовском клубе.</li>
+							<li class="modal-privacy__item-text">В Бойцовском Клубе мы подчеркиваем уважение, дисциплину и товарищество среди наших членов. Этот документ описывает ключевые правила, которые регулируют наш клуб и обеспечивают безопасный и приятный опыт для всех.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Не упоминать НИГДЕ о бойцовском клубе</li>
+							<li class="modal-privacy__item-text">Члены должны добровольно соглашаться участвовать в боях и носить подходящее защитное снаряжение. Безопасность является нашим высшим приоритетом.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Боец крикнул: "стоп", выдохся, отключился — бой окончен</li>
+							<li class="modal-privacy__item-text">Все бойцы должны проявлять уважение к своим соперникам как внутри, так и вне ринга. Личные нападки или недостойное поведение не будут терпимы.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">В бою участвуют лишь двое</li>
+							<li class="modal-privacy__item-text">После боя члены поощряются поздравлять своих соперников и оказывать поддержку, независимо от результата.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Бои идут один за другим</li>
+							<li class="modal-privacy__item-text">В случае травмы члены должны немедленно сообщить рефери и при необходимости обратиться за медицинской помощью.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Снимать обувь и рубашку</li>
+							<li class="modal-privacy__item-text">Все бойцы должны проявлять уважение к своим соперникам как внутри, так и вне ринга. Личные нападки или недостойное поведение не будут терпимы.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Бой продолжается столько, сколько нужно</li>
+							<li class="modal-privacy__item-text">Участники должны быть не младше 18 лет, чтобы присоединиться к Бойцовскому Клубу.</li>
+						</ul>
+					</li>
+					<li class="modal-privacy__item">
+						<ul class="modal-privacy__item-wrapper">
+							<li class="modal-privacy__item-title">Тот, кто впервые пришел в клуб, примет бой.</li>
+							<li class="modal-privacy__item-text">По любым вопросам или проблемам, касающимся этих правил, пожалуйста, свяжитесь с нами по адресу info@fightclub.com.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</dialog>
+		<dialog id="modal-call" class="modal-form">
+			<div class="modal-form__container">
+				<button class="modal-form__closeBtn icon-cross"></button>
+				<div class="modal-form__titlebox">
+					<h3 class="modal-form__title">Нужна помощь или&nbsp;консультация?</h3>
+					<p class="modal-form__subtitle">Отправьте заявку на обратный звонок, и мы перезвоним в течение 15&nbsp;минут или ближайший рабочий день</p>
+				</div>
+				<form class="modal-form__form" action="">
+					<input class="modal-form__input" type="text" placeholder="Имя" />
+					<input id="input-tel" class="modal-form__input" type="tel" placeholder="Телефон" required />
+					<button class="modal-form__button" type="submit">Отправить заявку<i class="icon-arrow-next"></i></button>
+					<small class="modal-form__agreement">Отправляя заявку, вы соглашаетесь с <button class="modal-form__agreement-link" data-privacy-open>политикой конфиденциальности</button></small>
+				</form>
+				<div class="modal-form__footer">
+					<p class="modal-form__hint">Вы также можете заполнить <a class="modal-form__hint-link" href="/projects/Goodman/pages/questionnaire.html">небольшую анкету</a>, чтобы мы заранее изучили вашу ситуацию и вернулись с готовым решением.</p>
+					<div class="modal-form__linksbox">
+						<p class="modal-form__links-title">Или свяжитесь с нами в соцсетях</p>
+						<div class="modal-form__socials">
+							<a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--tg icon-telegram"></a>
+							<a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--vk icon-vk"></a>
+							<a href="#" target="_blank" class="modal-form__socials-icon modal-form__socials-icon--insta icon-instagram"></a>
+						</div>
+						<a class="modal-form__email" href="mailto:hello@goodman.bz">hello@goodman.bz</a>
+					</div>
+				</div>
+			</div>
+		</dialog>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__links">
+					<div class="footer__socials">
+						<p class="footer__socials-title">Следите за нами в&nbsp;соцсетях:</p>
+						<div class="footer__socials-wrapper">
+							<a class="footer__socials-icon footer__socials-icon--zen icon-zen" href=""></a>
+							<a class="footer__socials-icon footer__socials-icon--telegram icon-telegram" href=""></a>
+							<a class="footer__socials-icon footer__socials-icon--youtube icon-youtube" href=""></a>
+							<a class="footer__socials-icon footer__socials-icon--vk icon-vk" href=""></a>
+							<a class="footer__socials-icon footer__socials-icon--instagram icon-instagram" href=""></a>
+						</div>
+					</div>
+					<nav>
+						<ul class="footer__nav">
+							<li class="footer__nav-item">
+								<a href="../pages/about.html">О нас</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="../pages/news.html">Новости</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="../pages/faq.html">Вопросы и ответы</a>
+							</li>
+							<li class="footer__nav-item">
+								<a href="../pages/docs.html">Полезное</a>
+							</li>
+							<li class="footer__nav-item"><a href="../pages/partnership.html">Партнёрам</a></li>
+							<li class="footer__nav-item"><a href="../pages/payment.html">Оплата</a></li>
+							<li class="footer__nav-item">
+								<a href="../pages/contact.html">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__location">
+						<div class="footer__location-linksbox">
+							<a class="footer__location-item footer__location-item--tel" href="tel:+79998461709"><i class="icon-tel"></i>+7 (999) 846-17-09</a>
+							<a class="footer__location-item footer__location-item--mail" href="mailto:hello@goodman.bz"><i class="icon-mail"></i>hello@goodman.bz</a>
+						</div>
+						<div class="footer__location-adress footer__location-adress--general">
+							<p class="footer__location-title">Головной офис:</p>
+							<div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Самара, ул. Пушкина, д. 15а, офис 22</div>
+						</div>
+						<div class="footer__location-adress footer__location-adress--add">
+							<p class="footer__location-title">Филиалы:</p>
+							<div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Краснодар, Красная ул., 118, этаж 8</div>
+							<div class="footer__location-item footer__location-item--mark"><i class="icon-mark"></i>Тольятти, ул. 70 лет Октября, 3</div>
+						</div>
+					</div>
+					<div class="footer__worktime-wrapper">
+						<p class="footer__worktime">Часы работы:<br /><br />Понедельник – четверг: 10:00 – 19:00<br />Пятница: 10:00 – 16:00</p>
+					</div>
+					<a class="footer__button icon-arrow-prev" href="#start"></a>
+				</div>
+				<div class="footer__docs">
+					<p class="footer__copyright">Goodman &copy; 2025. Все права защищены</p>
+					<a class="footer__docs-link" href="">Правовая информация</a>
+					<button class="footer__docs-link" data-privacy-open>Политика конфиденциальности</button>
+					<picture class="footer__logo-container">
+						<source class="footer__logo footer__logo--xs" srcset="../media/icons/logo-xs.svg" media="(max-width: 1100px)" />
+						<img class="footer__logo footer__logo--xl" src="../media/icons/logo-xl.svg" alt="Good Man" />
+					</picture>
+				</div>
+			</div>
+			<div class="footer__badge">
+				<div class="footer__badge-container">
+					<small class="footer__badge-title">Разработка и поддержка сайта:</small>
+					<a href="https://intheplace.ru"><img class="footer__badge-logo" src="../media/icons/studio-logo.svg" alt="#" /></a>
+				</div>
+			</div>
+		</footer>
+		<script src="../js/components/header.js"></script>
+		<script src="../js/components/burger.js"></script>
+		<script src="../js/components/navigation.js"></script>
+		<script src="../js/components/modals.js"></script>
+		<script src="../js/pages/docs/docsSpoiler.js"></script>
+		<script src="../js/pages/docs/docsFormsFilter.js"></script>
+	</body>
 </html>

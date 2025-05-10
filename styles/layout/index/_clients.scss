@@ -37,8 +37,8 @@
             height: 100%;
             pointer-events: none;
             box-shadow:
-                0px 96px 64px -40px rgba(0, 24, 36, 0.9) inset,
-                0px -99px 64px -40px rgba(0, 24, 36, 0.9) inset;
+                0 6rem 4rem -2.5rem rgba($primary-color, 0.9) inset,
+                0 -6rem 4rem -2.5rem rgba($primary-color, 0.9) inset;
         }
     }
     &__slider-container {
@@ -165,7 +165,7 @@
         &-name {
             font-size: 0.75rem;
             line-height: 0.75rem;
-            font-weight: 550;
+            font-weight: $font-weight;
         }
         &-status {
             font-size: 0.75rem;
@@ -179,7 +179,7 @@
 
 [data-feedback-positive]::before,
 [data-feedback-negative]::before {
-    content: url(../media/icons/icon-cool.png);
+    content: url(../../media/icons/icon-cool.png);
     position: absolute;
     top: -1.5rem;
     left: -1rem;

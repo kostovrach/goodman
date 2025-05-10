@@ -22,13 +22,13 @@
   &__tag {
     cursor: pointer;
     font-size: 0.75rem;
-    font-weight: 550;
+    font-weight: $font-weight;
     letter-spacing: 0.0625rem;
     color: $secondary-color;
     height: fit-content;
     padding: 0.25rem 1rem;
     outline: 0.0625rem solid $secondary-color;
-    border-radius: 2rem;
+    border-radius: calc($border-radius * 2);
     transition-duration: $duration;
     &:hover:not(.cases__tag--active) {
       color: $add-color;
@@ -41,7 +41,7 @@
     &--active {
       cursor: default;
       background-color: $secondary-color;
-      color: #fff;
+      color: $text-color;
     }
   }
   &__sliders {
@@ -76,7 +76,7 @@
       left: 0;
       right: 0;
       z-index: -1;
-      background: url("../media/img/hypnotic.svg");
+      background: url("../../media/img/hypnotic.svg");
       background-size: cover;
       animation: hypnotic 2500ms linear infinite;
       width: 150%;
@@ -91,7 +91,7 @@
     color: $secondary-color;
     line-height: 1.5rem;
     letter-spacing: 0;
-    font-weight: 550;
+    font-weight: $font-weight;
   }
   &__slide-image {
     width: 10rem;
@@ -102,7 +102,7 @@
   &__slide-title {
     font-size: 2.5rem;
     line-height: 2.5rem;
-    font-weight: 550;
+    font-weight: $font-weight;
   }
   &__slide-stats {
     display: grid;
@@ -115,7 +115,7 @@
     &-dur {
       &--number {
         font-size: 2.5rem;
-        font-weight: 800;
+        font-weight: calc($font-weight * 2);
       }
       &--description {
         padding-top: 1rem;
@@ -139,7 +139,7 @@
     }
     &--accent {
       font-size: 1.25rem;
-      font-weight: 800;
+      font-weight: calc($font-weight * 2);
     }
   }
   &__slide-links {
@@ -150,7 +150,7 @@
     margin-top: 1rem;
     opacity: 0.8;
     & a {
-      @include nav-item-horizontal-hover(black);
+      @include nav-item-horizontal-hover($primary-color);
     }
   }
   &__slider-navigation {

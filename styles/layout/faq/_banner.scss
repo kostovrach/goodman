@@ -1,7 +1,7 @@
 .banner {
     padding: 4rem 0;
     background-color: $accent-color;
-    border-radius: 6vw;
+    border-radius: calc($border-radius * 2);
     &__container {
         @include content-width();
         display: flex;

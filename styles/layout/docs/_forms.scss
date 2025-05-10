@@ -54,7 +54,7 @@
             translate: 0 -1rem;
             .forms__item-icon::before {
                 transition-duration: $duration;
-                filter: drop-shadow(0px 0px 20px rgba(28, 85, 100, 1));
+                filter: drop-shadow(0 0 1.25rem rgba($secondary-color, 1));
             }
             .forms__item-link {
                 max-height: 2rem;

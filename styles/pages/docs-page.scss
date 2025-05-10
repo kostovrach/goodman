@@ -1,16 +1,16 @@
-@import "utils/variables.scss";
-@import "utils/mixins.scss";
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
 
-@import "base/reset.scss";
-@import "base/typography.scss";
+@import "../base/reset.scss";
+@import "../base/typography.scss";
 
-@import "components/header.scss";
-@import "components/footer.scss";
-@import "components/modal-privacy.scss";
-@import "components/modal-form.scss";
+@import "../components/header.scss";
+@import "../components/footer.scss";
+@import "../components/modal-privacy.scss";
+@import "../components/modal-form.scss";
 
-@import "layout/docs/docs.scss";
-@import "layout/docs/forms.scss";
+@import "../layout/docs/docs.scss";
+@import "../layout/docs/forms.scss";
 
 @media (max-width: 1100px) {
     .docs {

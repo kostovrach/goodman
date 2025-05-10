@@ -3,7 +3,7 @@
     z-index: 0;
     height: 70vh;
     overflow: hidden;
-    border-radius: $block-border-radius;
+    border-radius: calc($border-radius * 2);
     translate: 0 -6vw;
     &__container {
         height: 100%;

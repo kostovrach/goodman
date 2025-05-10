@@ -41,7 +41,7 @@
       }
       &-preview {
         cursor: pointer;
-        font-weight: 550;
+        font-weight: $font-weight;
         padding: 1.5rem 0.65rem;
         display: flex;
         flex-direction: column;

@@ -962,7 +962,7 @@ body {
 .team__img-container {
   width: 100%;
   aspect-ratio: 2/1;
-  background-image: url("../media/img/team2.jpg");
+  background-image: url("../../media/img/team2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

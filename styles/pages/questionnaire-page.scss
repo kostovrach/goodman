@@ -1,17 +1,17 @@
-@import "utils/variables.scss";
-@import "utils/mixins.scss";
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
 
-@import "base/reset.scss";
-@import "base/typography.scss";
+@import "../base/reset.scss";
+@import "../base/typography.scss";
 
-@import "components/header.scss";
-@import "components/footer.scss";
-@import "components/modal-privacy.scss";
-@import "components/modal-form.scss";
+@import "../components/header.scss";
+@import "../components/footer.scss";
+@import "../components/modal-privacy.scss";
+@import "../components/modal-form.scss";
 
-@import "layout/questionnaire/main.scss";
-@import "layout/questionnaire/progress.scss";
-@import "layout/questionnaire/quastion.scss";
+@import "../layout/questionnaire/main.scss";
+@import "../layout/questionnaire/progress.scss";
+@import "../layout/questionnaire/quastion.scss";
 
 @media (max-width: 960px) {
     .quastion {

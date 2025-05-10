@@ -1,28 +1,28 @@
-@import "utils/variables.scss";
-@import "utils/mixins.scss";
-@import "utils/swiper.scss";
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+@import "../utils/swiper.scss";
 
-@import "base/reset.scss";
-@import "base/typography.scss";
+@import "../base/reset.scss";
+@import "../base/typography.scss";
 
-@import "components/header.scss";
-@import "components/footer.scss";
-@import "components/modal-privacy.scss";
-@import "components/modal-form.scss";
+@import "../components/header.scss";
+@import "../components/footer.scss";
+@import "../components/modal-privacy.scss";
+@import "../components/modal-form.scss";
 
-@import "layout/partnership/intro.scss";
-@import "layout/partnership/metrics.scss";
-@import "layout/partnership/useful.scss";
-@import "layout/partnership/benefits.scss";
-@import "layout/partnership/process.scss";
-@import "layout/partnership/about.scss";
-@import "layout/partnership/invite.scss";
-@import "layout/partnership/ideas.scss";
-@import "layout/partnership/footnote.scss";
-@import "layout/partnership/team.scss";
-@import "layout/partnership/advantages.scss";
-@import "layout/partnership/feedback.scss";
-@import "layout/partnership/connection.scss";
+@import "../layout/partnership/intro.scss";
+@import "../layout/partnership/metrics.scss";
+@import "../layout/partnership/useful.scss";
+@import "../layout/partnership/benefits.scss";
+@import "../layout/partnership/process.scss";
+@import "../layout/partnership/about.scss";
+@import "../layout/partnership/invite.scss";
+@import "../layout/partnership/ideas.scss";
+@import "../layout/partnership/footnote.scss";
+@import "../layout/partnership/team.scss";
+@import "../layout/partnership/advantages.scss";
+@import "../layout/partnership/feedback.scss";
+@import "../layout/partnership/connection.scss";
 
 @media (max-width: 1240px) {
     .metrics {
