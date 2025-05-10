@@ -692,6 +692,7 @@ body {
 }
 .modal-privacy__item-title {
   font-size: 1.5rem;
+  line-height: 1.5rem;
   text-indent: 1.5rem;
 }
 
@@ -699,6 +700,12 @@ body {
   overflow-y: hidden;
 }
 
+@media (max-width: 580px) {
+  .modal-privacy__title {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
 .modal-form {
   position: absolute;
   z-index: 3;
@@ -956,11 +963,12 @@ body {
 }
 
 .team {
-  border-radius: 6vw;
+  border-radius: 4rem;
   overflow: hidden;
 }
 .team__img-container {
   width: 100%;
+  height: 100%;
   aspect-ratio: 2/1;
   background-image: url("../../media/img/team2.jpg");
   background-size: cover;
@@ -1077,7 +1085,8 @@ body {
   content: "";
   position: absolute;
   right: -0.75rem;
-  top: 35%;
+  top: 50%;
+  translate: 0 -50%;
   width: 0.375rem;
   height: 0.375rem;
   background-color: #ADE5E4;
@@ -1246,7 +1255,15 @@ body {
 }
 @media (max-width: 660px) {
   .team__img-container {
-    aspect-ratio: 1/1;
+    display: none;
+  }
+  .team__text-container {
+    padding: 4rem 2rem;
+    display: block;
+  }
+  .team__quote {
+    width: 100%;
+    text-align: left;
   }
   .staff__item a {
     font-size: 0.75rem;
@@ -1266,12 +1283,6 @@ body {
     font-size: 4rem;
     margin-bottom: 1.5rem;
   }
-  .team__text-container {
-    padding: 2rem 0;
-  }
-  .team__quote {
-    font-size: 1.25rem;
-  }
   .staff__subtitle {
     width: 100%;
   }
@@ -1287,12 +1298,6 @@ body {
   .intro__text {
     font-size: 0.75rem;
     width: 100%;
-  }
-  .team__text-container {
-    padding: 2rem 0;
-  }
-  .team__quote {
-    font-size: 1.25rem;
   }
   .about__button span {
     display: none;

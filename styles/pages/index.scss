@@ -110,7 +110,10 @@
 }
 @media (max-width: 860px) {
     .team {
-        aspect-ratio: 3/2;
+        display: none;
+    }
+    .about {
+        padding-top: 4rem;
     }
     .opinion {
         &__container {

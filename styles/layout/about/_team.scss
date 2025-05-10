@@ -1,8 +1,9 @@
 .team {
-    border-radius: 6vw;
+    border-radius: calc($border-radius * 2);
     overflow: hidden;
     &__img-container {
         width: 100%;
+        height: 100%;
         aspect-ratio: 2/1;
         background-image: url('../../media/img/team2.jpg');
         background-size: cover;

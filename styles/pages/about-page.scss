@@ -50,7 +50,15 @@
 @media (max-width: 660px) {
     .team {
         &__img-container {
-            aspect-ratio: 1/1;
+            display: none;
+        }
+        &__text-container {
+            padding: 4rem 2rem;
+            display: block;
+        }
+        &__quote {
+            width: 100%;
+            text-align: left;
         }
     }
     .staff {
@@ -75,14 +83,6 @@
             margin-bottom: 1.5rem;
         }
     }
-    .team {
-        &__text-container {
-            padding: 2rem 0;
-        }
-        &__quote {
-            font-size: 1.25rem;
-        }
-    }
     .staff {
         &__subtitle {
             width: 100%;
@@ -101,14 +101,6 @@
         &__text {
             font-size: 0.75rem;
             width: 100%;
-        }
-    }
-    .team {
-        &__text-container {
-            padding: 2rem 0;
-        }
-        &__quote {
-            font-size: 1.25rem;
         }
     }
     .about {

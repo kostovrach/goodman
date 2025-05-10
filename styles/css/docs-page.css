@@ -692,6 +692,7 @@ body {
 }
 .modal-privacy__item-title {
   font-size: 1.5rem;
+  line-height: 1.5rem;
   text-indent: 1.5rem;
 }
 
@@ -699,6 +700,12 @@ body {
   overflow-y: hidden;
 }
 
+@media (max-width: 580px) {
+  .modal-privacy__title {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
 .modal-form {
   position: absolute;
   z-index: 3;

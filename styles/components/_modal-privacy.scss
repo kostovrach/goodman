@@ -69,6 +69,7 @@
         }
         &-title {
             font-size: 1.5rem;
+            line-height: 1.5rem;
             text-indent: 1.5rem;
         }
     }
@@ -76,4 +77,13 @@
 
 .block-scroll {
     overflow-y: hidden;
+}
+
+@media (max-width: 580px) {
+    .modal-privacy {
+        &__title {
+            font-size: 1.75rem;
+            line-height: 2rem;
+        }
+    }
 }
