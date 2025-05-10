@@ -992,7 +992,7 @@ body {
   border-radius: 0 0 2rem 2rem;
   padding: 2rem;
   padding-top: 6rem;
-  translate: 0 -25rem;
+  translate: 0 -30rem;
   opacity: 0;
 }
 .burger__wrapper.active {
@@ -1602,6 +1602,8 @@ body {
   left: 0;
   bottom: 0;
   width: 100vw;
+  min-height: 2.5rem;
+  height: fit-content;
   color: inherit;
   background-color: #001824;
   background-image: repeating-linear-gradient(-45deg, rgba(28, 85, 100, 0.3), rgba(28, 85, 100, 0.3) 1.25rem, transparent 1.25rem, transparent 2.5rem);

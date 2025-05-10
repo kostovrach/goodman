@@ -4,6 +4,8 @@
     left: 0;
     bottom: 0;
     width: 100vw;
+    min-height: 2.5rem;
+    height: fit-content;
     color: inherit;
     background-color: $primary-color;
     background-image: repeating-linear-gradient(

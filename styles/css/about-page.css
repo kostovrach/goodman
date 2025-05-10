@@ -294,7 +294,7 @@ body {
   border-radius: 0 0 2rem 2rem;
   padding: 2rem;
   padding-top: 6rem;
-  translate: 0 -25rem;
+  translate: 0 -30rem;
   opacity: 0;
 }
 .burger__wrapper.active {
