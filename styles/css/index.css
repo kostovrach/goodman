@@ -1611,7 +1611,7 @@ body {
 }
 .popup-test__closeBtn {
   position: absolute;
-  right: 2rem;
+  right: 1rem;
   top: 0.9rem;
   transition-duration: 0.5s;
 }
@@ -1620,7 +1620,7 @@ body {
 }
 .popup-test__container {
   height: 100%;
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1666,12 +1666,6 @@ body {
 @media (max-width: 768px) {
   .popup-test__container {
     justify-content: start;
-  }
-}
-@media (max-width: 530px) {
-  .popup-test__container {
-    flex-direction: column-reverse;
-    padding: 0.5rem 2rem;
   }
 }
 body {

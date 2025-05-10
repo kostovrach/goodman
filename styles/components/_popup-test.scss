@@ -18,7 +18,7 @@
     animation: run calc($duration * 10) linear infinite;
     &__closeBtn {
         position: absolute;
-        right: 2rem;
+        right: 1rem;
         top: 0.9rem;
         transition-duration: $duration;
         &:hover {
@@ -27,7 +27,7 @@
     }
     &__container {
         height: 100%;
-        padding: 0 2rem;
+        padding: 0 1rem;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -79,11 +79,11 @@
         }
     }
 }
-@media (max-width: 530px) {
-    .popup-test {
-        &__container {
-            flex-direction: column-reverse;
-            padding: 0.5rem 2rem;
-        }
-    }
-}
+// @media (max-width: 530px) {
+//     .popup-test {
+//         &__container {
+//             flex-direction: column-reverse;
+//             padding: 0.5rem 2rem;
+//         }
+//     }
+// }
