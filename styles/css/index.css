@@ -1602,7 +1602,6 @@ body {
   left: 0;
   bottom: 0;
   width: 100vw;
-  min-height: 2.5rem;
   color: inherit;
   background-color: #001824;
   background-image: repeating-linear-gradient(-45deg, rgba(28, 85, 100, 0.3), rgba(28, 85, 100, 0.3) 1.25rem, transparent 1.25rem, transparent 2.5rem);
@@ -1611,7 +1610,7 @@ body {
 }
 .popup-test__closeBtn {
   position: absolute;
-  right: 1rem;
+  right: 1.5rem;
   top: 0.9rem;
   transition-duration: 0.5s;
 }
@@ -1624,8 +1623,8 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 0.6rem;
+  gap: 0.5rem;
+  margin: 0.6rem 0;
 }
 .popup-test__link {
   position: relative;

@@ -4,7 +4,6 @@
     left: 0;
     bottom: 0;
     width: 100vw;
-    min-height: 2.5rem;
     color: inherit;
     background-color: $primary-color;
     background-image: repeating-linear-gradient(
@@ -18,7 +17,7 @@
     animation: run calc($duration * 10) linear infinite;
     &__closeBtn {
         position: absolute;
-        right: 1rem;
+        right: 1.5rem;
         top: 0.9rem;
         transition-duration: $duration;
         &:hover {
@@ -31,8 +30,8 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 0.6rem;
+        gap: 0.5rem;
+        margin: 0.6rem 0;
     }
     &__link {
         position: relative;
@@ -79,11 +78,3 @@
         }
     }
 }
-// @media (max-width: 530px) {
-//     .popup-test {
-//         &__container {
-//             flex-direction: column-reverse;
-//             padding: 0.5rem 2rem;
-//         }
-//     }
-// }
