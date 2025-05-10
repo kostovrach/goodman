@@ -2408,6 +2408,7 @@ body::after {
   background: none;
   color: #FFFFFF;
   transition-duration: 0.5s;
+  width: fit-content;
 }
 .steps__spoiler-item-button i {
   pointer-events: none;

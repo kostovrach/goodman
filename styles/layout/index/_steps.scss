@@ -107,6 +107,7 @@
       }
       &-button {
         @include button( $add-color, $accent-color, none, none, $text-color, $text-color, $accent-color );
+        width: fit-content;
       }
     }
   }
