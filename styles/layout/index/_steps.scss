@@ -23,40 +23,48 @@
     background-color: $secondary-color;
     &-item {
       display: flex;
-      max-height: 40rem;
+      height: 40rem;
+      flex-shrink: 0;
+      width: 5rem;
+      overflow: hidden;
+      transition-duration: calc($duration * 2);
+      &.active {
+        flex-shrink: 1;
+        width: 100%;
+        .steps__spoiler-item-preview {
+          pointer-events: none;
+          opacity: 0;
+          transition-duration: $duration;
+        }
+      }
+      &:not(.active) {
+        .steps__spoiler-item-content {
+          opacity: 0;
+        }
+      }
       &-content {
         display: flex;
+        flex-shrink: 0;
         flex-direction: column;
         justify-content: space-between;
-        padding: 0;
-        translate: 20rem 0;
-        max-width: 0;
-        overflow: hidden;
-        &.active {
-          max-width: none;
-          padding: 2rem;
-          translate: 0 0;
-          transition: translate $duration;
-        }
+        padding: 2rem;
+        opacity: 1;
+        transition-duration: calc($duration * 2);
       }
       &-preview {
         cursor: pointer;
         font-weight: $font-weight;
         padding: 1.5rem 0.65rem;
+        min-width: 5rem;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         opacity: 1;
-        transition: translate $duration;
+        transition-duration: calc($duration * 2);
         & * {
           cursor: pointer;
-        }
-        &.active {
-          opacity: 0;
-          translate: 50rem 0;
-          padding: 0;
-          overflow: hidden;
         }
         &--first {
           background-color: $add-color--dark;
@@ -98,12 +106,14 @@
         font-size: 1.5rem;
       }
       &-text-wrapper {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         gap: 1.5rem;
       }
       &-text {
         font-size: 2.5rem;
         line-height: 2.5rem;
+        max-width: 60vw
       }
       &-button {
         @include button( $add-color, $accent-color, none, none, $text-color, $text-color, $accent-color );

@@ -1,173 +1,173 @@
 @mixin content-width {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 2rem;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 2rem;
 }
 
 @mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-@mixin button ($outline-color, $outline-color-hover, $bg-color, $bg-color-hover, $t-color, $t-color-hover, $before-bg) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-    border-radius: $border-radius;
-    padding: $button-padding;
-    outline: 0.0625rem solid $outline-color;
-    background: $bg-color;
-    color: $t-color;
-    transition-duration: $duration;
-    i {
-        pointer-events: none;
-    }
-    &::before {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 70%;
-        width: 1rem;
-        height: 1rem;
-        scale: 0;
-        border-radius: 50%;
-        background: $before-bg;
-        transition-duration: 0.6s;
-        animation-timing-function: ease-out;
-    }
-    &:hover::before,
-    &:focus::before {
-        scale: 56;
-        background: $before-bg;
-    }
+@mixin button($outline-color, $outline-color-hover, $bg-color, $bg-color-hover, $t-color, $t-color-hover, $before-bg) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	border-radius: $border-radius;
+	padding: $button-padding;
+	border: 0.0625rem solid $outline-color;
+	background: $bg-color;
+	color: $t-color;
+	transition-duration: $duration;
+	i {
+		pointer-events: none;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 70%;
+		width: 1rem;
+		height: 1rem;
+		scale: 0;
+		border-radius: 50%;
+		background: $before-bg;
+		transition-duration: 0.6s;
+		animation-timing-function: ease-out;
+	}
+	&:hover::before,
+	&:focus::before {
+		scale: 56;
+		background: $before-bg;
+	}
 
-    &:hover,
-    &:focus {
-        color: $t-color-hover;
-        background: $bg-color-hover;
-        outline-color: $outline-color-hover;
-    }
+	&:hover,
+	&:focus {
+		color: $t-color-hover;
+		background: $bg-color-hover;
+		border-color: $outline-color-hover;
+	}
 }
 
 @mixin nav-item-vertical-hover {
-    position: relative;
-    transition-duration: $duration;
-    &::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 0.3125rem;
-        height: 0.3125rem;
-        background-color: #FFF;
-        border-radius: 50%;
-        translate: 0 1rem;
-        visibility: hidden;
-        animation-timing-function: ease;
-    }
-    &:hover::before {
-        translate: 0 0.5rem;
-        visibility: visible;
-        transition-duration: 0.2s;
-    }
-    &:hover {
-        translate: 0 -0.3rem;
-    }
+	position: relative;
+	transition-duration: $duration;
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 0.3125rem;
+		height: 0.3125rem;
+		background-color: #fff;
+		border-radius: 50%;
+		translate: 0 1rem;
+		visibility: hidden;
+		animation-timing-function: ease;
+	}
+	&:hover::before {
+		translate: 0 0.5rem;
+		visibility: visible;
+		transition-duration: 0.2s;
+	}
+	&:hover {
+		translate: 0 -0.3rem;
+	}
 }
 
 @mixin nav-item-vertical-force-hover {
-    translate: 0 -0.3rem;
-    &::before {
-        translate: 0 0.5rem;
-        visibility: visible;
-        transition-duration: 0.2s;
-    }
+	translate: 0 -0.3rem;
+	&::before {
+		translate: 0 0.5rem;
+		visibility: visible;
+		transition-duration: 0.2s;
+	}
 }
 
-@mixin nav-item-horizontal-hover ($hover-t-color) {
-    position: relative;
-    transition-duration: $duration;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 30%;
-        left: 0;
-        width: 0.6rem;
-        height: 0.6rem;
-        background-color: $accent-color;
-        border-radius: 50%;
-        scale: 0;
-        transition-duration: $duration;
-      }
-      &:hover {
-        color: $hover-t-color;
-        opacity: 1;
-        translate: 1rem 0;
-        &::before {
-          scale: 1;
-          translate: -1rem 0;
-        }
-      }
+@mixin nav-item-horizontal-hover($hover-t-color) {
+	position: relative;
+	transition-duration: $duration;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 30%;
+		left: 0;
+		width: 0.6rem;
+		height: 0.6rem;
+		background-color: $accent-color;
+		border-radius: 50%;
+		scale: 0;
+		transition-duration: $duration;
+	}
+	&:hover {
+		color: $hover-t-color;
+		opacity: 1;
+		translate: 1rem 0;
+		&::before {
+			scale: 1;
+			translate: -1rem 0;
+		}
+	}
 }
 
 // Socials hover
 @mixin tg-hover {
-    @include flex-center();
-    transition: scale $duration;
-    will-change: scale;
-    border-radius: 50%;
-    &:hover {
-        background-color: #229ED9;
-        scale: 1.1;
-    }
+	@include flex-center();
+	transition: scale $duration;
+	will-change: scale;
+	border-radius: 50%;
+	&:hover {
+		background-color: #229ed9;
+		scale: 1.1;
+	}
 }
 @mixin vk-hover {
-    @include flex-center();
-    font-size: 0.75rem;
-    transition: scale $duration;
-    will-change: scale;
-    border-radius: 50%;
-    &:hover {
-        background-color: #0E7CFF;
-        scale: 1.1;
-    }
+	@include flex-center();
+	font-size: 0.75rem;
+	transition: scale $duration;
+	will-change: scale;
+	border-radius: 50%;
+	&:hover {
+		background-color: #0e7cff;
+		scale: 1.1;
+	}
 }
 @mixin insta-hover {
-    @include flex-center();
-    transition: scale $duration;
-    will-change: scale;
-    border-radius: 50%;
-    &:hover {
-        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-        scale: 1.1;
-    }
+	@include flex-center();
+	transition: scale $duration;
+	will-change: scale;
+	border-radius: 50%;
+	&:hover {
+		background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+		scale: 1.1;
+	}
 }
 @mixin zen-hover {
-    @include flex-center();
-    transition: scale $duration;
-    will-change: scale;
-    border-radius: 50%;
-    &:hover {
-        font-size: 1.5rem;
-        color: $text-color;
-        background-color: #2C3036;
-        scale: 1.1;
-    }
+	@include flex-center();
+	transition: scale $duration;
+	will-change: scale;
+	border-radius: 50%;
+	&:hover {
+		font-size: 1.5rem;
+		color: $text-color;
+		background-color: #2c3036;
+		scale: 1.1;
+	}
 }
 @mixin youtube-hover {
-    @include flex-center();
-    transition: scale $duration;
-    will-change: scale;
-    border-radius: 50%;
-    &:hover {
-        font-size: 0.75rem;
-        background-color: #ff0000;
-        scale: 1.1;
-    }
+	@include flex-center();
+	transition: scale $duration;
+	will-change: scale;
+	border-radius: 50%;
+	&:hover {
+		font-size: 0.75rem;
+		background-color: #ff0000;
+		scale: 1.1;
+	}
 }

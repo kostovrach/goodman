@@ -27,12 +27,12 @@
     color: $secondary-color;
     height: fit-content;
     padding: 0.25rem 1rem;
-    outline: 0.0625rem solid $secondary-color;
+    border: 0.0625rem solid $secondary-color;
     border-radius: calc($border-radius * 2);
     transition-duration: $duration;
     &:hover:not(.cases__tag--active) {
       color: $add-color;
-      outline-color: $add-color;
+      border-color: $add-color;
     }
     &:focus:not(.cases__tag--active) {
       background-color: $add-color;
@@ -169,10 +169,10 @@
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 50%;
-    outline: 0.125rem solid $secondary-color;
+    border: 0.125rem solid $secondary-color;
     transition: scale $duration;
     &:hover:not(.disable) {
-      outline-color: $accent-color;
+      border-color: $accent-color;
       background-color: $accent-color;
       scale: 1.1;
     }

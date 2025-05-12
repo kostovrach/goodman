@@ -9,7 +9,8 @@
 @import "../components/modal-privacy.scss";
 @import "../components/modal-form.scss";
 
-@import "../layout/article/article";
+@import "../layout/article/article.scss";
+@import "../layout/article/suggest.scss";
 
 @media (max-width: 780px) {
     .article {
@@ -50,6 +51,14 @@
             }
         }
     }
+    .suggest {
+        &__container {
+            grid-template-columns: auto;
+        }
+        &__image-wrapper {
+            display: none;
+        }
+    }
 }
 @media (max-width: 590px) {
     .article {
@@ -67,6 +76,14 @@
             }
             &-button {
                 padding: $button-padding;
+            }
+        }
+    }
+    .suggest {
+        &__card {
+            &-title {
+                font-size: 1.5rem;
+                line-height: 2rem;
             }
         }
     }

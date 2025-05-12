@@ -33,7 +33,7 @@
     }
     &__button {
         @include button($text-color, $text-color, $text-color, $text-color, $accent-color, $text-color, $accent-color);
-        padding: 0.75rem 6rem;
+        min-width: 50%;
         margin-top: 2rem;
     }
     &__linksbox {

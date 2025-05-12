@@ -197,17 +197,6 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 1,
         speed: 800,
         spaceBetween: 30,
-        //  effect: 'creative',
-        //  creativeEffect: {
-        //    prev: {
-        //      translate: [0, 0, -400],
-        //    },
-        //    next: {
-        //      translate: ['100%', 0, 0],
-        //      rotate: [0, 0, -20],
-        //      opacity: 0,
-        //    },
-        //  },
         on: {
           init: function () {
             if (category === currentCategory) {

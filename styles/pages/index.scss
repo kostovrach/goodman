@@ -21,6 +21,7 @@
 @import "../layout/index/steps.scss";
 @import "../layout/index/clients.scss";
 @import "../layout/index/request.scss";
+@import "../layout/index/rating.scss";
 
 
 
@@ -207,6 +208,15 @@
                 display: none;
             }
             
+        }
+    }
+    .about {
+        &__message {
+            &--text {
+                text-wrap: wrap;
+                width: 100%;
+                translate: 2.5rem 0;
+            }
         }
     }
     .opinion {

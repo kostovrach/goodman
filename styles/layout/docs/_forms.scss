@@ -17,12 +17,12 @@
         font-size: 0.75rem;
         color: $secondary-color;
         padding: 0.25rem 1rem;
-        outline: 0.0625rem solid $secondary-color;
+        border: 0.0625rem solid $secondary-color;
         border-radius: $border-radius;
         transition-duration: $duration;
         &:hover {
             color: $text-color;
-            outline-color: $text-color;
+            border-color: $text-color;
         }
         &.active {
             pointer-events: none;
@@ -39,7 +39,7 @@
     &__item {
         max-width: 19.75rem;
         aspect-ratio: 1/1;
-        outline: 0.0625rem solid $secondary-color;
+        border: 0.0625rem solid $secondary-color;
         border-radius: $border-radius;
         padding: 2rem;
         text-wrap: wrap;
@@ -50,7 +50,7 @@
         justify-content: space-between;
         transition-duration: $duration;
         &:hover {
-            outline-color: $text-color;
+            border-color: $text-color;
             translate: 0 -1rem;
             .forms__item-icon::before {
                 transition-duration: $duration;

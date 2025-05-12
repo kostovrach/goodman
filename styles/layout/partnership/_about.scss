@@ -22,7 +22,7 @@
         color: $add-color;
         font-weight: $font-weight;
         border-radius: $border-radius;
-        outline: 0.0625rem solid $add-color;
+        border: 0.0625rem solid $add-color;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -32,7 +32,7 @@
         }
         &:nth-child(1),
         &:nth-child(5) {
-            outline: none;
+            border: none;
             padding: 0;
         }
         &-image-wrapper {

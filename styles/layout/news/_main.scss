@@ -51,7 +51,7 @@
     padding: 2rem;
     height: 20.125rem;
     color: $add-color;
-    outline: 0.0625rem solid $add-color;
+    border: 0.0625rem solid $add-color;
     border-radius: $border-radius;
     background-color: $secondary-color;
     overflow: hidden;
@@ -60,7 +60,7 @@
     justify-content: space-between;
     &:hover {
         color: $text-color;
-        outline-width: 0;
+        border-width: 0;
         & .card__image {
             opacity: 0.7;
         }

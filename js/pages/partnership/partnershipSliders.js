@@ -12,23 +12,30 @@ document.addEventListener("DOMContentLoaded", function () {
   const textSliderParams = {
     slidesPerView: "auto",
     spaceBetween: 32,
-    centeredSlides: true,
-    freeMode: {
-      enabled: true,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      paused: false,
     },
+    speed: 7000,
+    freeMode: true,
   };
 
   const imageSliderParams = {
     slidesPerView: "auto",
     spaceBetween: 16,
-    freeMode: {
-      enabled: true,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      paused: false,
     },
+    speed: 7000,
   };
 
   const feedbackSliderParams = {
     slidesPerView: 1,
     spaceBetween: 32,
+    speed: 800,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

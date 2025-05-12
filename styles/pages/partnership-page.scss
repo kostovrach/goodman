@@ -162,6 +162,18 @@
             }
         }
     }
+    .process {
+        &__title {
+            @include flex-center();
+        }
+        &__container {
+            max-width: none;
+            padding: 0;
+        }
+        &__item {
+            padding: 4rem 2rem;
+        }
+    }
     .footnote {
         &__image {
             max-width: 4rem;
@@ -199,6 +211,11 @@
         }
         &__subtitle {
             text-align: left;
+        }
+    }
+    .useful {
+        &__item {
+            padding-left: 1.5rem;
         }
     }
     .process {

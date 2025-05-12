@@ -2,12 +2,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const swiperParams = {
     direction: "vertical",
+    loop: true,
+    autoplay: {
+      delay: 0,
+      paused: false,
+    },
+    speed: 9000,
     spaceBetween: 16,
     slidesPerView: "auto",
-    initialSlide: 2,
-    freeMode: {
-      enabled: true,
-    },
     mousewheel: {
       enabled: true,
     },
@@ -16,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiperFirst = new Swiper(".clients__slider-container--1", swiperParams);
   const swiperSecond = new Swiper(".clients__slider-container--2", swiperParams);
 
+  swiperSecond.params.autoplay.reverseDirection = true;
   const swipers = [swiperFirst, swiperSecond];
 
   const videoFilterBtn = document.querySelector("[data-only-video]");

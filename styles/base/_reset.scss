@@ -74,9 +74,14 @@ img {
   vertical-align: top;
 }
 
+.swiper-wrapper {
+  -webkit-transition-timing-function:linear !important; 
+  -o-transition-timing-function:linear !important;
+  transition-timing-function:linear !important;
+}
+
 body {
   font-family: "Golos Text", sans-serif;
-  //font-family: 'Golos', sans-serif;
   font-size: $fs;
   line-height: 150%;
   text-wrap: balance;

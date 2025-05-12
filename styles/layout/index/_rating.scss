@@ -1,0 +1,41 @@
+.rating {
+    &__container {
+        @include content-width();
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    &__item {
+        color: $primary-color;
+        background-color: $add-color;
+        padding: 1rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 18.75rem;
+        overflow: hidden;
+        border-radius: $border-radius;
+        border-bottom-right-radius: 0;
+    }
+    &__titlebox,
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    &__name {
+        font-size: 0.875rem;
+    }
+    &__count {
+        font-size: 0.75rem;
+        line-height: 1rem;
+        border-bottom: 0.0625rem dashed $primary-color;
+    }
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}

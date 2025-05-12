@@ -1,6 +1,7 @@
 .main {
     background-color: $secondary-color;
     padding: 10rem 0 4rem 0;
+    border-radius: 0 0 calc($border-radius * 2) calc($border-radius * 2);
 }
 
 .article {
@@ -27,7 +28,7 @@
         line-height: 0.875rem;
         color: $add-color;
         border-radius: $border-radius;
-        outline: 0.09375rem solid $add-color;
+        border: 0.09375rem solid $add-color;
         padding: 0.25rem 1rem;
         opacity: 0.8;
     }

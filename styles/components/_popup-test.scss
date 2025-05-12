@@ -27,10 +27,11 @@
         }
     }
     &__container {
-        height: 100%;
+        height: auto;
         padding: 0 1rem;
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         gap: 0.5rem;
         margin: 0.6rem 0;
