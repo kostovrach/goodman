@@ -103,6 +103,7 @@
     font-size: 2.5rem;
     line-height: 2.5rem;
     font-weight: $font-weight;
+    filter: drop-shadow(1px 1px 1px rgba($primary-color, 0.7));
   }
   &__slide-stats {
     display: grid;

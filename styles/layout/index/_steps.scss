@@ -23,7 +23,7 @@
     background-color: $secondary-color;
     &-item {
       display: flex;
-      height: 40rem;
+      //height: 40rem;
       flex-shrink: 0;
       width: 5rem;
       overflow: hidden;
@@ -47,6 +47,7 @@
         flex-shrink: 0;
         flex-direction: column;
         justify-content: space-between;
+        gap: 4rem;
         padding: 2rem;
         opacity: 1;
         transition-duration: calc($duration * 2);
@@ -61,6 +62,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        gap: 2rem;
         opacity: 1;
         transition-duration: calc($duration * 2);
         & * {
@@ -103,7 +105,8 @@
         }
       }
       &-title {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
       }
       &-text-wrapper {
         display: flex;
@@ -111,9 +114,9 @@
         gap: 1.5rem;
       }
       &-text {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-        max-width: 60vw
+        font-size: 2rem;
+        line-height: 2rem;
+        max-width: 55vw
       }
       &-button {
         @include button( $add-color, $accent-color, none, none, $text-color, $text-color, $accent-color );

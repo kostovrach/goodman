@@ -25,5 +25,7 @@
     &__button {
         @include button(none, none, $secondary-color, $secondary-color, $text-color, $text-color, $accent-color);
         margin-top: 2rem;
+        display: flex;
+        gap: 0.25rem;
     }
 }

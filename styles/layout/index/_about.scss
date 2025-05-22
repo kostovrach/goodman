@@ -4,6 +4,7 @@
         @include content-width();
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
         overflow: hidden;
     }
     &__message {
@@ -38,7 +39,8 @@
             font-weight: $font-weight;
         }
         &--text {
-            translate: 8.5rem 0;
+            text-wrap: wrap;
+            padding-left: 8.5rem;
         }
     }
     &__title {

@@ -1,151 +1,186 @@
 .request {
-  background-color: $accent-color;
-  border-radius: calc($border-radius * 2);
-  padding: 4rem 0;
-  margin-bottom: 4rem;
-  &__container {
-    @include content-width();
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-  }
-  &__titlebox {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  &__title {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-  }
-  &__linksbox {
-    display: grid;
-    gap: 0.5rem;
-  }
-  &__email {
-    &-link {
-      font-size: 1.125rem;
-      font-weight: $font-weight;
-      text-decoration: underline;
-    }
-  }
-  &__socials {
-    display: flex;
-    gap: 1rem;
-  }
-  &__link {
-    @include flex-center();
-    width: 2rem;
-    height: 2rem;
-    overflow: hidden;
-    &::before {
-      color: $text-color
-    }
-    &--telegram {
-      @include tg-hover();
-    }
-    &--vk {
-      @include vk-hover();
-    }
-    &--instagram {
-      @include insta-hover();
-    }
-  }
-  &__questionnairye {
-    text-wrap: wrap;
-    &-link {
-      font-weight: $font-weight;
-      text-decoration: underline;
-    }
-  }
+	background-color: $accent-color;
+	border-radius: calc($border-radius * 2);
+	padding: 4rem 0;
+	margin-bottom: 4rem;
+	&__container {
+		@include content-width();
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 4rem;
+	}
+	&__titlebox {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__title {
+		font-size: 2.5rem;
+		line-height: 2.5rem;
+	}
+	&__linksbox {
+		display: grid;
+		gap: 0.5rem;
+	}
+	&__email {
+		&-link {
+			font-size: 1.125rem;
+			font-weight: $font-weight;
+			text-decoration: underline;
+		}
+	}
+	&__socials {
+		display: flex;
+		gap: 1rem;
+	}
+	&__link {
+		@include flex-center();
+		width: 2rem;
+		height: 2rem;
+		overflow: hidden;
+		&::before {
+			color: $text-color;
+		}
+		&--telegram {
+			@include tg-hover();
+		}
+		&--vk {
+			@include vk-hover();
+		}
+		&--instagram {
+			@include insta-hover();
+		}
+	}
+	&__questionnairye {
+		text-wrap: wrap;
+		&-link {
+			font-weight: $font-weight;
+			text-decoration: underline;
+		}
+	}
 }
 
 .form {
-  background-color: $text-color;
-  padding: 2rem;
-  border-radius: $border-radius;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
-  &__title {
-    font-size: 1.5rem;
-    color: $text-color-dark;
-    &-accent {
-      color: $accent-color;
-    }
-  }
-  &__input-wrapper {
-    display: flex;
-  }
-  &__inputbox {
-    position: relative;
-    flex: 50%;
-    display: flex;
-    flex-direction: column;
-    &:has(.form__input:hover) .form__label {
-      color: $accent-color;
-    }
-    &:has(.form__input:focus) .form__label,
-    &:has(.form__input:not(#input-tel):not(:placeholder-shown)) .form__label,
-    &:has(#input-tel.filled) .form__label {
-      translate: 0 0;
-      opacity: 1;
-      color: $accent-color;
-      font-size: 0.9em;
-    }
-    &:has(#input-tel:not(.filled):not(:focus)) .form__label {
-      translate: 0 2rem;
-      opacity: 0.7;
-    }
-  }
-  &__label {
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: $text-color-dark;
-    letter-spacing: 0;
-    opacity: 0.7;
-    translate: 0 2rem;
-    pointer-events: none;
-    transition-duration: $duration;
-  }
-  &__input {
-    font-size: 1.5rem;
-    padding: 1.8rem 0 0.5rem 0;
-    background: none;
-    box-shadow: 0 0.0625rem 0 0 $accent-color;
-    transition-duration: $duration;
-    &::placeholder {
-      opacity: 0;
-      transition-duration: $duration;
-    }
-    &:hover {
-      box-shadow: 0 0.125rem 0 0 $accent-color;
-    }
-    &:focus {
-      outline: none;
-      box-shadow: 0 0.125rem 0 0 $accent-color;
-      &::placeholder {
-        opacity: 1;
-      }
-    }
-  }
-  &__privacy-policy {
-    font-size: 0.75rem;
-    line-height: 1rem;
-    text-align: center;
-    letter-spacing: 0;
-    color: $text-color-dark;
-    font-weight: $font-weight;
-    opacity: 0.7;
-    &-link {
-      text-decoration: underline;
-    }
-  }
-  &__button {
-    width: 100%;
-    margin-top: 0.5rem;
-    @include button(none, none, $secondary-color, $secondary-color, $text-color, $text-color, $accent-color);
-  }
+	background-color: $text-color;
+	padding: 2rem;
+	border-radius: $border-radius;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+	&__title {
+		font-size: 1.5rem;
+		color: $text-color-dark;
+		&-accent {
+			color: $accent-color;
+		}
+	}
+	&__input-wrapper {
+		display: flex;
+	}
+	&__inputbox {
+		position: relative;
+		flex: 50%;
+		display: flex;
+		flex-direction: column;
+		&:has(.form__input:hover) .form__label {
+			color: $accent-color;
+		}
+		&:has(.form__input:focus) .form__label,
+		&:has(.form__input:not(#input-tel):not(:placeholder-shown)) .form__label,
+		&:has(#input-tel.filled) .form__label {
+			translate: 0 0;
+			opacity: 1;
+			color: $accent-color;
+			font-size: 0.9em;
+		}
+		&:has(#input-tel:not(.filled):not(:focus)) .form__label {
+			translate: 0 2rem;
+			opacity: 0.7;
+		}
+	}
+	&__label {
+		position: absolute;
+		left: 0;
+		top: 0;
+		color: $text-color-dark;
+		letter-spacing: 0;
+		opacity: 0.7;
+		translate: 0 2rem;
+		pointer-events: none;
+		transition-duration: $duration;
+	}
+	&__input {
+		font-size: 1.5rem;
+		padding: 1.8rem 0 0.5rem 0;
+		background: none;
+		box-shadow: 0 0.0625rem 0 0 $accent-color;
+		transition-duration: $duration;
+		&::placeholder {
+			opacity: 0;
+			transition-duration: $duration;
+		}
+		&:hover {
+			box-shadow: 0 0.125rem 0 0 $accent-color;
+		}
+		&:focus {
+			outline: none;
+			box-shadow: 0 0.125rem 0 0 $accent-color;
+			&::placeholder {
+				opacity: 1;
+			}
+		}
+		&--checkbox {
+			position: relative;
+			text-wrap: wrap;
+			display: flex;
+			align-items: flex-start;
+			gap: 1rem;
+			padding-left: 2rem;
+      margin-top: 1rem;
+			& input {
+				cursor: pointer;
+				position: absolute;
+				left: 0;
+				top: 0.25rem;
+				width: 1.5rem;
+				height: 1.5rem;
+				opacity: 0;
+			}
+			&::before {
+				content: "";
+				pointer-events: none;
+				position: absolute;
+				left: 0;
+				top: 0.25rem;
+				width: 1.25rem;
+				height: 1.25rem;
+				border: 0.125rem solid $accent-color;
+				border-radius: 50%;
+			}
+			&:has(input:hover)::before {
+				background-color: $text-color;
+			}
+			&:has(input:checked)::before {
+				border-width: 0.25rem;
+				background-color: $secondary-color;
+			}
+		}
+		&--agreement {
+			color: $text-color-dark;
+			text-wrap: wrap;
+			font-size: 0.875rem;
+			line-height: 1rem;
+			&-link {
+				cursor: pointer;
+				color: $text-color-dark;
+				text-decoration: underline;
+			}
+		}
+	}
+	&__button {
+		width: 100%;
+		margin-top: 0.5rem;
+		@include button(none, none, $secondary-color, $secondary-color, $text-color, $text-color, $accent-color);
+	}
 }

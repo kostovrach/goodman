@@ -15,6 +15,7 @@
         text-align: right;
         &--accent {
             color: $add-color;
+            filter: drop-shadow(1px 1px 1px rgba($primary-color, 1));
         }
     }
     &__author {
