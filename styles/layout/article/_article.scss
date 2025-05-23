@@ -21,6 +21,7 @@
     &__title {
         font-size: $title-fs;
         line-height: $title-fs;
+        text-wrap: wrap;
     }
     &__tag {
         width: fit-content;

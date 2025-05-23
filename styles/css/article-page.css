@@ -958,6 +958,7 @@ body {
 .article__title {
   font-size: 4rem;
   line-height: 4rem;
+  text-wrap: wrap;
 }
 .article__tag {
   width: fit-content;
