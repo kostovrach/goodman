@@ -777,6 +777,7 @@ img {
 }
 
 body {
+  position: relative;
   font-family: "Golos Text", sans-serif;
   font-size: 16px;
   line-height: 150%;
@@ -1703,6 +1704,55 @@ body {
     justify-content: start;
   }
 }
+.popup-cookies {
+  position: fixed;
+  left: auto;
+  right: 0;
+  bottom: 4rem;
+  z-index: 4;
+  width: fit-content;
+  max-width: 31rem;
+  margin: 0 0.5rem;
+  background-color: #FFFFFF;
+  color: #001824;
+  font-weight: 550;
+  font-size: 0.675rem;
+  line-height: 1rem;
+  text-wrap: wrap;
+  border-radius: 0.25rem;
+  opacity: 0.9;
+  transition: bottom 0.5s;
+}
+.popup-cookies__closeBtn {
+  position: absolute;
+  right: 1.5rem;
+  top: 0.9rem;
+  transition-duration: 0.5s;
+}
+.popup-cookies__closeBtn:hover {
+  rotate: 90deg;
+}
+.popup-cookies__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+}
+.popup-cookies__title {
+  font-size: 1rem;
+}
+.popup-cookies__policy {
+  text-decoration: underline;
+  color: #F7624C;
+}
+.popup-cookies__policy:hover {
+  text-decoration: none;
+}
+.popup-cookies__desc {
+  line-height: 1;
+  opacity: 0.5;
+}
+
 body {
   position: relative;
   z-index: 0;
@@ -2048,12 +2098,16 @@ body::after {
   font-size: 6rem;
 }
 .values__item--image {
+  width: 100%;
+  object-fit: cover;
+}
+.values__item--image-wrapper {
   max-width: 100%;
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
 @supports (clip-path: path("M0 0")) {
-  .values__item--image {
+  .values__item--image-wrapper {
     clip-path: url(#clip-rt);
     border-radius: 0;
   }

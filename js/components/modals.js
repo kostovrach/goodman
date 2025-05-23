@@ -56,3 +56,14 @@ window.addEventListener("scroll", () => {
     popupTest.removeAttribute('open');
 	}
 });
+
+const cookies = document.querySelector("#popup-cookies");
+const cookiesCloseBtn = cookies.querySelector(".popup-cookies__closeBtn");
+
+cookiesCloseBtn.addEventListener("click", () => cookies.close());
+
+window.addEventListener("scroll", () => {
+	if (window.scrollY > 100) {
+		cookies.style.setProperty('bottom', '1rem');
+	}
+});

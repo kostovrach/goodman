@@ -1,0 +1,48 @@
+.popup-cookies {
+	position: fixed;
+    left: auto;
+    right: 0;
+    bottom: 4rem;
+	z-index: 4;
+    width: fit-content;
+	max-width: 31rem;
+    margin: 0 0.5rem;
+    background-color: $text-color;
+	color: $primary-color;
+    font-weight: $font-weight;
+    font-size: 0.675rem;
+    line-height: 1rem;
+    text-wrap: wrap;
+    border-radius: 0.25rem;
+    opacity: 0.9;
+    transition: bottom $duration;
+	&__closeBtn {
+		position: absolute;
+		right: 1.5rem;
+		top: 0.9rem;
+		transition-duration: $duration;
+		&:hover {
+			rotate: 90deg;
+		}
+	}
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		padding: 1.5rem;
+	}
+    &__title {
+        font-size: 1rem;
+    }
+    &__policy {
+        text-decoration: underline;
+        color: $accent-color;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__desc {
+        line-height: 1;
+        opacity: 0.5;
+    }
+}
