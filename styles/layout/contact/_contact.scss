@@ -108,6 +108,56 @@
             background-color: $primary-color;
         }
     }
+    &__input {
+        
+		&--checkbox {
+			position: relative;
+			text-wrap: wrap;
+			display: flex;
+			align-items: flex-start;
+			gap: 1rem;
+			padding-left: 2rem;
+			margin-top: 1rem;
+			& input {
+				cursor: pointer;
+				position: absolute;
+				left: 0;
+				top: 0.25rem;
+				width: 1.5rem;
+				height: 1.5rem;
+				opacity: 0;
+			}
+			&::before {
+				content: "";
+				pointer-events: none;
+				position: absolute;
+				left: 0;
+				top: 0.25rem;
+				width: 1.25rem;
+				height: 1.25rem;
+				border: 0.125rem solid $add-color;
+				border-radius: 50%;
+			}
+			&:has(input:hover)::before {
+				background-color: $add-color;
+			}
+			&:has(input:checked)::before {
+				border-width: 0.25rem;
+				background-color: $secondary-color;
+			}
+		}
+		&--agreement {
+			color: $add-color;
+			text-wrap: wrap;
+			font-size: 0.875rem;
+			line-height: 1rem;
+            opacity: 0.5;
+			&-link {
+				cursor: pointer;
+				text-decoration: underline;
+			}
+		}
+    }
     &__textarea {
         resize: none;
         height: 8rem;
