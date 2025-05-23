@@ -1017,10 +1017,11 @@ body {
   font-weight: 550;
 }
 .article__aside-link {
-  color: #ADE5E4;
-  font-size: 0.875rem;
   position: relative;
   transition-duration: 0.5s;
+  width: fit-content;
+  color: #ADE5E4;
+  font-size: 0.875rem;
 }
 .article__aside-link::before {
   content: "";
@@ -1305,7 +1306,7 @@ body {
     font-size: 2rem;
     line-height: 2rem;
   }
-  .article__chapter-text {
+  .article__chapter-text, .article__chapter-list {
     font-size: 1rem;
     line-height: 1.75rem;
   }

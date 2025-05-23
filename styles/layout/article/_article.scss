@@ -77,9 +77,10 @@
             font-weight: $font-weight;
         }
         &-link {
+            @include nav-item-horizontal-hover($text-color);
+            width: fit-content;
             color: $add-color;
             font-size: 0.875rem;
-            @include nav-item-horizontal-hover($text-color);
         }
     }
     &__body {
