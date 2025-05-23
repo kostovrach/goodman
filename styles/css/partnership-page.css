@@ -2136,6 +2136,7 @@ body {
   line-height: 2.5rem;
   font-weight: 550;
   text-wrap: wrap;
+  filter: drop-shadow(1px 1px 1px rgba(0, 24, 36, 0.7));
 }
 .invite__image-wrapper {
   display: block;
@@ -2179,7 +2180,7 @@ body {
   gap: 1rem;
 }
 .invite__form-input {
-  cursor: pointer;
+  cursor: text;
   font-size: 1.5rem;
   color: #FFFFFF;
   padding: 1rem 2rem;
@@ -2198,6 +2199,53 @@ body {
   background-color: #1C5564;
   outline: 0.0625rem solid #FFFFFF;
 }
+.invite__form-input--checkbox {
+  position: relative;
+  text-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+.invite__form-input--checkbox input {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0;
+}
+.invite__form-input--checkbox::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 0.125rem solid #ADE5E4;
+  border-radius: 50%;
+}
+.invite__form-input--checkbox:has(input:hover)::before {
+  background-color: #ADE5E4;
+}
+.invite__form-input--checkbox:has(input:checked)::before {
+  border-width: 0.25rem;
+  background-color: #F7624C;
+}
+.invite__form-input--agreement {
+  color: #ADE5E4;
+  text-wrap: wrap;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  opacity: 0.5;
+}
+.invite__form-input--agreement-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .invite__form-button {
   display: flex;
   align-items: center;
@@ -2213,7 +2261,7 @@ body {
   color: #1C5564;
   transition-duration: 0.5s;
   font-size: 1.25rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .invite__form-button i {
   pointer-events: none;
